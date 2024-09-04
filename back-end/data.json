@@ -1,0 +1,39 @@
+{
+   "albuns": [
+      {
+         "name": "Yeezus",
+         "artist": "Kanye West",
+         "rating": 10
+      },
+      {
+         "name": "Trench",
+         "artist": "Twenty One Pilots",
+         "rating": 10
+      },
+      {
+         "name": "IGOR",
+         "artist": "Tyler, the Creator",
+         "rating": 10
+      },
+      {
+         "name": "Nectar",
+         "artist": "Joji",
+         "rating": "10"
+      },
+      {
+         "name": "All My Heroes Are Cornballs",
+         "artist": "JPEGMAFIA",
+         "rating": "7.5"
+      },
+      {
+         "name": "Scaled and Icy",
+         "artist": "Twenty One Pilots",
+         "rating": "9"
+      },
+      {
+         "name": "Amnesty (I)",
+         "artist": "Crystal Castles",
+         "rating": "9"
+      }
+   ]
+}
