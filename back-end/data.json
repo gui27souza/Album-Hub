@@ -34,6 +34,26 @@
          "name": "Amnesty (I)",
          "artist": "Crystal Castles",
          "rating": "9"
+      },
+      {
+         "name": "Blurryface",
+         "artist": "Twenty One Pilots",
+         "rating": "10"
+      },
+      {
+         "name": "Black Ben Carson",
+         "artist": "JPEGMAFIA",
+         "rating": "9.5"
+      },
+      {
+         "name": "Clancy",
+         "artist": "Twenty One Pilots",
+         "rating": "10"
+      },
+      {
+         "name": "I LAY DOWN MY LIFE FOR YOU",
+         "artist": "JPEGMAFIA",
+         "rating": "9"
       }
    ]
 }
