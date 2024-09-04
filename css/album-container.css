@@ -1,0 +1,187 @@
+.album-container {
+    width: var(--main-width);
+
+    padding: var(--container-padding);
+
+    display: flex;
+    flex-flow: column;
+    gap: var(--container-gap);
+
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+    border-radius: .5rem;
+}
+
+.album-item {
+    width: 100%;
+    height: 100%;
+
+    padding: var(--item-padding);
+
+    display: flex;
+    flex-flow: column;
+    gap: var(--item-gap);
+
+    border-radius: .5rem;
+    
+}
+
+.album-image {
+    width: 100%;
+
+    object-fit: contain;
+
+    border-radius: .5rem;
+}
+
+.album-text {
+    display: flex;
+    flex-flow: column;
+    gap: var(--inner-gap);
+}
+    
+.album-text-item {
+    padding: var(--inner-padding);
+
+    border-radius: .5rem;
+}
+
+.album-name {
+    font-size: 1.6rem;
+    font-weight: 600;
+
+    height: 5rem;
+}
+.album-artist {
+    font-size: 1.8rem;
+}
+.album-rating {
+    font-size: 1.6rem;
+}
+
+@media screen
+and (min-width: 300px) {
+    .album-name {
+        font-size: 1.8rem;
+    }
+    .album-artist {
+        font-size: 1.8rem;
+    }
+    .album-price {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen
+and (min-width: 400px) {
+
+    .album-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 1fr;
+    }
+
+    .album-text {
+        flex-grow: 1;
+    }
+
+    .album-name {
+        font-size: 2rem;
+
+        height: unset;
+        flex-grow: 1;
+
+        text-align: center;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .album-artist {
+        font-size: 1.8rem;
+    }
+    .album-price {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen
+and (min-width: 485px) {
+
+    .album-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .album-name {
+        font-size: 1.8rem;
+    }
+    .album-artist {
+        font-size: 1.6rem;
+    }
+    .album-price {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen
+and (min-width: 525px) {
+    .album-name {
+        font-size: 2rem;
+    }
+    .album-artist {
+        font-size: 1.8rem;
+    }
+    .album-price {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen
+and (min-width: 750px) {
+    .album-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen
+and (min-width: 950px) {
+    .album-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .album-name {
+        font-size: 1.8rem;
+    }
+    .album-artist {
+        font-size: 1.8rem;
+    }
+    .album-price {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen 
+and (min-width: 1200px) {
+
+}
+
+@media screen
+and (min-width: 1500px) {
+    .album-container {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .album-item {
+        max-width: 65rem;
+    }
+
+    .album-name {
+        font-size: 2rem;
+    }
+    .album-artist {
+        font-size: 2rem;
+    }
+    .album-price {
+        font-size: 1.8rem;
+    }
+}
