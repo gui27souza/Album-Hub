@@ -3,57 +3,220 @@
       {
          "name": "Yeezus",
          "artist": "Kanye West",
-         "rating": 10
+         "rating": "10",
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "On Sight",
+               "track_rating": "10"
+            },
+            {
+               "number": 2,
+               "title": "Black Skinhead",
+               "track_rating": "10"
+            },
+            {
+               "number": 3,
+               "title": "I Am a God",
+               "track_rating": "9"
+            },
+            {
+               "number": 4,
+               "title": "New Slaves",
+               "track_rating": "10"
+            },
+            {
+               "number": 5,
+               "title": "Hold My Liquor",
+               "track_rating": "10"
+            },
+            {
+               "number": 6,
+               "title": "I'm in It",
+               "track_rating": "9"
+            },
+            {
+               "number": 7,
+               "title": "Blood on the Leaves",
+               "track_rating": "10"
+            },
+            {
+               "number": 8,
+               "title": "Guilt Trip",
+               "track_rating": "9"
+            },
+            {
+               "number": 9,
+               "title": "Send It Up",
+               "track_rating": "10"
+            },
+            {
+               "number": 10,
+               "title": "Bound 2",
+               "track_rating": "9"
+            }
+         ]
       },
       {
-         "name": "Trench",
-         "artist": "Twenty One Pilots",
-         "rating": 10
+         "name": "Blonde",
+         "artist": "Frank Ocean",
+         "rating": "9",
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "Nikes",
+               "track_rating": 0
+            },
+            {
+               "number": 2,
+               "title": "Ivy",
+               "track_rating": 0
+            },
+            {
+               "number": 3,
+               "title": "Pink + White",
+               "track_rating": 0
+            },
+            {
+               "number": 4,
+               "title": "Be Yourself",
+               "track_rating": 0
+            },
+            {
+               "number": 5,
+               "title": "Solo",
+               "track_rating": 0
+            },
+            {
+               "number": 6,
+               "title": "Skyline To",
+               "track_rating": 0
+            },
+            {
+               "number": 7,
+               "title": "Self Control",
+               "track_rating": 0
+            },
+            {
+               "number": 8,
+               "title": "Good Guy",
+               "track_rating": 0
+            },
+            {
+               "number": 9,
+               "title": "Nights",
+               "track_rating": 0
+            },
+            {
+               "number": 10,
+               "title": "Solo (Reprise)",
+               "track_rating": 0
+            },
+            {
+               "number": 11,
+               "title": "Pretty Sweet",
+               "track_rating": 0
+            },
+            {
+               "number": 12,
+               "title": "Facebook Story",
+               "track_rating": 0
+            },
+            {
+               "number": 13,
+               "title": "Close to You",
+               "track_rating": 0
+            },
+            {
+               "number": 14,
+               "title": "White Ferrari",
+               "track_rating": 0
+            },
+            {
+               "number": 15,
+               "title": "Seigfried",
+               "track_rating": 0
+            },
+            {
+               "number": 16,
+               "title": "Godspeed",
+               "track_rating": 0
+            },
+            {
+               "number": 17,
+               "title": "Futura Free",
+               "track_rating": 0
+            }
+         ],
+         "average_track_rate": 0
       },
       {
          "name": "IGOR",
          "artist": "Tyler, the Creator",
-         "rating": 10
-      },
-      {
-         "name": "Nectar",
-         "artist": "Joji",
-         "rating": "10"
-      },
-      {
-         "name": "All My Heroes Are Cornballs",
-         "artist": "JPEGMAFIA",
-         "rating": "7.5"
-      },
-      {
-         "name": "Scaled and Icy",
-         "artist": "Twenty One Pilots",
-         "rating": "9"
-      },
-      {
-         "name": "Amnesty (I)",
-         "artist": "Crystal Castles",
-         "rating": "9"
-      },
-      {
-         "name": "Blurryface",
-         "artist": "Twenty One Pilots",
-         "rating": "10"
-      },
-      {
-         "name": "Black Ben Carson",
-         "artist": "JPEGMAFIA",
-         "rating": "9.5"
-      },
-      {
-         "name": "Clancy",
-         "artist": "Twenty One Pilots",
-         "rating": "10"
-      },
-      {
-         "name": "I LAY DOWN MY LIFE FOR YOU",
-         "artist": "JPEGMAFIA",
-         "rating": "9"
+         "rating": "10",
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "IGOR'S THEME",
+               "track_rating": "10"
+            },
+            {
+               "number": 2,
+               "title": "EARFQUAKE",
+               "track_rating": "9.5"
+            },
+            {
+               "number": 3,
+               "title": "I THINK",
+               "track_rating": "10"
+            },
+            {
+               "number": 4,
+               "title": "EXACTLY WHAT YOU RUN FROM YOU END UP CHASING",
+               "track_rating": "5"
+            },
+            {
+               "number": 5,
+               "title": "RUNNING OUT OF TIME",
+               "track_rating": "10"
+            },
+            {
+               "number": 6,
+               "title": "NEW MAGIC WAND",
+               "track_rating": "10"
+            },
+            {
+               "number": 7,
+               "title": "A BOY IS A GUN",
+               "track_rating": "6"
+            },
+            {
+               "number": 8,
+               "title": "PUPPET",
+               "track_rating": "8"
+            },
+            {
+               "number": 9,
+               "title": "WHAT'S GOOD",
+               "track_rating": "9"
+            },
+            {
+               "number": 10,
+               "title": "GONE, GONE / THANK YOU",
+               "track_rating": "10"
+            },
+            {
+               "number": 11,
+               "title": "I DON'T LOVE YOU ANYMORE",
+               "track_rating": "7"
+            },
+            {
+               "number": 12,
+               "title": "ARE WE STILL FRIENDS?",
+               "track_rating": "8"
+            }
+         ],
+         "average_track_rate": 9.1
       }
    ]
 }
