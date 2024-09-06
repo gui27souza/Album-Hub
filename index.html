@@ -14,6 +14,7 @@
 
     <link id="theme" rel="stylesheet" href="css/alfa_theme.css">
     <link rel="stylesheet" href="css/album-container.css">
+    <link rel="stylesheet" href="css/tracklist-container.css">
 
 </head>
 <body>
@@ -24,9 +25,20 @@
     ></section>
 
 
+    <section
+    class="tracklist-container"
+    id="tracklist-container"
+    >
+        <div class="tracklist-hide" onclick="hideTracklist()"></div>
+        <div class="tracklist" id="tracklist"></div>
+    </section>
+
+
     <!-- Data Related Scripts -->
         <script src="js/data.js"></script>
         <script src="js/loadAlbuns.js"></script>
-        <script src="js/createAlbuns.js"></script>    
+        <script src="js/createAlbuns.js"></script>
+
+        <script src="js/tracklist.js"></script>
 </body>
 </html>
