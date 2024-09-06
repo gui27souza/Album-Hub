@@ -524,55 +524,55 @@
             {
                "number": 1,
                "title": "On Sight",
-               "track_rating": -1
+               "track_rating": "10"
             },
             {
                "number": 2,
                "title": "Black Skinhead",
-               "track_rating": -1
+               "track_rating": "10"
             },
             {
                "number": 3,
                "title": "I Am a God",
-               "track_rating": -1
+               "track_rating": "9.5"
             },
             {
                "number": 4,
                "title": "New Slaves",
-               "track_rating": -1
+               "track_rating": "9.5"
             },
             {
                "number": 5,
                "title": "Hold My Liquor",
-               "track_rating": -1
+               "track_rating": "10"
             },
             {
                "number": 6,
                "title": "I'm in It",
-               "track_rating": -1
+               "track_rating": "10"
             },
             {
                "number": 7,
                "title": "Blood on the Leaves",
-               "track_rating": -1
+               "track_rating": "10"
             },
             {
                "number": 8,
                "title": "Guilt Trip",
-               "track_rating": -1
+               "track_rating": "9.5"
             },
             {
                "number": 9,
                "title": "Send It Up",
-               "track_rating": -1
+               "track_rating": "9.5"
             },
             {
                "number": 10,
                "title": "Bound 2",
-               "track_rating": -1
+               "track_rating": "9"
             }
          ],
-         "average_track_rate": -1
+         "average_track_rate": "9.7"
       },
       {
          "name": "nectar",
@@ -671,6 +671,328 @@
             }
          ],
          "average_track_rate": "9.3"
+      },
+      {
+         "name": "smithereens",
+         "artist": "joji",
+         "rating": "8.5",
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "Glimpse of Us",
+               "track_rating": "7.5"
+            },
+            {
+               "number": 2,
+               "title": "Feeling Like the End",
+               "track_rating": "9"
+            },
+            {
+               "number": 3,
+               "title": "Die for You",
+               "track_rating": "9"
+            },
+            {
+               "number": 4,
+               "title": "Before the Day Is Over",
+               "track_rating": "8.5"
+            },
+            {
+               "number": 5,
+               "title": "Dissolve",
+               "track_rating": "8.5"
+            },
+            {
+               "number": 6,
+               "title": "NIGHT RIDER",
+               "track_rating": "10"
+            },
+            {
+               "number": 7,
+               "title": "BLAHBLAHBLAH DEMO",
+               "track_rating": "9"
+            },
+            {
+               "number": 8,
+               "title": "YUKON (INTERLUDE)",
+               "track_rating": "10"
+            },
+            {
+               "number": 9,
+               "title": "1AM FREESTYLE",
+               "track_rating": "9.5"
+            }
+         ],
+         "average_track_rate": "9.0"
+      },
+      {
+         "name": "ballads 1",
+         "artist": "joji",
+         "rating": "8.5",
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "ATTENTION",
+               "track_rating": -1
+            },
+            {
+               "number": 2,
+               "title": "SLOW DANCING IN THE DARK",
+               "track_rating": -1
+            },
+            {
+               "number": 3,
+               "title": "TEST DRIVE",
+               "track_rating": -1
+            },
+            {
+               "number": 4,
+               "title": "WANTED U",
+               "track_rating": -1
+            },
+            {
+               "number": 5,
+               "title": "CAN'T GET OVER YOU",
+               "track_rating": -1
+            },
+            {
+               "number": 6,
+               "title": "YEAH RIGHT",
+               "track_rating": -1
+            },
+            {
+               "number": 7,
+               "title": "WHY AM I STILL IN LA",
+               "track_rating": -1
+            },
+            {
+               "number": 8,
+               "title": "NO FUN",
+               "track_rating": -1
+            },
+            {
+               "number": 9,
+               "title": "COME THRU",
+               "track_rating": -1
+            },
+            {
+               "number": 10,
+               "title": "R.I.P.",
+               "track_rating": -1
+            },
+            {
+               "number": 11,
+               "title": "XNXX",
+               "track_rating": -1
+            },
+            {
+               "number": 12,
+               "title": "I'LL SEE YOU IN 40",
+               "track_rating": -1
+            }
+         ],
+         "average_track_rate": -1
+      },
+      {
+         "name": "no phun intended",
+         "artist": "tyler joseph",
+         "rating": "9.0",
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "Blasphemy",
+               "track_rating": -1
+            },
+            {
+               "number": 2,
+               "title": "Drown",
+               "track_rating": -1
+            },
+            {
+               "number": 3,
+               "title": "Hole in the Ground",
+               "track_rating": -1
+            },
+            {
+               "number": 4,
+               "title": "Save",
+               "track_rating": -1
+            },
+            {
+               "number": 5,
+               "title": "Taken by Sleep",
+               "track_rating": -1
+            },
+            {
+               "number": 6,
+               "title": "I Want to Know",
+               "track_rating": -1
+            },
+            {
+               "number": 7,
+               "title": "Just Like Yesterday",
+               "track_rating": -1
+            },
+            {
+               "number": 8,
+               "title": "Never Change",
+               "track_rating": -1
+            },
+            {
+               "number": 9,
+               "title": "Prove Me Wrong",
+               "track_rating": -1
+            },
+            {
+               "number": 10,
+               "title": "Realize That It's Gone",
+               "track_rating": -1
+            },
+            {
+               "number": 11,
+               "title": "Tonight",
+               "track_rating": -1
+            },
+            {
+               "number": 12,
+               "title": "Falling Too",
+               "track_rating": -1
+            },
+            {
+               "number": 13,
+               "title": "Whisper",
+               "track_rating": -1
+            },
+            {
+               "number": 14,
+               "title": "TB Saga",
+               "track_rating": -1
+            },
+            {
+               "number": 15,
+               "title": "Chords/Words",
+               "track_rating": -1
+            },
+            {
+               "number": 16,
+               "title": "Trees",
+               "track_rating": -1
+            },
+            {
+               "number": 17,
+               "title": "Where Did We Go",
+               "track_rating": -1
+            },
+            {
+               "number": 18,
+               "title": "I'm a Goner",
+               "track_rating": -1
+            },
+            {
+               "number": 19,
+               "title": "Hear Me Now",
+               "track_rating": -1
+            }
+         ],
+         "average_track_rate": -1
+      },
+      {
+         "name": "the life of pablo",
+         "artist": "kanye west",
+         "rating": 10,
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "Ultralight Beam",
+               "track_rating": "9.5"
+            },
+            {
+               "number": 2,
+               "title": "Father Stretch My Hands Pt. 1",
+               "track_rating": "10"
+            },
+            {
+               "number": 3,
+               "title": "Pt. 2",
+               "track_rating": "10"
+            },
+            {
+               "number": 4,
+               "title": "Famous",
+               "track_rating": "10"
+            },
+            {
+               "number": 5,
+               "title": "Feedback",
+               "track_rating": "10"
+            },
+            {
+               "number": 6,
+               "title": "Low Lights",
+               "track_rating": "7"
+            },
+            {
+               "number": 7,
+               "title": "Highlights",
+               "track_rating": "7"
+            },
+            {
+               "number": 8,
+               "title": "Freestyle 4",
+               "track_rating": "10"
+            },
+            {
+               "number": 9,
+               "title": "I Love Kanye",
+               "track_rating": "10"
+            },
+            {
+               "number": 10,
+               "title": "Waves",
+               "track_rating": "8"
+            },
+            {
+               "number": 11,
+               "title": "FML",
+               "track_rating": "10"
+            },
+            {
+               "number": 12,
+               "title": "Real Friends",
+               "track_rating": "7"
+            },
+            {
+               "number": 13,
+               "title": "Wolves",
+               "track_rating": "9"
+            },
+            {
+               "number": 14,
+               "title": "Siiiiiiiiilver Surffffeeeeer Intermission",
+               "track_rating": "-"
+            },
+            {
+               "number": 15,
+               "title": "30 Hours",
+               "track_rating": "7.5"
+            },
+            {
+               "number": 16,
+               "title": "No More Parties In LA",
+               "track_rating": "9.5"
+            },
+            {
+               "number": 17,
+               "title": "Facts (Charlie Heat Version)",
+               "track_rating": "10"
+            },
+            {
+               "number": 18,
+               "title": "Fade",
+               "track_rating": "8.5"
+            }
+         ],
+         "average_track_rate": "9.0"
       }
    ]
 }
