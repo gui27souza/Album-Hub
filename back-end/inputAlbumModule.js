@@ -99,7 +99,7 @@
         album_index = jsonData.albuns.findIndex(album => album.name === album_name && album.artist === artist)
 
         if (album_index == -1) {
-            console.log(`'${album_name}' by '${artist}' is not in your library\n`)
+            console.log(`\n'${album_name}' by '${artist}' is not in your library\n`)
             return
         }
 
@@ -122,7 +122,7 @@
         const albumIndex = jsonData.albuns.findIndex(album => album.name === album_name && album.artist === artist)
 
         if (albumIndex === -1) {
-            console.log('This album is not in your library')
+            console.log(`\n'${album_name}' by '${artist}' is not in your library\n`)
             return
         }
 
@@ -149,6 +149,7 @@
         for (const track of tracklist) {
             let track_rating = await askQuestion(`${track.title}: `)
             track.track_rating = track_rating
+            if (track_rating === '-' || isNaN(parseFloat(track_rating))) continue;
             total_rate += parseFloat(track_rating)
             total_tracks++
         }
@@ -182,12 +183,13 @@
                 let album_name = await askQuestion('\nAlbum Name: ')
                 let artist = await askQuestion('Artist: ')
                 let album_added = await addAlbum(album_name, artist)
-                if (album_added == -1) {rl.close(); return}
-                console.log('\nAlbum added to you library!\n')
-                let sub_command = await askQuestion('Would you like to rate it?\n1 - Yes\n2 - No\n\n')
-                if (sub_command == 1) {
-                    let rating = await askQuestion('\nRating: ')
-                    await rateTracklist(album_name, artist, rating)
+                if (album_added != -1) {
+                    console.log('\nAlbum added to you library!\n')
+                    let sub_command = await askQuestion('Would you like to rate it?\n1 - Yes\n2 - No\n\n')
+                    if (sub_command == 1) {
+                        let rating = await askQuestion('\nRating: ')
+                        await rateTracklist(album_name, artist, rating)
+                    }
                 }
             }
 
