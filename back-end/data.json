@@ -1,222 +1,676 @@
 {
    "albuns": [
       {
-         "name": "Yeezus",
-         "artist": "Kanye West",
-         "rating": "10",
+         "name": "clancy",
+         "artist": "twenty one pilots",
+         "rating": 10,
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "Overcompensate",
+               "track_rating": "10"
+            },
+            {
+               "number": 2,
+               "title": "Next Semester",
+               "track_rating": "10"
+            },
+            {
+               "number": 3,
+               "title": "Backslide",
+               "track_rating": "10"
+            },
+            {
+               "number": 4,
+               "title": "Midwest Indigo",
+               "track_rating": "10"
+            },
+            {
+               "number": 5,
+               "title": "Routines in the Night",
+               "track_rating": "10"
+            },
+            {
+               "number": 6,
+               "title": "Vignette",
+               "track_rating": "10"
+            },
+            {
+               "number": 7,
+               "title": "The Craving (Jenna's version)",
+               "track_rating": "7.5"
+            },
+            {
+               "number": 8,
+               "title": "Lavish",
+               "track_rating": "9.5"
+            },
+            {
+               "number": 9,
+               "title": "Navigating",
+               "track_rating": "9.5"
+            },
+            {
+               "number": 10,
+               "title": "Snap Back",
+               "track_rating": "10"
+            },
+            {
+               "number": 11,
+               "title": "Oldies Station",
+               "track_rating": "10"
+            },
+            {
+               "number": 12,
+               "title": "At the Risk of Feeling Dumb",
+               "track_rating": "10"
+            },
+            {
+               "number": 13,
+               "title": "Paladin Strait",
+               "track_rating": "10"
+            }
+         ],
+         "average_track_rate": "9.7"
+      },
+      {
+         "name": "blurryface",
+         "artist": "twenty one pilots",
+         "rating": 10,
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "Heavydirtysoul",
+               "track_rating": "10"
+            },
+            {
+               "number": 2,
+               "title": "Stressed Out",
+               "track_rating": "10"
+            },
+            {
+               "number": 3,
+               "title": "Ride",
+               "track_rating": "10"
+            },
+            {
+               "number": 4,
+               "title": "Fairly Local",
+               "track_rating": "10"
+            },
+            {
+               "number": 5,
+               "title": "Tear in My Heart",
+               "track_rating": "9.5"
+            },
+            {
+               "number": 6,
+               "title": "Lane Boy",
+               "track_rating": "10"
+            },
+            {
+               "number": 7,
+               "title": "The Judge",
+               "track_rating": "10"
+            },
+            {
+               "number": 8,
+               "title": "Doubt",
+               "track_rating": "10"
+            },
+            {
+               "number": 9,
+               "title": "Polarize",
+               "track_rating": "9"
+            },
+            {
+               "number": 10,
+               "title": "We Don't Believe What's on TV",
+               "track_rating": "9"
+            },
+            {
+               "number": 11,
+               "title": "Message Man",
+               "track_rating": "10"
+            },
+            {
+               "number": 12,
+               "title": "Hometown",
+               "track_rating": "10"
+            },
+            {
+               "number": 13,
+               "title": "Not Today",
+               "track_rating": "9.5"
+            },
+            {
+               "number": 14,
+               "title": "Goner",
+               "track_rating": "9"
+            }
+         ],
+         "average_track_rate": "9.7"
+      },
+      {
+         "name": "scaled and icy",
+         "artist": "twenty one pilots",
+         "rating": "9.0",
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "Good Day",
+               "track_rating": "8"
+            },
+            {
+               "number": 2,
+               "title": "Choker",
+               "track_rating": "10"
+            },
+            {
+               "number": 3,
+               "title": "Shy Away",
+               "track_rating": "10"
+            },
+            {
+               "number": 4,
+               "title": "The Outside",
+               "track_rating": "10"
+            },
+            {
+               "number": 5,
+               "title": "Saturday",
+               "track_rating": "8"
+            },
+            {
+               "number": 6,
+               "title": "Never Take It",
+               "track_rating": "8.5"
+            },
+            {
+               "number": 7,
+               "title": "Mulberry Street",
+               "track_rating": "9"
+            },
+            {
+               "number": 8,
+               "title": "Formidable",
+               "track_rating": "9"
+            },
+            {
+               "number": 9,
+               "title": "Bounce Man",
+               "track_rating": "9"
+            },
+            {
+               "number": 10,
+               "title": "No Chances",
+               "track_rating": "10"
+            },
+            {
+               "number": 11,
+               "title": "Redecorate",
+               "track_rating": "10"
+            }
+         ],
+         "average_track_rate": "9.2"
+      },
+      {
+         "name": "trench",
+         "artist": "twenty one pilots",
+         "rating": 10,
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "Jumpsuit",
+               "track_rating": "10"
+            },
+            {
+               "number": 2,
+               "title": "Levitate",
+               "track_rating": "10"
+            },
+            {
+               "number": 3,
+               "title": "Morph",
+               "track_rating": "10"
+            },
+            {
+               "number": 4,
+               "title": "My Blood",
+               "track_rating": "9"
+            },
+            {
+               "number": 5,
+               "title": "Chlorine",
+               "track_rating": "10"
+            },
+            {
+               "number": 6,
+               "title": "Smithereens",
+               "track_rating": "8.5"
+            },
+            {
+               "number": 7,
+               "title": "Neon Gravestones",
+               "track_rating": "10"
+            },
+            {
+               "number": 8,
+               "title": "The Hype",
+               "track_rating": "9.5"
+            },
+            {
+               "number": 9,
+               "title": "Nico and the Niners",
+               "track_rating": "10"
+            },
+            {
+               "number": 10,
+               "title": "Cut My Lip",
+               "track_rating": "8"
+            },
+            {
+               "number": 11,
+               "title": "Bandito",
+               "track_rating": "10"
+            },
+            {
+               "number": 12,
+               "title": "Pet Cheetah",
+               "track_rating": "10"
+            },
+            {
+               "number": 13,
+               "title": "Legend",
+               "track_rating": "8"
+            },
+            {
+               "number": 14,
+               "title": "Leave the City",
+               "track_rating": "10"
+            }
+         ],
+         "average_track_rate": "9.5"
+      },
+      {
+         "name": "vessel",
+         "artist": "twenty one pilots",
+         "rating": "9.5",
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "Ode to Sleep",
+               "track_rating": "10"
+            },
+            {
+               "number": 2,
+               "title": "Holding on to You",
+               "track_rating": "10"
+            },
+            {
+               "number": 3,
+               "title": "Migraine",
+               "track_rating": "10"
+            },
+            {
+               "number": 4,
+               "title": "House of Gold",
+               "track_rating": "7.5"
+            },
+            {
+               "number": 5,
+               "title": "Car Radio",
+               "track_rating": "10"
+            },
+            {
+               "number": 6,
+               "title": "Semi-Automatic",
+               "track_rating": "8.5"
+            },
+            {
+               "number": 7,
+               "title": "Screen",
+               "track_rating": "8"
+            },
+            {
+               "number": 8,
+               "title": "The Run and Go",
+               "track_rating": "8"
+            },
+            {
+               "number": 9,
+               "title": "Fake You Out",
+               "track_rating": "8.5"
+            },
+            {
+               "number": 10,
+               "title": "Guns for Hands",
+               "track_rating": "10"
+            },
+            {
+               "number": 11,
+               "title": "Trees",
+               "track_rating": "9"
+            },
+            {
+               "number": 12,
+               "title": "Truce",
+               "track_rating": "8.5"
+            }
+         ],
+         "average_track_rate": "9.0"
+      },
+      {
+         "name": "regional at best",
+         "artist": "twenty one pilots",
+         "rating": "9.0",
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "Guns for Hands",
+               "track_rating": "10"
+            },
+            {
+               "number": 2,
+               "title": "Holding on to You",
+               "track_rating": "10"
+            },
+            {
+               "number": 3,
+               "title": "Ode to Sleep",
+               "track_rating": "10"
+            },
+            {
+               "number": 4,
+               "title": "Slowtown",
+               "track_rating": "10"
+            },
+            {
+               "number": 5,
+               "title": "Car Radio",
+               "track_rating": "10"
+            },
+            {
+               "number": 6,
+               "title": "Forest",
+               "track_rating": "9.5"
+            },
+            {
+               "number": 7,
+               "title": "Glowing Eyes",
+               "track_rating": "9.5"
+            },
+            {
+               "number": 8,
+               "title": "Kitchen Sink",
+               "track_rating": "10"
+            },
+            {
+               "number": 9,
+               "title": "Anathema",
+               "track_rating": "10"
+            },
+            {
+               "number": 10,
+               "title": "Lovely",
+               "track_rating": "10"
+            },
+            {
+               "number": 11,
+               "title": "Ruby",
+               "track_rating": "10"
+            },
+            {
+               "number": 12,
+               "title": "Trees",
+               "track_rating": "8"
+            },
+            {
+               "number": 13,
+               "title": "Be Concerned",
+               "track_rating": "8"
+            },
+            {
+               "number": 14,
+               "title": "Clear",
+               "track_rating": "9.5"
+            }
+         ],
+         "average_track_rate": "9.6"
+      },
+      {
+         "name": "twenty one pilots",
+         "artist": "twenty one pilots",
+         "rating": "9.0",
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "Implicit Demand for Proof",
+               "track_rating": "10"
+            },
+            {
+               "number": 2,
+               "title": "Fall Away",
+               "track_rating": "10"
+            },
+            {
+               "number": 3,
+               "title": "The Pantaloon",
+               "track_rating": "8.5"
+            },
+            {
+               "number": 4,
+               "title": "Addict with a Pen",
+               "track_rating": "8"
+            },
+            {
+               "number": 5,
+               "title": "Friend, Please",
+               "track_rating": "9"
+            },
+            {
+               "number": 6,
+               "title": "March to the Sea",
+               "track_rating": "8"
+            },
+            {
+               "number": 7,
+               "title": "Johnny Boy",
+               "track_rating": "8"
+            },
+            {
+               "number": 8,
+               "title": "Oh Ms Believer",
+               "track_rating": "7"
+            },
+            {
+               "number": 9,
+               "title": "Air Catcher",
+               "track_rating": "10"
+            },
+            {
+               "number": 10,
+               "title": "Trapdoor [Explicit]",
+               "track_rating": "10"
+            },
+            {
+               "number": 11,
+               "title": "A Car, a Torch, a Death",
+               "track_rating": "8"
+            },
+            {
+               "number": 12,
+               "title": "Taxi Cab",
+               "track_rating": "7.5"
+            },
+            {
+               "number": 13,
+               "title": "Before You Start Your Day",
+               "track_rating": "7.5"
+            },
+            {
+               "number": 14,
+               "title": "Isle of Flightless Birds",
+               "track_rating": "8"
+            }
+         ],
+         "average_track_rate": "8.5"
+      },
+      {
+         "name": "yeezus",
+         "artist": "kanye west",
+         "rating": 10,
          "tracklist": [
             {
                "number": 1,
                "title": "On Sight",
-               "track_rating": "10"
+               "track_rating": -1
             },
             {
                "number": 2,
                "title": "Black Skinhead",
-               "track_rating": "10"
+               "track_rating": -1
             },
             {
                "number": 3,
                "title": "I Am a God",
-               "track_rating": "9"
+               "track_rating": -1
             },
             {
                "number": 4,
                "title": "New Slaves",
-               "track_rating": "10"
+               "track_rating": -1
             },
             {
                "number": 5,
                "title": "Hold My Liquor",
-               "track_rating": "10"
+               "track_rating": -1
             },
             {
                "number": 6,
                "title": "I'm in It",
-               "track_rating": "9"
+               "track_rating": -1
             },
             {
                "number": 7,
                "title": "Blood on the Leaves",
-               "track_rating": "10"
+               "track_rating": -1
             },
             {
                "number": 8,
                "title": "Guilt Trip",
-               "track_rating": "9"
+               "track_rating": -1
             },
             {
                "number": 9,
                "title": "Send It Up",
-               "track_rating": "10"
+               "track_rating": -1
             },
             {
                "number": 10,
                "title": "Bound 2",
-               "track_rating": "9"
+               "track_rating": -1
             }
-         ]
+         ],
+         "average_track_rate": -1
       },
       {
-         "name": "Blonde",
-         "artist": "Frank Ocean",
-         "rating": "9",
+         "name": "nectar",
+         "artist": "joji",
+         "rating": 10,
          "tracklist": [
             {
                "number": 1,
-               "title": "Nikes",
-               "track_rating": 0
+               "title": "Ew",
+               "track_rating": "10"
             },
             {
                "number": 2,
-               "title": "Ivy",
-               "track_rating": 0
+               "title": "MODUS",
+               "track_rating": "10"
             },
             {
                "number": 3,
-               "title": "Pink + White",
-               "track_rating": 0
+               "title": "Tick Tock",
+               "track_rating": "10"
             },
             {
                "number": 4,
-               "title": "Be Yourself",
-               "track_rating": 0
+               "title": "Daylight",
+               "track_rating": "10"
             },
             {
                "number": 5,
-               "title": "Solo",
-               "track_rating": 0
+               "title": "Upgrade",
+               "track_rating": "9"
             },
             {
                "number": 6,
-               "title": "Skyline To",
-               "track_rating": 0
+               "title": "Gimme Love",
+               "track_rating": "10"
             },
             {
                "number": 7,
-               "title": "Self Control",
-               "track_rating": 0
+               "title": "Run",
+               "track_rating": "9"
             },
             {
                "number": 8,
-               "title": "Good Guy",
-               "track_rating": 0
+               "title": "Sanctuary",
+               "track_rating": "8"
             },
             {
                "number": 9,
-               "title": "Nights",
-               "track_rating": 0
+               "title": "High Hopes (feat. Omar Apollo)",
+               "track_rating": "8"
             },
             {
                "number": 10,
-               "title": "Solo (Reprise)",
-               "track_rating": 0
+               "title": "NITROUS",
+               "track_rating": "10"
             },
             {
                "number": 11,
-               "title": "Pretty Sweet",
-               "track_rating": 0
+               "title": "Pretty Boy (feat. Lil Yachty)",
+               "track_rating": "9"
             },
             {
                "number": 12,
-               "title": "Facebook Story",
-               "track_rating": 0
+               "title": "Normal People (feat. rei brown)",
+               "track_rating": "8"
             },
             {
                "number": 13,
-               "title": "Close to You",
-               "track_rating": 0
+               "title": "Afterthought",
+               "track_rating": "10"
             },
             {
                "number": 14,
-               "title": "White Ferrari",
-               "track_rating": 0
+               "title": "Mr. Hollywood",
+               "track_rating": "8"
             },
             {
                "number": 15,
-               "title": "Seigfried",
-               "track_rating": 0
+               "title": "777",
+               "track_rating": "10"
             },
             {
                "number": 16,
-               "title": "Godspeed",
-               "track_rating": 0
+               "title": "Reanimator (feat. Yves Tumor)",
+               "track_rating": "8"
             },
             {
                "number": 17,
-               "title": "Futura Free",
-               "track_rating": 0
+               "title": "Like You Do",
+               "track_rating": "10"
+            },
+            {
+               "number": 18,
+               "title": "Your Man",
+               "track_rating": "10"
             }
          ],
-         "average_track_rate": 0
-      },
-      {
-         "name": "IGOR",
-         "artist": "Tyler, the Creator",
-         "rating": "10",
-         "tracklist": [
-            {
-               "number": 1,
-               "title": "IGOR'S THEME",
-               "track_rating": "10"
-            },
-            {
-               "number": 2,
-               "title": "EARFQUAKE",
-               "track_rating": "9.5"
-            },
-            {
-               "number": 3,
-               "title": "I THINK",
-               "track_rating": "10"
-            },
-            {
-               "number": 4,
-               "title": "EXACTLY WHAT YOU RUN FROM YOU END UP CHASING",
-               "track_rating": "5"
-            },
-            {
-               "number": 5,
-               "title": "RUNNING OUT OF TIME",
-               "track_rating": "10"
-            },
-            {
-               "number": 6,
-               "title": "NEW MAGIC WAND",
-               "track_rating": "10"
-            },
-            {
-               "number": 7,
-               "title": "A BOY IS A GUN",
-               "track_rating": "6"
-            },
-            {
-               "number": 8,
-               "title": "PUPPET",
-               "track_rating": "8"
-            },
-            {
-               "number": 9,
-               "title": "WHAT'S GOOD",
-               "track_rating": "9"
-            },
-            {
-               "number": 10,
-               "title": "GONE, GONE / THANK YOU",
-               "track_rating": "10"
-            },
-            {
-               "number": 11,
-               "title": "I DON'T LOVE YOU ANYMORE",
-               "track_rating": "7"
-            },
-            {
-               "number": 12,
-               "title": "ARE WE STILL FRIENDS?",
-               "track_rating": "8"
-            }
-         ],
-         "average_track_rate": 9.1
+         "average_track_rate": "9.3"
       }
    ]
 }
