@@ -1,0 +1,42 @@
+.tracklist-hide {
+    display: block;
+    position: fixed;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(12, 12, 12, 0.534);    
+}
+
+.tracklist-container {
+    position: fixed;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    display: none;
+
+}
+
+.tracklist {
+    height: 90%;
+    width: 50%;
+    background-color: aliceblue;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+    border-radius: 2rem;
+}
+
+.tracklist * {
+    font-size: 4rem;
+}
