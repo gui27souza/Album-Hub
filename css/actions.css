@@ -1,0 +1,138 @@
+.actions-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    gap: var(--container-gap);
+
+    padding: var(--container-padding);
+
+    width: var(--main-width);
+
+    margin: var(--margin);
+
+    z-index: 0;
+
+    border-radius: .5rem;
+}
+
+.searchbar {
+    font-size: 2rem;
+        
+    
+    padding: 1.4rem;
+    
+    width: 100%;
+    height: 4rem;
+
+    border-radius: .5rem;
+}
+
+.actions-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    gap: var(--container-gap);
+    
+    width: 100%;
+    height: 4rem;
+}
+
+.actions-buttons-order {
+    font-size: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+
+    border-radius: .5rem;
+}
+
+.no-items-found {
+    display: none;
+    
+    width: var(--main-width);
+    
+    padding: var(--container-padding);
+    
+    border-radius: 0 0 .5rem .5rem;
+}
+
+.no-items-found p {
+    font-size: 2rem;
+
+    padding: var(--item-padding);
+
+    border-radius: .5rem;
+}
+
+@media screen 
+and (min-width: 300px) {
+    .no-items-found p {
+        font-size: calc(2rem + 1vw);
+    }
+}
+
+@media screen 
+and (min-width: 400px) {
+    
+    .searchbar,
+    .actions-buttons {
+        height: 6rem;
+    }
+
+    .searchbar,
+    .actions-buttons-order {
+        font-size: 2.4rem;
+    }
+
+    .no-items-found p {
+        font-size: 3.6rem;
+    }
+}
+
+@media screen 
+and (min-width: 600px) {
+    .no-items-found p {
+        font-size: 5rem;
+    }
+}
+
+@media screen 
+and (min-width: 900px) {
+    
+    .actions-container {
+        flex-flow: row;
+        justify-content: space-between;
+    }
+
+    .searchbar {
+        max-width: 50%;
+    }
+
+    .actions-buttons {
+        max-width: 15rem;
+    }
+}
+
+@media screen 
+and (min-width: 1200px) {
+    .actions-buttons {
+        max-width: 20rem;
+    }
+}
+
+@media screen 
+and (min-width: 1500px) {
+    .searchbar {
+        max-width: 50%;
+    }
+
+    .actions-buttons {
+        max-width: 25rem;
+    }
+}

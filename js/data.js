@@ -1,5 +1,5 @@
 // Global var that will recieve the JSON data
-let data = {}
+let data = []
 
 // Makes sure that the data store happens once
 document.addEventListener('DOMContentLoaded', () => {
@@ -13,6 +13,7 @@ async function loadJSON() {
     
     // Store data in global var
     data = await response.json()
+    data = data.albuns
     
     // Check the loaded data
     console.log(data)
