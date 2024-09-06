@@ -24,16 +24,32 @@
 }
 
 .tracklist {
-    height: 90%;
-    width: 50%;
+    max-height: 90%;
+    min-width: 50%;
+    max-width: 80%;
     background-color: aliceblue;
+
+    padding: 6rem;
 
     display: flex;
     flex-flow: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     gap: 1.5rem;
 
+    overflow-y: scroll;
+
+    border-radius: 2rem;
+}
+
+.tracklist::-webkit-scrollbar {
+    width: 10px;
+}
+.tracklist::-webkit-scrollbar-track {
+    background: transparent;
+}
+.tracklist::-webkit-scrollbar-thumb {
+    background: #000;
     border-radius: 2rem;
 }
 

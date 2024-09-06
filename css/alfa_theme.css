@@ -26,7 +26,26 @@ body {
     .album-image,
     .album-text-item {
         background-color: var(--sub-items);
-        color: var(--);
     }
 
 /**/
+
+    .actions-container {
+        background-color: var(--container);
+    }
+
+    .searchbar {
+        background-color: var(--sub-items);
+    }
+
+    .actions-buttons-order {
+        background-color: var(--sub-items);
+    }
+
+    .no-items-found {
+        background-color: var(--container);
+    }
+
+    .no-items-found p {
+        background-color: var(--sub-items);
+    }

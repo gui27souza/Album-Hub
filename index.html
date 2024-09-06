@@ -34,6 +34,51 @@
         placeholder="Look for an album..."
         >
 
+        <div class="actions-buttons" style="display: none;">
+
+            <select id="order" class="actions-buttons-order" onchange="order(order_type, this.options[this.selectedIndex].id)">
+                <option 
+                    id="random">
+                    Random
+                </option>
+                <option 
+                    id="name_ascending">
+                    Name A-Z
+                </option>
+                <option 
+                    id="name_descending">
+                    Name Z-A
+                </option>
+                <option 
+                    id="artist_ascending">
+                    Artist A-Z
+                </option>
+                <option 
+                    id="artist_descending">
+                    Artist Z-A
+                </option>
+                <option 
+                    id="amount_ascending">
+                    Rate &#8593;
+                </option>
+                <option 
+                    id="amount_descending">
+                    Rate &#8595;
+                </option>
+            </select>
+
+        </div>
+
+    </section>
+
+    <section 
+        class="no-items-found" 
+        id="no-items-found"
+    >
+        <p>
+            No Items Found.
+        </p>
+    </section>
     
     <section 
         class="album-container" 
@@ -55,6 +100,7 @@
         <script src="js/loadAlbuns.js"></script>
         <script src="js/createAlbuns.js"></script>
 
+        <script src="js/search.js"></script>
         <script src="js/loadTracklist.js"></script>
 </body>
 </html>
