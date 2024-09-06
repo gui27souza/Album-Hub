@@ -19,9 +19,9 @@ function getTracklistHTML(album_name, artist) {
 
     const tracklist_div = document.getElementById('tracklist')
     
-    const albumIndex = data.albuns.findIndex(album => album.name == album_name && album.artist == artist)
+    const albumIndex = data.findIndex(album => album.name == album_name && album.artist == artist)
 
-    const tracklist = data.albuns[albumIndex].tracklist
+    const tracklist = data[albumIndex].tracklist
     let i = 0
 
     if (tracklist[0].track_rating == -1)
