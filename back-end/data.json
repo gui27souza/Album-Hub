@@ -993,6 +993,755 @@
             }
          ],
          "average_track_rate": "9.0"
+      },
+      {
+         "name": "utopia",
+         "artist": "travis scott",
+         "rating": "9.5",
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "HYAENA",
+               "track_rating": "10"
+            },
+            {
+               "number": 2,
+               "title": "THANK GOD",
+               "track_rating": "9"
+            },
+            {
+               "number": 3,
+               "title": "MODERN JAM",
+               "track_rating": "10"
+            },
+            {
+               "number": 4,
+               "title": "MY EYES",
+               "track_rating": "10"
+            },
+            {
+               "number": 5,
+               "title": "GOD'S COUNTRY",
+               "track_rating": "9"
+            },
+            {
+               "number": 6,
+               "title": "SIRENS",
+               "track_rating": "8.5"
+            },
+            {
+               "number": 7,
+               "title": "MELTDOWN",
+               "track_rating": "8"
+            },
+            {
+               "number": 8,
+               "title": "FE!N",
+               "track_rating": "10"
+            },
+            {
+               "number": 9,
+               "title": "DELRESTO (ECHOES)",
+               "track_rating": "7"
+            },
+            {
+               "number": 10,
+               "title": "I KNOW ?",
+               "track_rating": "9"
+            },
+            {
+               "number": 11,
+               "title": "TOPIA TWINS",
+               "track_rating": "8.5"
+            },
+            {
+               "number": 12,
+               "title": "CIRCUS MAXIMUS",
+               "track_rating": "10"
+            },
+            {
+               "number": 13,
+               "title": "PARASAIL",
+               "track_rating": "7"
+            },
+            {
+               "number": 14,
+               "title": "SKITZO",
+               "track_rating": "9.5"
+            },
+            {
+               "number": 15,
+               "title": "LOST FOREVER",
+               "track_rating": "8"
+            },
+            {
+               "number": 16,
+               "title": "LOOOVE",
+               "track_rating": "7.5"
+            },
+            {
+               "number": 17,
+               "title": "K-POP",
+               "track_rating": "4"
+            },
+            {
+               "number": 18,
+               "title": "TELEKINESIS",
+               "track_rating": "10"
+            },
+            {
+               "number": 19,
+               "title": "TIL FURTHER NOTICE",
+               "track_rating": "9.5"
+            }
+         ],
+         "average_track_rate": "8.7"
+      },
+      {
+         "name": "donda",
+         "artist": "kanye west",
+         "rating": "9.5",
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "Donda Chant",
+               "track_rating": "-"
+            },
+            {
+               "number": 2,
+               "title": "Jail",
+               "track_rating": "8"
+            },
+            {
+               "number": 3,
+               "title": "God Breathed",
+               "track_rating": "8"
+            },
+            {
+               "number": 4,
+               "title": "Off the Grid",
+               "track_rating": "9"
+            },
+            {
+               "number": 5,
+               "title": "Hurricane",
+               "track_rating": "10"
+            },
+            {
+               "number": 6,
+               "title": "Praise God",
+               "track_rating": "10"
+            },
+            {
+               "number": 7,
+               "title": "Jonah",
+               "track_rating": "9"
+            },
+            {
+               "number": 8,
+               "title": "Ok Ok",
+               "track_rating": "8"
+            },
+            {
+               "number": 9,
+               "title": "Junya",
+               "track_rating": "7.5"
+            },
+            {
+               "number": 10,
+               "title": "Believe What I Say",
+               "track_rating": "7.5"
+            },
+            {
+               "number": 11,
+               "title": "24",
+               "track_rating": "7"
+            },
+            {
+               "number": 12,
+               "title": "Remote Control",
+               "track_rating": "8"
+            },
+            {
+               "number": 13,
+               "title": "Moon",
+               "track_rating": "9"
+            },
+            {
+               "number": 14,
+               "title": "Heaven and Hell",
+               "track_rating": "10"
+            },
+            {
+               "number": 15,
+               "title": "Donda",
+               "track_rating": "8"
+            },
+            {
+               "number": 16,
+               "title": "Keep My Spirit Alive",
+               "track_rating": "7.5"
+            },
+            {
+               "number": 17,
+               "title": "Jesus Lord",
+               "track_rating": "8"
+            },
+            {
+               "number": 18,
+               "title": "New Again",
+               "track_rating": "9"
+            },
+            {
+               "number": 19,
+               "title": "Tell the Vision",
+               "track_rating": "6"
+            },
+            {
+               "number": 20,
+               "title": "Lord I Need You",
+               "track_rating": "7"
+            },
+            {
+               "number": 21,
+               "title": "Pure Souls",
+               "track_rating": "8"
+            },
+            {
+               "number": 22,
+               "title": "Come to Life",
+               "track_rating": "10"
+            },
+            {
+               "number": 23,
+               "title": "No Child Left Behind",
+               "track_rating": "10"
+            },
+            {
+               "number": 24,
+               "title": "Jail Pt 2",
+               "track_rating": "-"
+            },
+            {
+               "number": 25,
+               "title": "Ok Ok, Pt. 2",
+               "track_rating": "-"
+            },
+            {
+               "number": 26,
+               "title": "Junya, Pt. 2",
+               "track_rating": "-"
+            },
+            {
+               "number": 27,
+               "title": "Jesus Lord, Pt. 2",
+               "track_rating": "-"
+            }
+         ],
+         "average_track_rate": "8.4"
+      },
+      {
+         "name": "black ben carson",
+         "artist": "jpegmafia",
+         "rating": 10,
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "drake era",
+               "track_rating": "10"
+            },
+            {
+               "number": 2,
+               "title": "JPEGMAFIA ALL CAPS NO SPACES",
+               "track_rating": "10"
+            },
+            {
+               "number": 3,
+               "title": "digital blackface",
+               "track_rating": "9"
+            },
+            {
+               "number": 4,
+               "title": "Cuckold",
+               "track_rating": "10"
+            },
+            {
+               "number": 5,
+               "title": "i smell crack",
+               "track_rating": "8"
+            },
+            {
+               "number": 6,
+               "title": "you think you know",
+               "track_rating": "10"
+            },
+            {
+               "number": 7,
+               "title": "motor mouth",
+               "track_rating": "8.5"
+            },
+            {
+               "number": 8,
+               "title": "black ben carson",
+               "track_rating": "10"
+            },
+            {
+               "number": 9,
+               "title": "black steve austin",
+               "track_rating": "10"
+            },
+            {
+               "number": 10,
+               "title": "black stacey dash",
+               "track_rating": "9"
+            },
+            {
+               "number": 11,
+               "title": "What's Crackin', Parts 1 & 2",
+               "track_rating": "8.5"
+            },
+            {
+               "number": 12,
+               "title": "i just killed a cop now i'm horny",
+               "track_rating": "9"
+            },
+            {
+               "number": 13,
+               "title": "Plastic",
+               "track_rating": "9"
+            },
+            {
+               "number": 14,
+               "title": "Boi",
+               "track_rating": "9"
+            },
+            {
+               "number": 15,
+               "title": "Flex The Connect",
+               "track_rating": "-"
+            },
+            {
+               "number": 16,
+               "title": "the 27 club",
+               "track_rating": "9"
+            },
+            {
+               "number": 17,
+               "title": "LL Cool J",
+               "track_rating": "-"
+            },
+            {
+               "number": 18,
+               "title": "Face Down Ass Up",
+               "track_rating": "7.5"
+            },
+            {
+               "number": 19,
+               "title": "This That Shit Kid Cudi Coulda Been",
+               "track_rating": "10"
+            },
+            {
+               "number": 20,
+               "title": "Jerrys",
+               "track_rating": "-"
+            },
+            {
+               "number": 21,
+               "title": "2015 was a great year",
+               "track_rating": "10"
+            },
+            {
+               "number": 22,
+               "title": "try me",
+               "track_rating": "10"
+            }
+         ],
+         "average_track_rate": "9.3"
+      },
+      {
+         "name": "i lay down my life for you",
+         "artist": "jpegmafia",
+         "rating": "9.5",
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "I SCREAM THIS IN THE MIRROR BEFORE I INTERACT WITH ANYONE",
+               "track_rating": "10"
+            },
+            {
+               "number": 2,
+               "title": "SIN MIEDO",
+               "track_rating": "10"
+            },
+            {
+               "number": 3,
+               "title": "I'll Be Right There",
+               "track_rating": "9.5"
+            },
+            {
+               "number": 4,
+               "title": "it's dark and hell is hot",
+               "track_rating": "10"
+            },
+            {
+               "number": 5,
+               "title": "New Black History",
+               "track_rating": "10"
+            },
+            {
+               "number": 6,
+               "title": "don't rely on other men",
+               "track_rating": "9.5"
+            },
+            {
+               "number": 7,
+               "title": "vulgar display of power",
+               "track_rating": "10"
+            },
+            {
+               "number": 8,
+               "title": "Exmilitary",
+               "track_rating": "10"
+            },
+            {
+               "number": 9,
+               "title": "JIHAD JOE",
+               "track_rating": "10"
+            },
+            {
+               "number": 10,
+               "title": "JPEGULTRA!",
+               "track_rating": "9.5"
+            },
+            {
+               "number": 11,
+               "title": "either on or off the drugs",
+               "track_rating": "9"
+            },
+            {
+               "number": 12,
+               "title": "loop it and leave it",
+               "track_rating": "9"
+            },
+            {
+               "number": 13,
+               "title": "Don't Put Anything On the Bible",
+               "track_rating": "9"
+            },
+            {
+               "number": 14,
+               "title": "i recovered from this",
+               "track_rating": "9"
+            }
+         ],
+         "average_track_rate": "9.6"
+      },
+      {
+         "name": "my beautiful dark twisted fantasy",
+         "artist": "kanye west",
+         "rating": "9.0",
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "Dark Fantasy",
+               "track_rating": "10"
+            },
+            {
+               "number": 2,
+               "title": "Gorgeous",
+               "track_rating": "8"
+            },
+            {
+               "number": 3,
+               "title": "POWER",
+               "track_rating": "10"
+            },
+            {
+               "number": 4,
+               "title": "All of the Lights (Interlude)",
+               "track_rating": "-"
+            },
+            {
+               "number": 5,
+               "title": "All of the Lights",
+               "track_rating": "10"
+            },
+            {
+               "number": 6,
+               "title": "Monster",
+               "track_rating": "9.5"
+            },
+            {
+               "number": 7,
+               "title": "So Appalled",
+               "track_rating": "9"
+            },
+            {
+               "number": 8,
+               "title": "Devil in a New Dress",
+               "track_rating": "10"
+            },
+            {
+               "number": 9,
+               "title": "Runaway",
+               "track_rating": "10"
+            },
+            {
+               "number": 10,
+               "title": "Hell of a Life",
+               "track_rating": "9.5"
+            },
+            {
+               "number": 11,
+               "title": "Blame Game",
+               "track_rating": "7"
+            },
+            {
+               "number": 12,
+               "title": "Lost in the World",
+               "track_rating": "8.5"
+            },
+            {
+               "number": 13,
+               "title": "Who Will Survive in America",
+               "track_rating": "-"
+            }
+         ],
+         "average_track_rate": "9.2"
+      },
+      {
+         "name": "sick boy",
+         "artist": "the chainsmokers",
+         "rating": "9.0",
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "This Feeling",
+               "track_rating": "8"
+            },
+            {
+               "number": 2,
+               "title": "Beach House",
+               "track_rating": "10"
+            },
+            {
+               "number": 3,
+               "title": "Hope",
+               "track_rating": "9"
+            },
+            {
+               "number": 4,
+               "title": "Somebody",
+               "track_rating": "10"
+            },
+            {
+               "number": 5,
+               "title": "Side Effects",
+               "track_rating": "8"
+            },
+            {
+               "number": 6,
+               "title": "Sick Boy",
+               "track_rating": "10"
+            },
+            {
+               "number": 7,
+               "title": "Everybody Hates Me",
+               "track_rating": "10"
+            },
+            {
+               "number": 8,
+               "title": "Siren",
+               "track_rating": "8"
+            },
+            {
+               "number": 9,
+               "title": "You Owe Me",
+               "track_rating": "9"
+            },
+            {
+               "number": 10,
+               "title": "Save Yourself",
+               "track_rating": "8"
+            }
+         ],
+         "average_track_rate": "9.0"
+      },
+      {
+         "name": "so far so good",
+         "artist": "the chainsmokers",
+         "rating": 10,
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "Riptide",
+               "track_rating": "9.5"
+            },
+            {
+               "number": 2,
+               "title": "High",
+               "track_rating": "9.5"
+            },
+            {
+               "number": 3,
+               "title": "iPad",
+               "track_rating": "8"
+            },
+            {
+               "number": 4,
+               "title": "Maradona",
+               "track_rating": "10"
+            },
+            {
+               "number": 5,
+               "title": "Solo Mission",
+               "track_rating": "10"
+            },
+            {
+               "number": 6,
+               "title": "Something Different",
+               "track_rating": "9"
+            },
+            {
+               "number": 7,
+               "title": "I Love U",
+               "track_rating": "9"
+            },
+            {
+               "number": 8,
+               "title": "If You're Serious",
+               "track_rating": "8.5"
+            },
+            {
+               "number": 9,
+               "title": "Channel 1",
+               "track_rating": "10"
+            },
+            {
+               "number": 10,
+               "title": "Testing",
+               "track_rating": "10"
+            },
+            {
+               "number": 11,
+               "title": "In Too Deep",
+               "track_rating": "7.5"
+            },
+            {
+               "number": 12,
+               "title": "I Hope You Change Your Mind",
+               "track_rating": "8"
+            },
+            {
+               "number": 13,
+               "title": "Cyanide",
+               "track_rating": "9"
+            }
+         ],
+         "average_track_rate": "9.1"
+      },
+      {
+         "name": "veteran",
+         "artist": "jpegmafia",
+         "rating": -1,
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "1539 N. Calvert",
+               "track_rating": -1
+            },
+            {
+               "number": 2,
+               "title": "Real Nega",
+               "track_rating": -1
+            },
+            {
+               "number": 3,
+               "title": "Thug Tears",
+               "track_rating": -1
+            },
+            {
+               "number": 4,
+               "title": "Dayum",
+               "track_rating": -1
+            },
+            {
+               "number": 5,
+               "title": "Baby I'm Bleeding",
+               "track_rating": -1
+            },
+            {
+               "number": 6,
+               "title": "My Thoughts On Neogaf Dying",
+               "track_rating": -1
+            },
+            {
+               "number": 7,
+               "title": "Rock N Roll Is Dead",
+               "track_rating": -1
+            },
+            {
+               "number": 8,
+               "title": "DD Form 214",
+               "track_rating": -1
+            },
+            {
+               "number": 9,
+               "title": "Germs",
+               "track_rating": -1
+            },
+            {
+               "number": 10,
+               "title": "Libtard Anthem",
+               "track_rating": -1
+            },
+            {
+               "number": 11,
+               "title": "😱",
+               "track_rating": -1
+            },
+            {
+               "number": 12,
+               "title": "DJ Snitch Bitch Interlude",
+               "track_rating": -1
+            },
+            {
+               "number": 13,
+               "title": "Whole Foods",
+               "track_rating": -1
+            },
+            {
+               "number": 14,
+               "title": "Macaulay Culkin",
+               "track_rating": -1
+            },
+            {
+               "number": 15,
+               "title": "Williamsburg",
+               "track_rating": -1
+            },
+            {
+               "number": 16,
+               "title": "I Cannot Fucking Wait Until Morrissey Dies",
+               "track_rating": -1
+            },
+            {
+               "number": 17,
+               "title": "Rainbow Six",
+               "track_rating": -1
+            },
+            {
+               "number": 18,
+               "title": "1488",
+               "track_rating": -1
+            },
+            {
+               "number": 19,
+               "title": "Curb Stomp",
+               "track_rating": -1
+            }
+         ],
+         "average_track_rate": -1
       }
    ]
 }
