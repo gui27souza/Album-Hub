@@ -34,37 +34,58 @@
         placeholder="Look for an album..."
         >
 
-        <div class="actions-buttons" style="display: none;">
+        <div class="actions-buttons">
 
-            <select id="order" class="actions-buttons-order" onchange="order(order_type, this.options[this.selectedIndex].id)">
+            <select id="order" class="actions-buttons-order" onchange="order(this.options[this.selectedIndex].id)">
+                
                 <option 
+                    class="order-option"
                     id="random">
                     Random
                 </option>
+
                 <option 
-                    id="name_ascending">
-                    Name A-Z
+                    class="order-option"
+                    id="name_des">
+                    Name 
                 </option>
                 <option 
-                    id="name_descending">
-                    Name Z-A
+                    class="order-option"
+                    style="display: none;"
+                    id="name_asc">
+                    Name &#8593;
+                </option>
+
+                <option 
+                    class="order-option"
+                    id="artist_des">
+                    Artist 
                 </option>
                 <option 
-                    id="artist_ascending">
-                    Artist A-Z
+                    class="order-option"
+                    style="display: none;"
+                    id="artist_asc">
+                    Artist asc&#8593;
+                </option>
+
+                <option 
+                    class="order-option"
+                    id="rate_des">
+                    Rate 
                 </option>
                 <option 
-                    id="artist_descending">
-                    Artist Z-A
-                </option>
-                <option 
-                    id="amount_ascending">
+                    class="order-option"
+                    style="display: none;"
+                    id="rate_asc">
                     Rate &#8593;
                 </option>
+                
                 <option 
-                    id="amount_descending">
-                    Rate &#8595;
+                    class="order-option"
+                    id="unrated">
+                    Unrated
                 </option>
+                        
             </select>
 
         </div>
