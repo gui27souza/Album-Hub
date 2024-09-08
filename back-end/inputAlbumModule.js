@@ -59,6 +59,7 @@
 
 // 
 
+
 // Adds an album to the data object
 
     async function addAlbum(album_name, artist) {
@@ -83,6 +84,14 @@
 
         const updatedData = JSON.stringify(jsonData, null, 3)
         fs.writeFileSync('./data.json', updatedData, 'utf8')
+
+        console.log('\nAlbum added to you library!\n')
+
+        let sub_command = await askQuestion('Would you like to rate it?\n1 - Yes\n2 - No\n\n')
+        if (sub_command == 1) {
+            let rating = await askQuestion('\nRating: ')
+            await rateTracklist(album_name, artist, rating)
+        }
 
         return 1
     }
@@ -165,6 +174,27 @@
         fs.writeFileSync('./data.json', updatedData, 'utf8')
     }
 
+//
+
+// Search for an album
+
+    async function searchAlbumData(search) {
+
+        try {
+            
+            const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=album.search&album=${encodeURIComponent(search)}&limit=5&api_key=846d44d63f8f2e8a951c6e66b43a1a4c&format=json`)
+
+            const data = await response.json()
+
+            return data.results.albummatches.album
+
+        } catch (error) {
+            console.log('Error fetching album search', error)
+            return []
+        }
+
+    }
+
 // 
 
 // Main function
@@ -177,20 +207,12 @@
 
             console.log('\n\t-----Album Hub-----\n')
             
-            let command = await askQuestion('1 - Add album\n2 - See my library\n3 - Remove album\n4 - Rate Album\\Tracklist\n\n0 - End program\n\n')
+            let command = await askQuestion('1 - Add album\n2 - See my library\n3 - Remove album\n4 - Rate Album\\Tracklist\n5 - Search album\n\n0 - End program\n\n')
 
             if (command == 1) {
                 let album_name = await askQuestion('\nAlbum Name: ')
                 let artist = await askQuestion('Artist: ')
-                let album_added = await addAlbum(album_name, artist)
-                if (album_added != -1) {
-                    console.log('\nAlbum added to you library!\n')
-                    let sub_command = await askQuestion('Would you like to rate it?\n1 - Yes\n2 - No\n\n')
-                    if (sub_command == 1) {
-                        let rating = await askQuestion('\nRating: ')
-                        await rateTracklist(album_name, artist, rating)
-                    }
-                }
+                await addAlbum(album_name, artist)
             }
 
             if (command == 2) {
@@ -215,6 +237,25 @@
                 let artist = await askQuestion('Artist: ')
                 let rating = await askQuestion('Rating: ')
                 await rateTracklist(album_name, artist, rating)
+            }
+
+            if (command == 5) {
+                
+                let search = await askQuestion('\nSearch terms: ')
+                let search_results = await searchAlbumData(search)
+
+                console.log('')
+                let i = 0
+                search_results.forEach(album => {
+                    console.log(`${++i} - ${album.name} by ${album.artist}`)
+                });
+
+                let sub_command1 = await askQuestion('\nWould you like to add any to your library?\n1 - Yes\n2 - No\n\n')
+                if (sub_command1 == 1) {
+                    let album_index = await askQuestion('\nType the value of the album in the list: ')
+                    album_add = search_results[album_index-1]
+                    await addAlbum(album_add.name, album_add.artist)
+                }
             }
 
             if (command == 0) {
