@@ -1,5 +1,6 @@
 // Global var that will recieve the JSON data
 let data = []
+let api_key
 
 // Makes sure that the data store happens once
 document.addEventListener('DOMContentLoaded', () => {
@@ -15,7 +16,10 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Store data in global var
         data = await response.json()
+        console.log(data)
+        api_key = data.api_key
         data = data.albuns
+
         
         // Check the loaded data
         console.log(data)
@@ -68,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function getAlbum(album_name, artist) {
         try {
-            const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=846d44d63f8f2e8a951c6e66b43a1a4c&artist=${encodeURIComponent(artist)}&album=${encodeURIComponent(album_name)}&format=json`);
+            const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=${api_key}&artist=${encodeURIComponent(artist)}&album=${encodeURIComponent(album_name)}&format=json`);
             const data = await response.json();
             return data.album;
         } catch (error) {

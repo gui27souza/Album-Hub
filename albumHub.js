@@ -6,6 +6,7 @@
 // Creation of an object with the data
     const data = fs.readFileSync('./data.json')
     const jsonData = JSON.parse(data)
+    let api_key = jsonData.api_key
 // 
 
 
@@ -32,7 +33,7 @@
 
         try {
             
-            const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=846d44d63f8f2e8a951c6e66b43a1a4c&artist=${encodeURIComponent(artist)}&album=${encodeURIComponent(album_name)}&format=json`)
+            const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=${api_key}&artist=${encodeURIComponent(artist)}&album=${encodeURIComponent(album_name)}&format=json`)
 
             const data = await response.json()
             let tracklist = []
@@ -180,7 +181,7 @@
 
         try {
             
-            const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=album.search&album=${encodeURIComponent(search)}&limit=5&api_key=846d44d63f8f2e8a951c6e66b43a1a4c&format=json`)
+            const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=album.search&album=${encodeURIComponent(search)}&limit=5&api_key=${api_key}&format=json`)
 
             const data = await response.json()
 
@@ -200,6 +201,12 @@
     const main = async () => {
 
         let kill_program = 0
+
+        if (jsonData.api_key == 0) {
+            api_key = await askQuestion('Insert your LastFM API key: ')
+            jsonData.api_key = api_key
+            fs.writeFileSync('./data.json', JSON.stringify(jsonData, null, 2), 'utf8')
+        }
 
         while (!kill_program) {
 
