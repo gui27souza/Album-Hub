@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     async function loadJSON() {
 
         // Gets the data of the JSON
-        const response = await fetch('../../back-end/data.json')
+        const response = await fetch('../data.json')
         
         // Store data in global var
         data = await response.json()
