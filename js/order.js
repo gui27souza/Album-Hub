@@ -4,7 +4,9 @@ function order(order_type) {
 
     if (previous_order_type == 'unrated') {
         document.getElementById('album-container').innerHTML = ''
-        loadAlbuns()
+        data.forEach(album => {
+            createAlbuns(album.name, album.artist, album.rating, album.average_track_rate)
+        })
     }
 
     let all_items = Array.from(document.getElementsByClassName('album-item'))
