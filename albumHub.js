@@ -1,12 +1,10 @@
 // Modules import 
     const fs = require('fs')
     const readline = require('readline')
-    const path = require('path')
 // 
 
 // Creation of an object with the data
-    const dataPath = path.join(__dirname, 'data.json')
-    const data = fs.readFileSync(dataPath)
+    const data = fs.readFileSync('./data.json')
     const jsonData = JSON.parse(data)
 // 
 
