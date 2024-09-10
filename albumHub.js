@@ -72,27 +72,14 @@
             return -1
         }
 
-        const tracklist = await getTrackList(album_name, artist)
-        if (tracklist == -1) {
-            
-            const search = await searchAlbumData(album_name+' '+artist)
-            if (search == -1 || search[0] == undefined) {
-                console.log('Album not found\n')
-                return -1
-            }
-
-            const answer = await askQuestion(`Did you meant ${search[0].name} by ${search[0].artist}?\n1 - Yes\n2 - No\n`)
-
-            if (answer == 1) {
-                await addAlbum(search[0].name, search[0].artist)
-                return
-            } else {
-                console.log('Album not found\n')
-                return -1
-            }
-
+        const check =  await checkAlbum(album_name, artist)
+        if (check == -1) return
+        if (check.lenght == 2) {
+            await addAlbum(check[0], check[1])
+            return
         }
 
+        const tracklist = await getTrackList(album_name, artist)
         const newAlbum = { name: album_name, artist: artist, "rating": -1, tracklist: tracklist, "average_track_rate": -1 }
 
         jsonData.albuns.push(newAlbum)
@@ -212,6 +199,40 @@
 
 // 
 
+    async function checkAlbum(album_name, artist) {
+
+        const tracklist = await getTrackList(album_name, artist)
+
+        if (tracklist == -1) {
+            
+            const search = await searchAlbumData(album_name+' '+artist)
+            if (search == -1 || search[0] == undefined) {
+                console.log('Album not found\n')
+                return -1
+            }
+
+            const answer1 = await askQuestion(`Did you meant ${search[0].name} by ${search[0].artist}?\n1 - Yes\n2 - No\n`)
+
+            if (answer1 == 1) {
+                album_name = search[0].name
+                artist = search[0].artist
+                return [album_name, artist]
+            } else if (search[1] != undefined) {
+                const answer2 = await askQuestion(`\nDid you meant ${search[1].name} by ${search[1].artist}?\n1 - Yes\n2 - No\n`)
+                if (answer2 == 1) {
+                    album_name = search[1].name
+                    artist = search[1].artist
+                    return [album_name, artist]
+                }
+            } else {
+                console.log('Album not found\n')
+                return -1
+            }
+
+        } else return 1
+
+    }
+
 // Main function
 
     const main = async () => {
@@ -250,10 +271,8 @@
             }
 
             if (command == 4) {
-                const data = require("./data.json")
-
                 console.log('')
-                data.albuns.forEach(album => {
+                jsonData.albuns.forEach(album => {
                     console.log("Name:\t", album.name)
                     console.log("Artist:\t", album.artist)
                     console.log("Rating:\t", album.rating, '\n')
