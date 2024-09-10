@@ -1,0 +1,69 @@
+.album-page-container {
+    width: var(--main-width);
+
+    padding: var(--container-padding);
+
+    display: flex;
+    flex-flow: column;
+    gap: var(--container-gap);
+
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+    border-radius: 1rem;
+}
+
+.album-page-header {
+    display: flex;
+    flex-flow: row;
+    gap: var(--container-gap);
+}
+
+.album-page-header-image {
+    height: 50rem;
+}
+
+.album-cover {
+    height: 100%;
+
+    border-radius: 1rem;
+}
+
+.album-page-header-text {
+    flex-grow: 1;
+
+    display: flex;
+    flex-flow: column;
+    gap: var(--container-gap);
+}
+
+.album-page-header-title {
+    height: 65%;
+
+    border-radius: 1rem;
+
+    padding: 5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.album-page-header-title span {
+    font-size: 9rem;
+    text-align: center;
+}
+
+.album-page-header-artist {
+    flex-grow: 1;
+
+    border-radius: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.album-page-header-artist span {
+    font-size: 5.4rem;
+    text-align: center;
+}
