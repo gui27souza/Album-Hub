@@ -24,7 +24,8 @@ body {
     }
 
     .album-image,
-    .album-text-item {
+    .album-text-item,
+    .album-page-header-text * {
         background-color: var(--sub-items);
     }
 
