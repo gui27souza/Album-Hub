@@ -50,8 +50,8 @@
             return tracklist
 
         } catch (error) {
-            console.log('Error fetching album tracklist')
-            return []
+            console.log('\nError fetching album tracklist')
+            return -1
         }
 
     }
@@ -73,8 +73,24 @@
         }
 
         const tracklist = await getTrackList(album_name, artist)
-        if (tracklist == []) {
-            return -1
+        if (tracklist == -1) {
+            
+            const search = await searchAlbumData(album_name+' '+artist)
+            if (search == -1 || search[0] == undefined) {
+                console.log('Album not found\n')
+                return -1
+            }
+
+            const answer = await askQuestion(`Did you meant ${search[0].name} by ${search[0].artist}?\n1 - Yes\n2 - No\n`)
+
+            if (answer == 1) {
+                await addAlbum(search[0].name, search[0].artist)
+                return
+            } else {
+                console.log('Album not found\n')
+                return -1
+            }
+
         }
 
         const newAlbum = { name: album_name, artist: artist, "rating": -1, tracklist: tracklist, "average_track_rate": -1 }
@@ -157,7 +173,7 @@
         for (const track of tracklist) {
             let track_rating = await askQuestion(`${track.title}: `)
             track.track_rating = track_rating
-            if (track_rating === '-' || isNaN(parseFloat(track_rating))) continue;
+            if (track_rating === '-' || isNaN(parseFloat(track_rating))) continue
             total_rate += parseFloat(track_rating)
             total_tracks++
         }
@@ -189,7 +205,7 @@
 
         } catch (error) {
             console.log('Error fetching album search', error)
-            return []
+            return -1
         }
 
     }
@@ -212,7 +228,7 @@
 
             console.log('\n\t-----Album Hub-----\n')
             
-            let command = await askQuestion('1 - Add album\n2 - See my library\n3 - Remove album\n4 - Rate Album\\Tracklist\n5 - Search album\n\n0 - End program\n\n')
+            let command = await askQuestion('1 - Add album\n2 - Rate Album\\Tracklist\n3 - Remove album\n4 - See my library\n5 - Search album\n6 - Search album tracklist\n\n0 - End program\n\n')
 
             if (command == 1) {
                 let album_name = await askQuestion('\nAlbum Name: ')
@@ -221,14 +237,10 @@
             }
 
             if (command == 2) {
-                const data = require("./data.json")
-
-                console.log('')
-                data.albuns.forEach(album => {
-                    console.log("Name:\t", album.name)
-                    console.log("Artist:\t", album.artist)
-                    console.log("Rating:\t", album.rating, '\n')
-                })
+                let album_name = await askQuestion('\nAlbum Name: ')
+                let artist = await askQuestion('Artist: ')
+                let rating = await askQuestion('Rating: ')
+                await rateTracklist(album_name, artist, rating)
             }
 
             if (command == 3) {
@@ -238,10 +250,14 @@
             }
 
             if (command == 4) {
-                let album_name = await askQuestion('\nAlbum Name: ')
-                let artist = await askQuestion('Artist: ')
-                let rating = await askQuestion('Rating: ')
-                await rateTracklist(album_name, artist, rating)
+                const data = require("./data.json")
+
+                console.log('')
+                data.albuns.forEach(album => {
+                    console.log("Name:\t", album.name)
+                    console.log("Artist:\t", album.artist)
+                    console.log("Rating:\t", album.rating, '\n')
+                })
             }
 
             if (command == 5) {
@@ -253,7 +269,7 @@
                 let i = 0
                 search_results.forEach(album => {
                     console.log(`${++i} - ${album.name} by ${album.artist}`)
-                });
+                })
 
                 let sub_command1 = await askQuestion('\nWould you like to add any to your library?\n1 - Yes\n2 - No\n\n')
                 if (sub_command1 == 1) {
@@ -261,6 +277,21 @@
                     album_add = search_results[album_index-1]
                     await addAlbum(album_add.name, album_add.artist)
                 }
+            }
+
+            if (command == 6) {
+
+                let album_name = await askQuestion('\nAlbum Name: ')
+                let artist = await askQuestion('Artist: ')
+
+                console.log('')
+                let tracklist = await getTrackList(album_name, artist)
+
+                let i = 0
+                tracklist.forEach(track => {
+                    console.log(++i,'-',track.title)
+                })
+
             }
 
             if (command == 0) {
