@@ -6,7 +6,7 @@ body {
 
 /* Album Container */
 
-    .album-container {
+    .album-container, .album-page-container {
         background-color: var(--container);
     }
 

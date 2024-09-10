@@ -7,34 +7,7 @@
 :root {
     font-size: 62.5%;
     font-family: "Exo 2", sans-serif;
-
-    /* Create two types, change on theme or dont */
-
-    /* Original
-    --main-tone:     #f33e3c;
-    --second-tone:   #861b19;
-    --third-tone:    #aa2b2a;
-    --dark-tone:     #491312;
-    --light-tone:    #1d0b0b; */
-
-    /* --main-tone:     #485797;
-    --second-tone:   #4B88A2;
-    --third-tone:    #D3D4D9;
-    --dark-tone:     #010400;
-    --light-tone:    #FFF9FB; */
-    
-    /* --background-dark: #3A1C71;
-    --background-light: #D76D77;
-    --container: #FFAF7B;
-    --albuns: #FFFFFF;
-    --sub-items: #F0E6EF; */
-    
-    /* --background-dark: #D6D6D6;
-    --background-light: #E5E5E5;
-    --container: #FFFFFF;
-    --albuns: #B0B0B0;
-    --sub-items: #F0F0F0; */
-    
+   
     --background-dark: #1A1A1D;
     --background-light: #2C2C2E;
     --container: #3D3D42;

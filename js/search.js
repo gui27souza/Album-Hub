@@ -59,7 +59,7 @@
             
             actions.style.marginBottom = 0
             actions.style.paddingBottom = 0
-            actions.style.borderRadius = '.5rem .5rem 0 0'
+            actions.style.borderRadius = '1rem 1rem 0 0'
 
             container.style.visibility = 'hidden'
         } else {
@@ -68,7 +68,7 @@
             
             actions.style.marginBottom = margin_bottom_actions
             actions.style.paddingBottom = padding_bottom_actions
-            actions.style.borderRadius = '.5rem'
+            actions.style.borderRadius = '1rem'
 
             container.style.visibility = 'visible'
         }
