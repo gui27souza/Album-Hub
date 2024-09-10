@@ -30,25 +30,58 @@
     background-color: aliceblue;
 
     padding: 6rem;
+    padding-right: 3rem;
+    padding-bottom: 4rem;
+    
+    display: flex;
+    flex-flow: column;
+    gap: 2rem;
+    
+    border-radius: 2rem;
+}
+
+.tracklist-items {
+    padding-right: 3rem;
+    overflow-y: auto;
 
     display: flex;
     flex-flow: column;
     justify-content: start;
     align-items: center;
     gap: 1.5rem;
-
-    overflow-y: scroll;
-
-    border-radius: 2rem;
 }
 
-.tracklist::-webkit-scrollbar {
+.tracklist-items span:last-of-type {
+    padding-bottom: 1rem;
+}
+
+.go-to-album {
+    background-color: #ccc;
+    color: #000;
+
+    text-align: center;
+    width: fit-content;
+
+    padding: 1rem;
+
+    border-radius: 1rem;
+
+    align-self: center;
+
+    transition: .5s ease background-color;
+}
+
+.go-to-album:hover {
+    background-color: #888;
+}
+
+.tracklist-items::-webkit-scrollbar {
     width: 10px;
 }
-.tracklist::-webkit-scrollbar-track {
+.tracklist-items::-webkit-scrollbar-track {
     background: transparent;
 }
-.tracklist::-webkit-scrollbar-thumb {
+.tracklist-items::-webkit-scrollbar-thumb {
     background: #000;
     border-radius: 2rem;
 }

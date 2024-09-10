@@ -7,7 +7,7 @@ let tracklist_is_on = 0
 
         // HTML elements
         const tracklist_container = document.getElementById('tracklist-container')
-        const tracklist_div = document.getElementById('tracklist')
+        const tracklist_div = document.getElementById('tracklist-items')
 
         // Visibility management
         if (tracklist_is_on) {
@@ -28,7 +28,7 @@ let tracklist_is_on = 0
 
     function getTracklistHTML(album_name, artist) {
 
-        const tracklist_div = document.getElementById('tracklist')
+        const tracklist_div = document.getElementById('tracklist-items')
         
         const albumIndex = data.findIndex(album => album.name == album_name && album.artist == artist)
 
