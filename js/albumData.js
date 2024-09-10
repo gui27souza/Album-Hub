@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Gets the actual album name and cover
         const album_object = await getAlbum(album_name, artist)
-        const image_link = album_object.image[3]['#text']
+        const image_link = album_object.image[4]['#text']
 
         // In case is not rated yet
         if (rating == -1) rating = `&Oslash`

@@ -8,15 +8,27 @@ let tracklist_is_on = 0
         // HTML elements
         const tracklist_container = document.getElementById('tracklist-container')
         const tracklist_div = document.getElementById('tracklist-items')
+        const go_to_album = document.getElementById('go-to-album')
 
         // Visibility management
         if (tracklist_is_on) {
+            
             tracklist_container.style.display = 'none'
+            go_to_album.setAttribute('data-album', "")
+            go_to_album.setAttribute('data-artist', "")
+
             tracklist_is_on = 0
             tracklist_div.innerHTML = ''
+
+            
         } else {
+
             tracklist_container.style.display = 'flex'
+
             tracklist_is_on = 1
+
+            go_to_album.href = `html/album.html?album=${encodeURIComponent(album_name)}&artist=${encodeURIComponent(artist)}`
+
             getTracklistHTML(album_name, artist)
         }
 
@@ -29,6 +41,10 @@ let tracklist_is_on = 0
     function getTracklistHTML(album_name, artist) {
 
         const tracklist_div = document.getElementById('tracklist-items')
+        const go_to_album = document.getElementById('go-to-album')
+
+        go_to_album.setAttribute('data-album', `${album_name}`)
+        go_to_album.setAttribute('data-artist', `${artist}`)
         
         const albumIndex = data.findIndex(album => album.name == album_name && album.artist == artist)
 
