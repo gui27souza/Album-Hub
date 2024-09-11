@@ -33,8 +33,15 @@ async function loadJSON() {
     console.log(data)
     api_key = data.api_key
     data = data.albuns
+
+    await loadAlbumPage()
+}
+
+async function loadAlbumPage() {
     
     const album = await getAlbum(album_name, artist)
+
+    console.log(album)
 
     const album_title = document.getElementById('album-title')
     const album_artist = document.getElementById('album-artist')
@@ -43,8 +50,25 @@ async function loadJSON() {
     album_title.innerHTML = album.name
     album_artist.innerHTML = album.artist
     album_cover.src = album.image[3]['#text']
+    album_cover.src = album.image[4]['#text']
 
     console.log(album)
+    getTracklistHTML(album_name, artist)
+function getTracklistHTML(album_name, artist) {
+
+    const tracklist_div = document.getElementById('tracklist-items')
+    
+    const albumIndex = data.findIndex(album => album.name == album_name && album.artist == artist)
+
+    const tracklist = data[albumIndex].tracklist
+    let i = 0
+
+    if (tracklist[0].track_rating == -1) unrated = `&Oslash`
+
+    tracklist.forEach(track => {
+        tracklist_div.innerHTML += `<span>${++i}. ${track.title} ${(track.track_rating == -1)? '' : '| ' + track.track_rating}</span>`
+    })
+}
 
     // const tracklist = await 
 }

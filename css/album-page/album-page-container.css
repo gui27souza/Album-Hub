@@ -1,6 +1,8 @@
 .album-page-container {
     width: var(--main-width);
 
+    height: 90vh;
+
     padding: var(--container-padding);
 
     display: flex;
@@ -8,7 +10,6 @@
     gap: var(--container-gap);
 
     margin-top: 5rem;
-    margin-bottom: 5rem;
 
     border-radius: 1rem;
 }
@@ -17,10 +18,11 @@
     display: flex;
     flex-flow: row;
     gap: var(--container-gap);
+    height: 50%;
 }
 
 .album-page-header-image {
-    height: 50rem;
+    height: 40rem;
 }
 
 .album-cover {
@@ -66,4 +68,52 @@
 .album-page-header-artist span {
     font-size: 5.4rem;
     text-align: center;
+}
+
+.album-page-middle {
+    display: flex;
+    gap: var(--container-gap);
+
+    height: calc(50% - var(--container-gap));
+    width: 100%;
+}
+
+.tracklist-container {
+
+    border-radius: 1rem;
+
+    width: 50%;
+    height: 100%;
+
+    overflow-y: auto;
+}
+
+.tracklist-items {
+    background-color: var(--sub-items);
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    min-height: 100%;
+
+    padding: 4rem;
+}
+
+.tracklist-container::-webkit-scrollbar {
+    width: 10px;
+}
+.tracklist-container::-webkit-scrollbar-track {
+    background: transparent;
+    background-color: var(--sub-items);
+    border-radius: 0 5rem 5rem 0;
+}
+.tracklist-container::-webkit-scrollbar-thumb {
+    background: #000;
+    border-radius: 0 5rem 5rem 0;
+}
+
+.tracklist-items span {
+    font-size: 3rem;
+}
 }
