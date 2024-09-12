@@ -1,3 +1,28 @@
+:root {
+    --vibrant: #f00;
+    --light-vibrant: #fff;
+    --dark-vibrant: #000;
+}
+
+body {
+    background-image: 
+        linear-gradient(-40deg, var(--dark-vibrant) 60%, var(--dark-vibrant))
+    ;
+}
+
+.album-page-container {
+    background-color: var(--vibrant);
+}
+
+.album-page-header-title,
+.album-page-header-artist,
+.tracklist-container,
+.album-info-tags,
+.album-info-links,
+.album-info-summary {
+    background-color: var(--light-vibrant);
+}
+
 .album-page-container {
     width: var(--main-width);
 
@@ -90,7 +115,6 @@
 }
 
 .tracklist-items {
-    background-color: var(--sub-items);
 
     display: flex;
     flex-flow: column;
@@ -108,7 +132,7 @@
 }
 .tracklist-container::-webkit-scrollbar-track {
     background: transparent;
-    background-color: var(--sub-items);
+    background-color: #ccc;
     border-radius: 0 1rem 1rem 0;
 }
 .tracklist-container::-webkit-scrollbar-thumb {

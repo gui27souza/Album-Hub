@@ -53,6 +53,10 @@ async function loadAlbumPage() {
 
     getTracklistHTML(album_name, artist)
     getAlbumInfoHTML(album)
+
+    await getAlbumColors()
+}
+
 function getTracklistHTML(album_name, artist) {
 
     const tracklist_div = document.getElementById('tracklist-items')
