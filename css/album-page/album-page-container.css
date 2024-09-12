@@ -22,7 +22,7 @@
 }
 
 .album-page-header-image {
-    height: 40rem;
+    height: 100%;
 }
 
 .album-cover {
@@ -86,6 +86,7 @@
     height: 100%;
 
     overflow-y: auto;
+
 }
 
 .tracklist-items {
@@ -94,6 +95,8 @@
     display: flex;
     flex-flow: column;
     align-items: center;
+    justify-content: center;
+    gap: 1rem;
 
     min-height: 100%;
 
@@ -101,19 +104,93 @@
 }
 
 .tracklist-container::-webkit-scrollbar {
-    width: 10px;
+    width: 1.4rem;
 }
 .tracklist-container::-webkit-scrollbar-track {
     background: transparent;
     background-color: var(--sub-items);
-    border-radius: 0 5rem 5rem 0;
+    border-radius: 0 1rem 1rem 0;
 }
 .tracklist-container::-webkit-scrollbar-thumb {
     background: #000;
-    border-radius: 0 5rem 5rem 0;
+    border-radius: 0 1rem 1rem 0;
 }
 
 .tracklist-items span {
-    font-size: 3rem;
+    font-size: 3.4rem;
+    text-align: center;
 }
+
+.album-info {
+    
+    height: 100%;
+    width: 50%;
+    
+    border-radius: 1rem;
+    
+    display: flex;
+    flex-flow: column wrap;
+    gap: var(--container-gap);
+    
+    align-items: center;
+}
+
+.album-info-tags {
+
+    height: calc(50% - var(--container-gap)/2);
+    width: calc(50% - var(--container-gap)/2);
+
+    display: flex;
+    flex-flow: column;
+
+    border-radius: 1rem;
+
+    padding: 2rem;
+}
+
+.album-info-tags span {
+    font-size: 3rem;
+    width: 100%;
+}
+.album-info-tags span:nth-of-type(odd){text-align: left;}
+.album-info-tags span:nth-of-type(even){text-align: right;}
+
+.album-info-links {
+    height: calc(50% - var(--container-gap)/2);
+    width: calc(50% - var(--container-gap)/2);
+
+    display: flex;
+    flex-flow: column;
+
+    border-radius: 1rem;
+}
+
+.album-info-summary {
+    border-radius: 1rem;
+
+    height: 100%;
+    width: calc(50% - var(--container-gap)/2);
+
+    overflow-y: auto;
+
+    font-size: 2.4rem;
+
+    padding: 2rem;
+
+    text-align: justify;
+    hyphens: auto;
+    word-spacing: -.1ch;
+}
+
+.album-info-summary::-webkit-scrollbar {
+    width: 1.4rem;
+}
+.album-info-summary::-webkit-scrollbar-track {
+    background: transparent;
+    background-color: #ccc;
+    border-radius: 0 1rem 1rem 0;
+}
+.album-info-summary::-webkit-scrollbar-thumb {
+    background: #000;
+    border-radius: 0 1rem 1rem 0;
 }

@@ -2,12 +2,12 @@ let data = []
 let album_name
 let artist
 
+
 document.addEventListener('DOMContentLoaded', () => {
 
     loadJSON()
 
     const params = new URLSearchParams(window.location.search)
-
     album_name = params.get('album')
     artist = params.get('artist')
 })
@@ -49,11 +49,10 @@ async function loadAlbumPage() {
 
     album_title.innerHTML = album.name
     album_artist.innerHTML = album.artist
-    album_cover.src = album.image[3]['#text']
     album_cover.src = album.image[4]['#text']
 
-    console.log(album)
     getTracklistHTML(album_name, artist)
+    getAlbumInfoHTML(album)
 function getTracklistHTML(album_name, artist) {
 
     const tracklist_div = document.getElementById('tracklist-items')
@@ -70,5 +69,19 @@ function getTracklistHTML(album_name, artist) {
     })
 }
 
-    // const tracklist = await 
+function getAlbumInfoHTML(album) {
+    
+    const album_info_tags = document.getElementById('album-info-tags')
+    
+    let i = 0
+    album.tags.tag.forEach(tag => {
+        if (i%2 == 0) {album_info_tags.innerHTML += `<span>• ${tag.name}</span>`}
+        if (i%2 == 1) {album_info_tags.innerHTML += `<span>${tag.name} •</span>`}  
+        i++      
+    });
+
+
+    const album_info_summary = document.getElementById('album-info-summary')
+
+    album_info_summary.innerHTML = album.wiki.summary
 }
