@@ -1,0 +1,3316 @@
+{
+   "api_key": "846d44d63f8f2e8a951c6e66b43a1a4c",
+   "albuns": [
+      {
+         "name": "clancy",
+         "artist": "twenty one pilots",
+         "rating": 10,
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "Overcompensate",
+               "track_rating": "10"
+            },
+            {
+               "number": 2,
+               "title": "Next Semester",
+               "track_rating": "10"
+            },
+            {
+               "number": 3,
+               "title": "Backslide",
+               "track_rating": "10"
+            },
+            {
+               "number": 4,
+               "title": "Midwest Indigo",
+               "track_rating": "10"
+            },
+            {
+               "number": 5,
+               "title": "Routines in the Night",
+               "track_rating": "10"
+            },
+            {
+               "number": 6,
+               "title": "Vignette",
+               "track_rating": "10"
+            },
+            {
+               "number": 7,
+               "title": "The Craving (Jenna's version)",
+               "track_rating": "7.5"
+            },
+            {
+               "number": 8,
+               "title": "Lavish",
+               "track_rating": "9.5"
+            },
+            {
+               "number": 9,
+               "title": "Navigating",
+               "track_rating": "9.5"
+            },
+            {
+               "number": 10,
+               "title": "Snap Back",
+               "track_rating": "10"
+            },
+            {
+               "number": 11,
+               "title": "Oldies Station",
+               "track_rating": "10"
+            },
+            {
+               "number": 12,
+               "title": "At the Risk of Feeling Dumb",
+               "track_rating": "10"
+            },
+            {
+               "number": 13,
+               "title": "Paladin Strait",
+               "track_rating": "10"
+            }
+         ],
+         "average_track_rate": "9.7"
+      },
+      {
+         "name": "blurryface",
+         "artist": "twenty one pilots",
+         "rating": 10,
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "Heavydirtysoul",
+               "track_rating": "10"
+            },
+            {
+               "number": 2,
+               "title": "Stressed Out",
+               "track_rating": "10"
+            },
+            {
+               "number": 3,
+               "title": "Ride",
+               "track_rating": "10"
+            },
+            {
+               "number": 4,
+               "title": "Fairly Local",
+               "track_rating": "10"
+            },
+            {
+               "number": 5,
+               "title": "Tear in My Heart",
+               "track_rating": "9.5"
+            },
+            {
+               "number": 6,
+               "title": "Lane Boy",
+               "track_rating": "10"
+            },
+            {
+               "number": 7,
+               "title": "The Judge",
+               "track_rating": "10"
+            },
+            {
+               "number": 8,
+               "title": "Doubt",
+               "track_rating": "10"
+            },
+            {
+               "number": 9,
+               "title": "Polarize",
+               "track_rating": "9"
+            },
+            {
+               "number": 10,
+               "title": "We Don't Believe What's on TV",
+               "track_rating": "9"
+            },
+            {
+               "number": 11,
+               "title": "Message Man",
+               "track_rating": "10"
+            },
+            {
+               "number": 12,
+               "title": "Hometown",
+               "track_rating": "10"
+            },
+            {
+               "number": 13,
+               "title": "Not Today",
+               "track_rating": "9.5"
+            },
+            {
+               "number": 14,
+               "title": "Goner",
+               "track_rating": "9"
+            }
+         ],
+         "average_track_rate": "9.7"
+      },
+      {
+         "name": "scaled and icy",
+         "artist": "twenty one pilots",
+         "rating": "9.0",
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "Good Day",
+               "track_rating": "8"
+            },
+            {
+               "number": 2,
+               "title": "Choker",
+               "track_rating": "10"
+            },
+            {
+               "number": 3,
+               "title": "Shy Away",
+               "track_rating": "10"
+            },
+            {
+               "number": 4,
+               "title": "The Outside",
+               "track_rating": "10"
+            },
+            {
+               "number": 5,
+               "title": "Saturday",
+               "track_rating": "8"
+            },
+            {
+               "number": 6,
+               "title": "Never Take It",
+               "track_rating": "8.5"
+            },
+            {
+               "number": 7,
+               "title": "Mulberry Street",
+               "track_rating": "9"
+            },
+            {
+               "number": 8,
+               "title": "Formidable",
+               "track_rating": "9"
+            },
+            {
+               "number": 9,
+               "title": "Bounce Man",
+               "track_rating": "9"
+            },
+            {
+               "number": 10,
+               "title": "No Chances",
+               "track_rating": "10"
+            },
+            {
+               "number": 11,
+               "title": "Redecorate",
+               "track_rating": "10"
+            }
+         ],
+         "average_track_rate": "9.2"
+      },
+      {
+         "name": "trench",
+         "artist": "twenty one pilots",
+         "rating": 10,
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "Jumpsuit",
+               "track_rating": "10"
+            },
+            {
+               "number": 2,
+               "title": "Levitate",
+               "track_rating": "10"
+            },
+            {
+               "number": 3,
+               "title": "Morph",
+               "track_rating": "10"
+            },
+            {
+               "number": 4,
+               "title": "My Blood",
+               "track_rating": "9"
+            },
+            {
+               "number": 5,
+               "title": "Chlorine",
+               "track_rating": "10"
+            },
+            {
+               "number": 6,
+               "title": "Smithereens",
+               "track_rating": "8.5"
+            },
+            {
+               "number": 7,
+               "title": "Neon Gravestones",
+               "track_rating": "10"
+            },
+            {
+               "number": 8,
+               "title": "The Hype",
+               "track_rating": "9.5"
+            },
+            {
+               "number": 9,
+               "title": "Nico and the Niners",
+               "track_rating": "10"
+            },
+            {
+               "number": 10,
+               "title": "Cut My Lip",
+               "track_rating": "8"
+            },
+            {
+               "number": 11,
+               "title": "Bandito",
+               "track_rating": "10"
+            },
+            {
+               "number": 12,
+               "title": "Pet Cheetah",
+               "track_rating": "10"
+            },
+            {
+               "number": 13,
+               "title": "Legend",
+               "track_rating": "8"
+            },
+            {
+               "number": 14,
+               "title": "Leave the City",
+               "track_rating": "10"
+            }
+         ],
+         "average_track_rate": "9.5"
+      },
+      {
+         "name": "vessel",
+         "artist": "twenty one pilots",
+         "rating": "9.5",
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "Ode to Sleep",
+               "track_rating": "10"
+            },
+            {
+               "number": 2,
+               "title": "Holding on to You",
+               "track_rating": "10"
+            },
+            {
+               "number": 3,
+               "title": "Migraine",
+               "track_rating": "10"
+            },
+            {
+               "number": 4,
+               "title": "House of Gold",
+               "track_rating": "7.5"
+            },
+            {
+               "number": 5,
+               "title": "Car Radio",
+               "track_rating": "10"
+            },
+            {
+               "number": 6,
+               "title": "Semi-Automatic",
+               "track_rating": "8.5"
+            },
+            {
+               "number": 7,
+               "title": "Screen",
+               "track_rating": "8"
+            },
+            {
+               "number": 8,
+               "title": "The Run and Go",
+               "track_rating": "8"
+            },
+            {
+               "number": 9,
+               "title": "Fake You Out",
+               "track_rating": "8.5"
+            },
+            {
+               "number": 10,
+               "title": "Guns for Hands",
+               "track_rating": "10"
+            },
+            {
+               "number": 11,
+               "title": "Trees",
+               "track_rating": "9"
+            },
+            {
+               "number": 12,
+               "title": "Truce",
+               "track_rating": "8.5"
+            }
+         ],
+         "average_track_rate": "9.0"
+      },
+      {
+         "name": "regional at best",
+         "artist": "twenty one pilots",
+         "rating": "9.0",
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "Guns for Hands",
+               "track_rating": "10"
+            },
+            {
+               "number": 2,
+               "title": "Holding on to You",
+               "track_rating": "10"
+            },
+            {
+               "number": 3,
+               "title": "Ode to Sleep",
+               "track_rating": "10"
+            },
+            {
+               "number": 4,
+               "title": "Slowtown",
+               "track_rating": "10"
+            },
+            {
+               "number": 5,
+               "title": "Car Radio",
+               "track_rating": "10"
+            },
+            {
+               "number": 6,
+               "title": "Forest",
+               "track_rating": "9.5"
+            },
+            {
+               "number": 7,
+               "title": "Glowing Eyes",
+               "track_rating": "9.5"
+            },
+            {
+               "number": 8,
+               "title": "Kitchen Sink",
+               "track_rating": "10"
+            },
+            {
+               "number": 9,
+               "title": "Anathema",
+               "track_rating": "10"
+            },
+            {
+               "number": 10,
+               "title": "Lovely",
+               "track_rating": "10"
+            },
+            {
+               "number": 11,
+               "title": "Ruby",
+               "track_rating": "10"
+            },
+            {
+               "number": 12,
+               "title": "Trees",
+               "track_rating": "8"
+            },
+            {
+               "number": 13,
+               "title": "Be Concerned",
+               "track_rating": "8"
+            },
+            {
+               "number": 14,
+               "title": "Clear",
+               "track_rating": "9.5"
+            }
+         ],
+         "average_track_rate": "9.6"
+      },
+      {
+         "name": "twenty one pilots",
+         "artist": "twenty one pilots",
+         "rating": "9.0",
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "Implicit Demand for Proof",
+               "track_rating": "10"
+            },
+            {
+               "number": 2,
+               "title": "Fall Away",
+               "track_rating": "10"
+            },
+            {
+               "number": 3,
+               "title": "The Pantaloon",
+               "track_rating": "8.5"
+            },
+            {
+               "number": 4,
+               "title": "Addict with a Pen",
+               "track_rating": "8"
+            },
+            {
+               "number": 5,
+               "title": "Friend, Please",
+               "track_rating": "9"
+            },
+            {
+               "number": 6,
+               "title": "March to the Sea",
+               "track_rating": "8"
+            },
+            {
+               "number": 7,
+               "title": "Johnny Boy",
+               "track_rating": "8"
+            },
+            {
+               "number": 8,
+               "title": "Oh Ms Believer",
+               "track_rating": "7"
+            },
+            {
+               "number": 9,
+               "title": "Air Catcher",
+               "track_rating": "10"
+            },
+            {
+               "number": 10,
+               "title": "Trapdoor [Explicit]",
+               "track_rating": "10"
+            },
+            {
+               "number": 11,
+               "title": "A Car, a Torch, a Death",
+               "track_rating": "8"
+            },
+            {
+               "number": 12,
+               "title": "Taxi Cab",
+               "track_rating": "7.5"
+            },
+            {
+               "number": 13,
+               "title": "Before You Start Your Day",
+               "track_rating": "7.5"
+            },
+            {
+               "number": 14,
+               "title": "Isle of Flightless Birds",
+               "track_rating": "8"
+            }
+         ],
+         "average_track_rate": "8.5"
+      },
+      {
+         "name": "yeezus",
+         "artist": "kanye west",
+         "rating": 10,
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "On Sight",
+               "track_rating": "10"
+            },
+            {
+               "number": 2,
+               "title": "Black Skinhead",
+               "track_rating": "10"
+            },
+            {
+               "number": 3,
+               "title": "I Am a God",
+               "track_rating": "9.5"
+            },
+            {
+               "number": 4,
+               "title": "New Slaves",
+               "track_rating": "9.5"
+            },
+            {
+               "number": 5,
+               "title": "Hold My Liquor",
+               "track_rating": "10"
+            },
+            {
+               "number": 6,
+               "title": "I'm in It",
+               "track_rating": "10"
+            },
+            {
+               "number": 7,
+               "title": "Blood on the Leaves",
+               "track_rating": "10"
+            },
+            {
+               "number": 8,
+               "title": "Guilt Trip",
+               "track_rating": "9.5"
+            },
+            {
+               "number": 9,
+               "title": "Send It Up",
+               "track_rating": "9.5"
+            },
+            {
+               "number": 10,
+               "title": "Bound 2",
+               "track_rating": "9"
+            }
+         ],
+         "average_track_rate": "9.7"
+      },
+      {
+         "name": "nectar",
+         "artist": "joji",
+         "rating": 10,
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "Ew",
+               "track_rating": "10"
+            },
+            {
+               "number": 2,
+               "title": "MODUS",
+               "track_rating": "10"
+            },
+            {
+               "number": 3,
+               "title": "Tick Tock",
+               "track_rating": "10"
+            },
+            {
+               "number": 4,
+               "title": "Daylight",
+               "track_rating": "10"
+            },
+            {
+               "number": 5,
+               "title": "Upgrade",
+               "track_rating": "9"
+            },
+            {
+               "number": 6,
+               "title": "Gimme Love",
+               "track_rating": "10"
+            },
+            {
+               "number": 7,
+               "title": "Run",
+               "track_rating": "9"
+            },
+            {
+               "number": 8,
+               "title": "Sanctuary",
+               "track_rating": "8"
+            },
+            {
+               "number": 9,
+               "title": "High Hopes (feat. Omar Apollo)",
+               "track_rating": "8"
+            },
+            {
+               "number": 10,
+               "title": "NITROUS",
+               "track_rating": "10"
+            },
+            {
+               "number": 11,
+               "title": "Pretty Boy (feat. Lil Yachty)",
+               "track_rating": "9"
+            },
+            {
+               "number": 12,
+               "title": "Normal People (feat. rei brown)",
+               "track_rating": "8"
+            },
+            {
+               "number": 13,
+               "title": "Afterthought",
+               "track_rating": "10"
+            },
+            {
+               "number": 14,
+               "title": "Mr. Hollywood",
+               "track_rating": "8"
+            },
+            {
+               "number": 15,
+               "title": "777",
+               "track_rating": "10"
+            },
+            {
+               "number": 16,
+               "title": "Reanimator (feat. Yves Tumor)",
+               "track_rating": "8"
+            },
+            {
+               "number": 17,
+               "title": "Like You Do",
+               "track_rating": "10"
+            },
+            {
+               "number": 18,
+               "title": "Your Man",
+               "track_rating": "10"
+            }
+         ],
+         "average_track_rate": "9.3"
+      },
+      {
+         "name": "smithereens",
+         "artist": "joji",
+         "rating": "8.5",
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "Glimpse of Us",
+               "track_rating": "7.5"
+            },
+            {
+               "number": 2,
+               "title": "Feeling Like the End",
+               "track_rating": "9"
+            },
+            {
+               "number": 3,
+               "title": "Die for You",
+               "track_rating": "9"
+            },
+            {
+               "number": 4,
+               "title": "Before the Day Is Over",
+               "track_rating": "8.5"
+            },
+            {
+               "number": 5,
+               "title": "Dissolve",
+               "track_rating": "8.5"
+            },
+            {
+               "number": 6,
+               "title": "NIGHT RIDER",
+               "track_rating": "10"
+            },
+            {
+               "number": 7,
+               "title": "BLAHBLAHBLAH DEMO",
+               "track_rating": "9"
+            },
+            {
+               "number": 8,
+               "title": "YUKON (INTERLUDE)",
+               "track_rating": "10"
+            },
+            {
+               "number": 9,
+               "title": "1AM FREESTYLE",
+               "track_rating": "9.5"
+            }
+         ],
+         "average_track_rate": "9.0"
+      },
+      {
+         "name": "ballads 1",
+         "artist": "joji",
+         "rating": "8.5",
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "ATTENTION",
+               "track_rating": -1
+            },
+            {
+               "number": 2,
+               "title": "SLOW DANCING IN THE DARK",
+               "track_rating": -1
+            },
+            {
+               "number": 3,
+               "title": "TEST DRIVE",
+               "track_rating": -1
+            },
+            {
+               "number": 4,
+               "title": "WANTED U",
+               "track_rating": -1
+            },
+            {
+               "number": 5,
+               "title": "CAN'T GET OVER YOU",
+               "track_rating": -1
+            },
+            {
+               "number": 6,
+               "title": "YEAH RIGHT",
+               "track_rating": -1
+            },
+            {
+               "number": 7,
+               "title": "WHY AM I STILL IN LA",
+               "track_rating": -1
+            },
+            {
+               "number": 8,
+               "title": "NO FUN",
+               "track_rating": -1
+            },
+            {
+               "number": 9,
+               "title": "COME THRU",
+               "track_rating": -1
+            },
+            {
+               "number": 10,
+               "title": "R.I.P.",
+               "track_rating": -1
+            },
+            {
+               "number": 11,
+               "title": "XNXX",
+               "track_rating": -1
+            },
+            {
+               "number": 12,
+               "title": "I'LL SEE YOU IN 40",
+               "track_rating": -1
+            }
+         ],
+         "average_track_rate": -1
+      },
+      {
+         "name": "no phun intended",
+         "artist": "tyler joseph",
+         "rating": "9.0",
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "Blasphemy",
+               "track_rating": -1
+            },
+            {
+               "number": 2,
+               "title": "Drown",
+               "track_rating": -1
+            },
+            {
+               "number": 3,
+               "title": "Hole in the Ground",
+               "track_rating": -1
+            },
+            {
+               "number": 4,
+               "title": "Save",
+               "track_rating": -1
+            },
+            {
+               "number": 5,
+               "title": "Taken by Sleep",
+               "track_rating": -1
+            },
+            {
+               "number": 6,
+               "title": "I Want to Know",
+               "track_rating": -1
+            },
+            {
+               "number": 7,
+               "title": "Just Like Yesterday",
+               "track_rating": -1
+            },
+            {
+               "number": 8,
+               "title": "Never Change",
+               "track_rating": -1
+            },
+            {
+               "number": 9,
+               "title": "Prove Me Wrong",
+               "track_rating": -1
+            },
+            {
+               "number": 10,
+               "title": "Realize That It's Gone",
+               "track_rating": -1
+            },
+            {
+               "number": 11,
+               "title": "Tonight",
+               "track_rating": -1
+            },
+            {
+               "number": 12,
+               "title": "Falling Too",
+               "track_rating": -1
+            },
+            {
+               "number": 13,
+               "title": "Whisper",
+               "track_rating": -1
+            },
+            {
+               "number": 14,
+               "title": "TB Saga",
+               "track_rating": -1
+            },
+            {
+               "number": 15,
+               "title": "Chords/Words",
+               "track_rating": -1
+            },
+            {
+               "number": 16,
+               "title": "Trees",
+               "track_rating": -1
+            },
+            {
+               "number": 17,
+               "title": "Where Did We Go",
+               "track_rating": -1
+            },
+            {
+               "number": 18,
+               "title": "I'm a Goner",
+               "track_rating": -1
+            },
+            {
+               "number": 19,
+               "title": "Hear Me Now",
+               "track_rating": -1
+            }
+         ],
+         "average_track_rate": -1
+      },
+      {
+         "name": "the life of pablo",
+         "artist": "kanye west",
+         "rating": 10,
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "Ultralight Beam",
+               "track_rating": "9.5"
+            },
+            {
+               "number": 2,
+               "title": "Father Stretch My Hands Pt. 1",
+               "track_rating": "10"
+            },
+            {
+               "number": 3,
+               "title": "Pt. 2",
+               "track_rating": "10"
+            },
+            {
+               "number": 4,
+               "title": "Famous",
+               "track_rating": "10"
+            },
+            {
+               "number": 5,
+               "title": "Feedback",
+               "track_rating": "10"
+            },
+            {
+               "number": 6,
+               "title": "Low Lights",
+               "track_rating": "7"
+            },
+            {
+               "number": 7,
+               "title": "Highlights",
+               "track_rating": "7"
+            },
+            {
+               "number": 8,
+               "title": "Freestyle 4",
+               "track_rating": "10"
+            },
+            {
+               "number": 9,
+               "title": "I Love Kanye",
+               "track_rating": "10"
+            },
+            {
+               "number": 10,
+               "title": "Waves",
+               "track_rating": "8"
+            },
+            {
+               "number": 11,
+               "title": "FML",
+               "track_rating": "10"
+            },
+            {
+               "number": 12,
+               "title": "Real Friends",
+               "track_rating": "7"
+            },
+            {
+               "number": 13,
+               "title": "Wolves",
+               "track_rating": "9"
+            },
+            {
+               "number": 14,
+               "title": "Siiiiiiiiilver Surffffeeeeer Intermission",
+               "track_rating": "-"
+            },
+            {
+               "number": 15,
+               "title": "30 Hours",
+               "track_rating": "7.5"
+            },
+            {
+               "number": 16,
+               "title": "No More Parties In LA",
+               "track_rating": "9.5"
+            },
+            {
+               "number": 17,
+               "title": "Facts (Charlie Heat Version)",
+               "track_rating": "10"
+            },
+            {
+               "number": 18,
+               "title": "Fade",
+               "track_rating": "8.5"
+            }
+         ],
+         "average_track_rate": "9.0"
+      },
+      {
+         "name": "utopia",
+         "artist": "travis scott",
+         "rating": "9.5",
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "HYAENA",
+               "track_rating": "10"
+            },
+            {
+               "number": 2,
+               "title": "THANK GOD",
+               "track_rating": "9"
+            },
+            {
+               "number": 3,
+               "title": "MODERN JAM",
+               "track_rating": "10"
+            },
+            {
+               "number": 4,
+               "title": "MY EYES",
+               "track_rating": "10"
+            },
+            {
+               "number": 5,
+               "title": "GOD'S COUNTRY",
+               "track_rating": "9"
+            },
+            {
+               "number": 6,
+               "title": "SIRENS",
+               "track_rating": "8.5"
+            },
+            {
+               "number": 7,
+               "title": "MELTDOWN",
+               "track_rating": "8"
+            },
+            {
+               "number": 8,
+               "title": "FE!N",
+               "track_rating": "10"
+            },
+            {
+               "number": 9,
+               "title": "DELRESTO (ECHOES)",
+               "track_rating": "7"
+            },
+            {
+               "number": 10,
+               "title": "I KNOW ?",
+               "track_rating": "9"
+            },
+            {
+               "number": 11,
+               "title": "TOPIA TWINS",
+               "track_rating": "8.5"
+            },
+            {
+               "number": 12,
+               "title": "CIRCUS MAXIMUS",
+               "track_rating": "10"
+            },
+            {
+               "number": 13,
+               "title": "PARASAIL",
+               "track_rating": "7"
+            },
+            {
+               "number": 14,
+               "title": "SKITZO",
+               "track_rating": "9.5"
+            },
+            {
+               "number": 15,
+               "title": "LOST FOREVER",
+               "track_rating": "8"
+            },
+            {
+               "number": 16,
+               "title": "LOOOVE",
+               "track_rating": "7.5"
+            },
+            {
+               "number": 17,
+               "title": "K-POP",
+               "track_rating": "4"
+            },
+            {
+               "number": 18,
+               "title": "TELEKINESIS",
+               "track_rating": "10"
+            },
+            {
+               "number": 19,
+               "title": "TIL FURTHER NOTICE",
+               "track_rating": "9.5"
+            }
+         ],
+         "average_track_rate": "8.7"
+      },
+      {
+         "name": "donda",
+         "artist": "kanye west",
+         "rating": "9.5",
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "Donda Chant",
+               "track_rating": "-"
+            },
+            {
+               "number": 2,
+               "title": "Jail",
+               "track_rating": "8"
+            },
+            {
+               "number": 3,
+               "title": "God Breathed",
+               "track_rating": "8"
+            },
+            {
+               "number": 4,
+               "title": "Off the Grid",
+               "track_rating": "9"
+            },
+            {
+               "number": 5,
+               "title": "Hurricane",
+               "track_rating": "10"
+            },
+            {
+               "number": 6,
+               "title": "Praise God",
+               "track_rating": "10"
+            },
+            {
+               "number": 7,
+               "title": "Jonah",
+               "track_rating": "9"
+            },
+            {
+               "number": 8,
+               "title": "Ok Ok",
+               "track_rating": "8"
+            },
+            {
+               "number": 9,
+               "title": "Junya",
+               "track_rating": "7.5"
+            },
+            {
+               "number": 10,
+               "title": "Believe What I Say",
+               "track_rating": "7.5"
+            },
+            {
+               "number": 11,
+               "title": "24",
+               "track_rating": "7"
+            },
+            {
+               "number": 12,
+               "title": "Remote Control",
+               "track_rating": "8"
+            },
+            {
+               "number": 13,
+               "title": "Moon",
+               "track_rating": "9"
+            },
+            {
+               "number": 14,
+               "title": "Heaven and Hell",
+               "track_rating": "10"
+            },
+            {
+               "number": 15,
+               "title": "Donda",
+               "track_rating": "8"
+            },
+            {
+               "number": 16,
+               "title": "Keep My Spirit Alive",
+               "track_rating": "7.5"
+            },
+            {
+               "number": 17,
+               "title": "Jesus Lord",
+               "track_rating": "8"
+            },
+            {
+               "number": 18,
+               "title": "New Again",
+               "track_rating": "9"
+            },
+            {
+               "number": 19,
+               "title": "Tell the Vision",
+               "track_rating": "6"
+            },
+            {
+               "number": 20,
+               "title": "Lord I Need You",
+               "track_rating": "7"
+            },
+            {
+               "number": 21,
+               "title": "Pure Souls",
+               "track_rating": "8"
+            },
+            {
+               "number": 22,
+               "title": "Come to Life",
+               "track_rating": "10"
+            },
+            {
+               "number": 23,
+               "title": "No Child Left Behind",
+               "track_rating": "10"
+            },
+            {
+               "number": 24,
+               "title": "Jail Pt 2",
+               "track_rating": "-"
+            },
+            {
+               "number": 25,
+               "title": "Ok Ok, Pt. 2",
+               "track_rating": "-"
+            },
+            {
+               "number": 26,
+               "title": "Junya, Pt. 2",
+               "track_rating": "-"
+            },
+            {
+               "number": 27,
+               "title": "Jesus Lord, Pt. 2",
+               "track_rating": "-"
+            }
+         ],
+         "average_track_rate": "8.4"
+      },
+      {
+         "name": "black ben carson",
+         "artist": "jpegmafia",
+         "rating": 10,
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "drake era",
+               "track_rating": "10"
+            },
+            {
+               "number": 2,
+               "title": "JPEGMAFIA ALL CAPS NO SPACES",
+               "track_rating": "10"
+            },
+            {
+               "number": 3,
+               "title": "digital blackface",
+               "track_rating": "9"
+            },
+            {
+               "number": 4,
+               "title": "Cuckold",
+               "track_rating": "10"
+            },
+            {
+               "number": 5,
+               "title": "i smell crack",
+               "track_rating": "8"
+            },
+            {
+               "number": 6,
+               "title": "you think you know",
+               "track_rating": "10"
+            },
+            {
+               "number": 7,
+               "title": "motor mouth",
+               "track_rating": "8.5"
+            },
+            {
+               "number": 8,
+               "title": "black ben carson",
+               "track_rating": "10"
+            },
+            {
+               "number": 9,
+               "title": "black steve austin",
+               "track_rating": "10"
+            },
+            {
+               "number": 10,
+               "title": "black stacey dash",
+               "track_rating": "9"
+            },
+            {
+               "number": 11,
+               "title": "What's Crackin', Parts 1 & 2",
+               "track_rating": "8.5"
+            },
+            {
+               "number": 12,
+               "title": "i just killed a cop now i'm horny",
+               "track_rating": "9"
+            },
+            {
+               "number": 13,
+               "title": "Plastic",
+               "track_rating": "9"
+            },
+            {
+               "number": 14,
+               "title": "Boi",
+               "track_rating": "9"
+            },
+            {
+               "number": 15,
+               "title": "Flex The Connect",
+               "track_rating": "-"
+            },
+            {
+               "number": 16,
+               "title": "the 27 club",
+               "track_rating": "9"
+            },
+            {
+               "number": 17,
+               "title": "LL Cool J",
+               "track_rating": "-"
+            },
+            {
+               "number": 18,
+               "title": "Face Down Ass Up",
+               "track_rating": "7.5"
+            },
+            {
+               "number": 19,
+               "title": "This That Shit Kid Cudi Coulda Been",
+               "track_rating": "10"
+            },
+            {
+               "number": 20,
+               "title": "Jerrys",
+               "track_rating": "-"
+            },
+            {
+               "number": 21,
+               "title": "2015 was a great year",
+               "track_rating": "10"
+            },
+            {
+               "number": 22,
+               "title": "try me",
+               "track_rating": "10"
+            }
+         ],
+         "average_track_rate": "9.3"
+      },
+      {
+         "name": "i lay down my life for you",
+         "artist": "jpegmafia",
+         "rating": "9.5",
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "I SCREAM THIS IN THE MIRROR BEFORE I INTERACT WITH ANYONE",
+               "track_rating": "10"
+            },
+            {
+               "number": 2,
+               "title": "SIN MIEDO",
+               "track_rating": "10"
+            },
+            {
+               "number": 3,
+               "title": "I'll Be Right There",
+               "track_rating": "9.5"
+            },
+            {
+               "number": 4,
+               "title": "it's dark and hell is hot",
+               "track_rating": "10"
+            },
+            {
+               "number": 5,
+               "title": "New Black History",
+               "track_rating": "10"
+            },
+            {
+               "number": 6,
+               "title": "don't rely on other men",
+               "track_rating": "9.5"
+            },
+            {
+               "number": 7,
+               "title": "vulgar display of power",
+               "track_rating": "10"
+            },
+            {
+               "number": 8,
+               "title": "Exmilitary",
+               "track_rating": "10"
+            },
+            {
+               "number": 9,
+               "title": "JIHAD JOE",
+               "track_rating": "10"
+            },
+            {
+               "number": 10,
+               "title": "JPEGULTRA!",
+               "track_rating": "9.5"
+            },
+            {
+               "number": 11,
+               "title": "either on or off the drugs",
+               "track_rating": "9"
+            },
+            {
+               "number": 12,
+               "title": "loop it and leave it",
+               "track_rating": "9"
+            },
+            {
+               "number": 13,
+               "title": "Don't Put Anything On the Bible",
+               "track_rating": "9"
+            },
+            {
+               "number": 14,
+               "title": "i recovered from this",
+               "track_rating": "9"
+            }
+         ],
+         "average_track_rate": "9.6"
+      },
+      {
+         "name": "my beautiful dark twisted fantasy",
+         "artist": "kanye west",
+         "rating": "9.0",
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "Dark Fantasy",
+               "track_rating": "10"
+            },
+            {
+               "number": 2,
+               "title": "Gorgeous",
+               "track_rating": "8"
+            },
+            {
+               "number": 3,
+               "title": "POWER",
+               "track_rating": "10"
+            },
+            {
+               "number": 4,
+               "title": "All of the Lights (Interlude)",
+               "track_rating": "-"
+            },
+            {
+               "number": 5,
+               "title": "All of the Lights",
+               "track_rating": "10"
+            },
+            {
+               "number": 6,
+               "title": "Monster",
+               "track_rating": "9.5"
+            },
+            {
+               "number": 7,
+               "title": "So Appalled",
+               "track_rating": "9"
+            },
+            {
+               "number": 8,
+               "title": "Devil in a New Dress",
+               "track_rating": "10"
+            },
+            {
+               "number": 9,
+               "title": "Runaway",
+               "track_rating": "10"
+            },
+            {
+               "number": 10,
+               "title": "Hell of a Life",
+               "track_rating": "9.5"
+            },
+            {
+               "number": 11,
+               "title": "Blame Game",
+               "track_rating": "7"
+            },
+            {
+               "number": 12,
+               "title": "Lost in the World",
+               "track_rating": "8.5"
+            },
+            {
+               "number": 13,
+               "title": "Who Will Survive in America",
+               "track_rating": "-"
+            }
+         ],
+         "average_track_rate": "9.2"
+      },
+      {
+         "name": "sick boy",
+         "artist": "the chainsmokers",
+         "rating": "9.0",
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "This Feeling",
+               "track_rating": "8"
+            },
+            {
+               "number": 2,
+               "title": "Beach House",
+               "track_rating": "10"
+            },
+            {
+               "number": 3,
+               "title": "Hope",
+               "track_rating": "9"
+            },
+            {
+               "number": 4,
+               "title": "Somebody",
+               "track_rating": "10"
+            },
+            {
+               "number": 5,
+               "title": "Side Effects",
+               "track_rating": "8"
+            },
+            {
+               "number": 6,
+               "title": "Sick Boy",
+               "track_rating": "10"
+            },
+            {
+               "number": 7,
+               "title": "Everybody Hates Me",
+               "track_rating": "10"
+            },
+            {
+               "number": 8,
+               "title": "Siren",
+               "track_rating": "8"
+            },
+            {
+               "number": 9,
+               "title": "You Owe Me",
+               "track_rating": "9"
+            },
+            {
+               "number": 10,
+               "title": "Save Yourself",
+               "track_rating": "8"
+            }
+         ],
+         "average_track_rate": "9.0"
+      },
+      {
+         "name": "so far so good",
+         "artist": "the chainsmokers",
+         "rating": 10,
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "Riptide",
+               "track_rating": "10"
+            },
+            {
+               "number": 2,
+               "title": "High",
+               "track_rating": "10"
+            },
+            {
+               "number": 3,
+               "title": "iPad",
+               "track_rating": "8"
+            },
+            {
+               "number": 4,
+               "title": "Maradona",
+               "track_rating": "10"
+            },
+            {
+               "number": 5,
+               "title": "Solo Mission",
+               "track_rating": "10"
+            },
+            {
+               "number": 6,
+               "title": "Something Different",
+               "track_rating": "8.5"
+            },
+            {
+               "number": 7,
+               "title": "I Love U",
+               "track_rating": "9"
+            },
+            {
+               "number": 8,
+               "title": "If You're Serious",
+               "track_rating": "8.5"
+            },
+            {
+               "number": 9,
+               "title": "Channel 1",
+               "track_rating": "10"
+            },
+            {
+               "number": 10,
+               "title": "Testing",
+               "track_rating": "10"
+            },
+            {
+               "number": 11,
+               "title": "In Too Deep",
+               "track_rating": "7"
+            },
+            {
+               "number": 12,
+               "title": "I Hope You Change Your Mind",
+               "track_rating": "9"
+            },
+            {
+               "number": 13,
+               "title": "Cyanide",
+               "track_rating": "9"
+            }
+         ],
+         "average_track_rate": "9.2"
+      },
+      {
+         "name": "ep!",
+         "artist": "jpegmafia",
+         "rating": "8.0",
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "BALD!",
+               "track_rating": "10"
+            },
+            {
+               "number": 2,
+               "title": "COVERED IN MONEY!",
+               "track_rating": "10"
+            },
+            {
+               "number": 3,
+               "title": "BODYGUARD!",
+               "track_rating": "7"
+            },
+            {
+               "number": 4,
+               "title": "BALD! REMIX",
+               "track_rating": "10"
+            },
+            {
+               "number": 5,
+               "title": "CUTIE PIE!",
+               "track_rating": "8"
+            },
+            {
+               "number": 6,
+               "title": "THE BENDS!",
+               "track_rating": "8"
+            },
+            {
+               "number": 7,
+               "title": "ROUGH 7",
+               "track_rating": "9"
+            },
+            {
+               "number": 8,
+               "title": "living single",
+               "track_rating": "7"
+            },
+            {
+               "number": 9,
+               "title": "SUPER TUESDAY!",
+               "track_rating": "7"
+            }
+         ],
+         "average_track_rate": "8.4"
+      },
+      {
+         "name": "amnesty (i)",
+         "artist": "crystal castles",
+         "rating": "9.0",
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "Femen",
+               "track_rating": "9"
+            },
+            {
+               "number": 2,
+               "title": "Fleece",
+               "track_rating": "9.5"
+            },
+            {
+               "number": 3,
+               "title": "Char",
+               "track_rating": "10"
+            },
+            {
+               "number": 4,
+               "title": "Enth",
+               "track_rating": "9"
+            },
+            {
+               "number": 5,
+               "title": "Sadist",
+               "track_rating": "9"
+            },
+            {
+               "number": 6,
+               "title": "Teach Her How to Hunt",
+               "track_rating": "-"
+            },
+            {
+               "number": 7,
+               "title": "Chloroform",
+               "track_rating": "9"
+            },
+            {
+               "number": 8,
+               "title": "Frail",
+               "track_rating": "9"
+            },
+            {
+               "number": 9,
+               "title": "Concrete",
+               "track_rating": "9"
+            },
+            {
+               "number": 10,
+               "title": "Ornament",
+               "track_rating": "9"
+            },
+            {
+               "number": 11,
+               "title": "Kept",
+               "track_rating": "9"
+            },
+            {
+               "number": 12,
+               "title": "Their Kindness Is Charade",
+               "track_rating": "9"
+            }
+         ],
+         "average_track_rate": "9.1"
+      },
+      {
+         "name": "ye",
+         "artist": "kanye west",
+         "rating": -1,
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "I Thought About Killing You",
+               "track_rating": -1
+            },
+            {
+               "number": 2,
+               "title": "Yikes",
+               "track_rating": -1
+            },
+            {
+               "number": 3,
+               "title": "All Mine",
+               "track_rating": -1
+            },
+            {
+               "number": 4,
+               "title": "Wouldn't Leave",
+               "track_rating": -1
+            },
+            {
+               "number": 5,
+               "title": "No Mistakes",
+               "track_rating": -1
+            },
+            {
+               "number": 6,
+               "title": "Ghost Town",
+               "track_rating": -1
+            },
+            {
+               "number": 7,
+               "title": "Violent Crimes",
+               "track_rating": -1
+            }
+         ],
+         "average_track_rate": -1
+      },
+      {
+         "name": "crystal castles",
+         "artist": "crystal castles",
+         "rating": -1,
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "Untrust Us",
+               "track_rating": -1
+            },
+            {
+               "number": 2,
+               "title": "Alice Practice",
+               "track_rating": -1
+            },
+            {
+               "number": 3,
+               "title": "Crimewave",
+               "track_rating": -1
+            },
+            {
+               "number": 4,
+               "title": "Magic Spells",
+               "track_rating": -1
+            },
+            {
+               "number": 5,
+               "title": "xxzxcuzx me",
+               "track_rating": -1
+            },
+            {
+               "number": 6,
+               "title": "Air War",
+               "track_rating": -1
+            },
+            {
+               "number": 7,
+               "title": "Courtship Dating",
+               "track_rating": -1
+            },
+            {
+               "number": 8,
+               "title": "Good Time",
+               "track_rating": -1
+            },
+            {
+               "number": 9,
+               "title": "1991",
+               "track_rating": -1
+            },
+            {
+               "number": 10,
+               "title": "Vanished",
+               "track_rating": -1
+            },
+            {
+               "number": 11,
+               "title": "Knights",
+               "track_rating": -1
+            },
+            {
+               "number": 12,
+               "title": "Love and Caring",
+               "track_rating": -1
+            },
+            {
+               "number": 13,
+               "title": "Through the Hosiery",
+               "track_rating": -1
+            },
+            {
+               "number": 14,
+               "title": "Reckless",
+               "track_rating": -1
+            },
+            {
+               "number": 15,
+               "title": "Black Panther",
+               "track_rating": -1
+            },
+            {
+               "number": 16,
+               "title": "Tell Me What to Swallow",
+               "track_rating": -1
+            },
+            {
+               "number": 17,
+               "title": "Trash Hologram",
+               "track_rating": -1
+            },
+            {
+               "number": 18,
+               "title": "Air War - David Wolf remix",
+               "track_rating": -1
+            }
+         ],
+         "average_track_rate": -1
+      },
+      {
+         "name": "(ii)",
+         "artist": "crystal castles",
+         "rating": -1,
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "Fainting Spells (Album Version)",
+               "track_rating": -1
+            },
+            {
+               "number": 2,
+               "title": "Celestica (Album Version)",
+               "track_rating": -1
+            },
+            {
+               "number": 3,
+               "title": "Doe Deer (Album Version)",
+               "track_rating": -1
+            },
+            {
+               "number": 4,
+               "title": "Baptism",
+               "track_rating": -1
+            },
+            {
+               "number": 5,
+               "title": "Year Of Silence (Album Version)",
+               "track_rating": -1
+            },
+            {
+               "number": 6,
+               "title": "Empathy (Album Version)",
+               "track_rating": -1
+            },
+            {
+               "number": 7,
+               "title": "Suffocation (Album Version)",
+               "track_rating": -1
+            },
+            {
+               "number": 8,
+               "title": "Violent Dreams (Album Version)",
+               "track_rating": -1
+            },
+            {
+               "number": 9,
+               "title": "Vietnam (Album Version)",
+               "track_rating": -1
+            },
+            {
+               "number": 10,
+               "title": "Birds (Album Version)",
+               "track_rating": -1
+            },
+            {
+               "number": 11,
+               "title": "Pap Smear (Album Version)",
+               "track_rating": -1
+            },
+            {
+               "number": 12,
+               "title": "Not In Love (Radio Version) [feat. Robert Smith]",
+               "track_rating": -1
+            },
+            {
+               "number": 13,
+               "title": "Intimate (Album Version)",
+               "track_rating": -1
+            },
+            {
+               "number": 14,
+               "title": "I Am Made Of Chalk (Album Version)",
+               "track_rating": -1
+            }
+         ],
+         "average_track_rate": -1
+      },
+      {
+         "name": "(iii)",
+         "artist": "crystal castles",
+         "rating": -1,
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "Plague",
+               "track_rating": -1
+            },
+            {
+               "number": 2,
+               "title": "Kerosene",
+               "track_rating": -1
+            },
+            {
+               "number": 3,
+               "title": "Wrath of God",
+               "track_rating": -1
+            },
+            {
+               "number": 4,
+               "title": "Affection",
+               "track_rating": -1
+            },
+            {
+               "number": 5,
+               "title": "Pale Flesh",
+               "track_rating": -1
+            },
+            {
+               "number": 6,
+               "title": "Sad Eyes",
+               "track_rating": -1
+            },
+            {
+               "number": 7,
+               "title": "Insulin",
+               "track_rating": -1
+            },
+            {
+               "number": 8,
+               "title": "Transgender",
+               "track_rating": -1
+            },
+            {
+               "number": 9,
+               "title": "Violent Youth",
+               "track_rating": -1
+            },
+            {
+               "number": 10,
+               "title": "Telepath",
+               "track_rating": -1
+            },
+            {
+               "number": 11,
+               "title": "Mercenary",
+               "track_rating": -1
+            },
+            {
+               "number": 12,
+               "title": "Child I Will Hurt You",
+               "track_rating": -1
+            }
+         ],
+         "average_track_rate": -1
+      },
+      {
+         "name": "because the internet",
+         "artist": "childish gambino",
+         "rating": -1,
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "The Library (Intro)",
+               "track_rating": -1
+            },
+            {
+               "number": 2,
+               "title": "I. Crawl",
+               "track_rating": -1
+            },
+            {
+               "number": 3,
+               "title": "II. Worldstar",
+               "track_rating": -1
+            },
+            {
+               "number": 4,
+               "title": "Dial Up",
+               "track_rating": -1
+            },
+            {
+               "number": 5,
+               "title": "I. The Worst Guys",
+               "track_rating": -1
+            },
+            {
+               "number": 6,
+               "title": "II. Shadows",
+               "track_rating": -1
+            },
+            {
+               "number": 7,
+               "title": "III. Telegraph Ave. (\"Oakland\" by Lloyd)",
+               "track_rating": -1
+            },
+            {
+               "number": 8,
+               "title": "IV. Sweatpants",
+               "track_rating": -1
+            },
+            {
+               "number": 9,
+               "title": "V. 3005",
+               "track_rating": -1
+            },
+            {
+               "number": 10,
+               "title": "Playing Around Before the Party Starts",
+               "track_rating": -1
+            },
+            {
+               "number": 11,
+               "title": "I. The Party",
+               "track_rating": -1
+            },
+            {
+               "number": 12,
+               "title": "II. No Exit",
+               "track_rating": -1
+            },
+            {
+               "number": 13,
+               "title": "Death By Numbers",
+               "track_rating": -1
+            },
+            {
+               "number": 14,
+               "title": "I. Flight of the Navigator",
+               "track_rating": -1
+            },
+            {
+               "number": 15,
+               "title": "II. Zealots of Stockholm (Free Information)",
+               "track_rating": -1
+            },
+            {
+               "number": 16,
+               "title": "III. Urn",
+               "track_rating": -1
+            },
+            {
+               "number": 17,
+               "title": "I. Pink Toes",
+               "track_rating": -1
+            },
+            {
+               "number": 18,
+               "title": "II. Earth: The Oldest Computer (The Last Night)",
+               "track_rating": -1
+            },
+            {
+               "number": 19,
+               "title": "III. Life: The Biggest Troll [Andrew Auernheimer]",
+               "track_rating": -1
+            }
+         ],
+         "average_track_rate": -1
+      },
+      {
+         "name": "bando stone and the new world",
+         "artist": "childish gambino",
+         "rating": -1,
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "H3@RT$ W3RE M3@NT T0 F7¥",
+               "track_rating": -1
+            },
+            {
+               "number": 2,
+               "title": "Lithonia",
+               "track_rating": -1
+            },
+            {
+               "number": 3,
+               "title": "Survive",
+               "track_rating": -1
+            },
+            {
+               "number": 4,
+               "title": "Steps Beach",
+               "track_rating": -1
+            },
+            {
+               "number": 5,
+               "title": "Talk My Shit",
+               "track_rating": -1
+            },
+            {
+               "number": 6,
+               "title": "Got To Be",
+               "track_rating": -1
+            },
+            {
+               "number": 7,
+               "title": "real love",
+               "track_rating": -1
+            },
+            {
+               "number": 8,
+               "title": "In The Night",
+               "track_rating": -1
+            },
+            {
+               "number": 9,
+               "title": "Yoshinoya",
+               "track_rating": -1
+            },
+            {
+               "number": 10,
+               "title": "Can You Feel Me",
+               "track_rating": -1
+            },
+            {
+               "number": 11,
+               "title": "No Excuses",
+               "track_rating": -1
+            },
+            {
+               "number": 12,
+               "title": "Cruisin'",
+               "track_rating": -1
+            },
+            {
+               "number": 13,
+               "title": "We Are God",
+               "track_rating": -1
+            },
+            {
+               "number": 14,
+               "title": "Running Around",
+               "track_rating": -1
+            },
+            {
+               "number": 15,
+               "title": "Dadvocate",
+               "track_rating": -1
+            },
+            {
+               "number": 16,
+               "title": "Happy Survival",
+               "track_rating": -1
+            },
+            {
+               "number": 17,
+               "title": "A Place Where Love Goes",
+               "track_rating": -1
+            }
+         ],
+         "average_track_rate": -1
+      },
+      {
+         "name": "3.15.20",
+         "artist": "childish gambino",
+         "rating": -1,
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "0.00",
+               "track_rating": -1
+            },
+            {
+               "number": 2,
+               "title": "Algorhythm",
+               "track_rating": -1
+            },
+            {
+               "number": 3,
+               "title": "Time",
+               "track_rating": -1
+            },
+            {
+               "number": 4,
+               "title": "12.38",
+               "track_rating": -1
+            },
+            {
+               "number": 5,
+               "title": "19.10",
+               "track_rating": -1
+            },
+            {
+               "number": 6,
+               "title": "24.19",
+               "track_rating": -1
+            },
+            {
+               "number": 7,
+               "title": "32.22",
+               "track_rating": -1
+            },
+            {
+               "number": 8,
+               "title": "35.31",
+               "track_rating": -1
+            },
+            {
+               "number": 9,
+               "title": "39.28",
+               "track_rating": -1
+            },
+            {
+               "number": 10,
+               "title": "42.26",
+               "track_rating": -1
+            },
+            {
+               "number": 11,
+               "title": "47.48",
+               "track_rating": -1
+            },
+            {
+               "number": 12,
+               "title": "53.49",
+               "track_rating": -1
+            }
+         ],
+         "average_track_rate": -1
+      },
+      {
+         "name": "2093",
+         "artist": "yeat",
+         "rating": -1,
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "Psycho Ceo",
+               "track_rating": -1
+            },
+            {
+               "number": 2,
+               "title": "power trip",
+               "track_rating": -1
+            },
+            {
+               "number": 3,
+               "title": "Breathe",
+               "track_rating": -1
+            },
+            {
+               "number": 4,
+               "title": "Morë",
+               "track_rating": -1
+            },
+            {
+               "number": 5,
+               "title": "Bought The Earth",
+               "track_rating": -1
+            },
+            {
+               "number": 6,
+               "title": "nothing changë",
+               "track_rating": -1
+            },
+            {
+               "number": 7,
+               "title": "U Should Know",
+               "track_rating": -1
+            },
+            {
+               "number": 8,
+               "title": "Lyfestylë (with Lil Wayne)",
+               "track_rating": -1
+            },
+            {
+               "number": 9,
+               "title": "ILUV",
+               "track_rating": -1
+            },
+            {
+               "number": 10,
+               "title": "Tell Më",
+               "track_rating": -1
+            },
+            {
+               "number": 11,
+               "title": "Shade",
+               "track_rating": -1
+            },
+            {
+               "number": 12,
+               "title": "Keep Pushin",
+               "track_rating": -1
+            },
+            {
+               "number": 13,
+               "title": "Riot & Set It Off",
+               "track_rating": -1
+            },
+            {
+               "number": 14,
+               "title": "Team CEO",
+               "track_rating": -1
+            },
+            {
+               "number": 15,
+               "title": "2093",
+               "track_rating": -1
+            },
+            {
+               "number": 16,
+               "title": "Stand On It (with Future)",
+               "track_rating": -1
+            },
+            {
+               "number": 17,
+               "title": "Familia",
+               "track_rating": -1
+            },
+            {
+               "number": 18,
+               "title": "Mr. Inbetweenit",
+               "track_rating": -1
+            },
+            {
+               "number": 19,
+               "title": "Psychocainë",
+               "track_rating": -1
+            },
+            {
+               "number": 20,
+               "title": "Run Thëy Mouth",
+               "track_rating": -1
+            },
+            {
+               "number": 21,
+               "title": "If We Being Rëal",
+               "track_rating": -1
+            },
+            {
+               "number": 22,
+               "title": "1093",
+               "track_rating": -1
+            }
+         ],
+         "average_track_rate": -1
+      },
+      {
+         "name": "all my heroes are cornballs",
+         "artist": "jpegmafia",
+         "rating": -1,
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "Jesus Forgive Me, I Am a Thot",
+               "track_rating": -1
+            },
+            {
+               "number": 2,
+               "title": "Kenan Vs. Kel",
+               "track_rating": -1
+            },
+            {
+               "number": 3,
+               "title": "Beta Male Strategies",
+               "track_rating": -1
+            },
+            {
+               "number": 4,
+               "title": "JPEGMAFIA TYPE BEAT",
+               "track_rating": -1
+            },
+            {
+               "number": 5,
+               "title": "Grimy Waifu",
+               "track_rating": -1
+            },
+            {
+               "number": 6,
+               "title": "PTSD",
+               "track_rating": -1
+            },
+            {
+               "number": 7,
+               "title": "Rap Grow Old & Die x No Child Left Behind",
+               "track_rating": -1
+            },
+            {
+               "number": 8,
+               "title": "All My Heroes Are Cornballs",
+               "track_rating": -1
+            },
+            {
+               "number": 9,
+               "title": "BBW",
+               "track_rating": -1
+            },
+            {
+               "number": 10,
+               "title": "PRONE!",
+               "track_rating": -1
+            },
+            {
+               "number": 11,
+               "title": "Lifes Hard, Here's a Song About Sorrel",
+               "track_rating": -1
+            },
+            {
+               "number": 12,
+               "title": "Thot Tactics",
+               "track_rating": -1
+            },
+            {
+               "number": 13,
+               "title": "Free The Frail",
+               "track_rating": -1
+            },
+            {
+               "number": 14,
+               "title": "Post Verified Lifestyle",
+               "track_rating": -1
+            },
+            {
+               "number": 15,
+               "title": "BasicBitchTearGas",
+               "track_rating": -1
+            },
+            {
+               "number": 16,
+               "title": "DOTS FREESTYLE REMIX",
+               "track_rating": -1
+            },
+            {
+               "number": 17,
+               "title": "BUTTERMILK JESUS TYPE BEAT",
+               "track_rating": -1
+            },
+            {
+               "number": 18,
+               "title": "Papi I Missed U",
+               "track_rating": -1
+            }
+         ],
+         "average_track_rate": -1
+      },
+      {
+         "name": "\"awaken, my love!\"",
+         "artist": "childish gambino",
+         "rating": -1,
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "Me and Your Mama",
+               "track_rating": -1
+            },
+            {
+               "number": 2,
+               "title": "Have Some Love",
+               "track_rating": -1
+            },
+            {
+               "number": 3,
+               "title": "Boogieman",
+               "track_rating": -1
+            },
+            {
+               "number": 4,
+               "title": "Zombies",
+               "track_rating": -1
+            },
+            {
+               "number": 5,
+               "title": "Riot",
+               "track_rating": -1
+            },
+            {
+               "number": 6,
+               "title": "Redbone",
+               "track_rating": -1
+            },
+            {
+               "number": 7,
+               "title": "California",
+               "track_rating": -1
+            },
+            {
+               "number": 8,
+               "title": "Terrified",
+               "track_rating": -1
+            },
+            {
+               "number": 9,
+               "title": "Baby Boy",
+               "track_rating": -1
+            },
+            {
+               "number": 10,
+               "title": "The Night Me and Your Mama Met",
+               "track_rating": -1
+            },
+            {
+               "number": 11,
+               "title": "Stand Tall",
+               "track_rating": -1
+            }
+         ],
+         "average_track_rate": -1
+      },
+      {
+         "name": "blonde",
+         "artist": "frank ocean",
+         "rating": -1,
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "Nikes",
+               "track_rating": -1
+            },
+            {
+               "number": 2,
+               "title": "Ivy",
+               "track_rating": -1
+            },
+            {
+               "number": 3,
+               "title": "Pink + White",
+               "track_rating": -1
+            },
+            {
+               "number": 4,
+               "title": "Be Yourself",
+               "track_rating": -1
+            },
+            {
+               "number": 5,
+               "title": "Solo",
+               "track_rating": -1
+            },
+            {
+               "number": 6,
+               "title": "Skyline To",
+               "track_rating": -1
+            },
+            {
+               "number": 7,
+               "title": "Self Control",
+               "track_rating": -1
+            },
+            {
+               "number": 8,
+               "title": "Good Guy",
+               "track_rating": -1
+            },
+            {
+               "number": 9,
+               "title": "Nights",
+               "track_rating": -1
+            },
+            {
+               "number": 10,
+               "title": "Solo (Reprise)",
+               "track_rating": -1
+            },
+            {
+               "number": 11,
+               "title": "Pretty Sweet",
+               "track_rating": -1
+            },
+            {
+               "number": 12,
+               "title": "Facebook Story",
+               "track_rating": -1
+            },
+            {
+               "number": 13,
+               "title": "Close to You",
+               "track_rating": -1
+            },
+            {
+               "number": 14,
+               "title": "White Ferrari",
+               "track_rating": -1
+            },
+            {
+               "number": 15,
+               "title": "Seigfried",
+               "track_rating": -1
+            },
+            {
+               "number": 16,
+               "title": "Godspeed",
+               "track_rating": -1
+            },
+            {
+               "number": 17,
+               "title": "Futura Free",
+               "track_rating": -1
+            }
+         ],
+         "average_track_rate": -1
+      },
+      {
+         "name": "channel orange",
+         "artist": "frank ocean",
+         "rating": -1,
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "Start",
+               "track_rating": -1
+            },
+            {
+               "number": 2,
+               "title": "Thinkin Bout You",
+               "track_rating": -1
+            },
+            {
+               "number": 3,
+               "title": "Fertilizer",
+               "track_rating": -1
+            },
+            {
+               "number": 4,
+               "title": "Sierra Leone",
+               "track_rating": -1
+            },
+            {
+               "number": 5,
+               "title": "Sweet Life",
+               "track_rating": -1
+            },
+            {
+               "number": 6,
+               "title": "Not Just Money",
+               "track_rating": -1
+            },
+            {
+               "number": 7,
+               "title": "Super Rich Kids",
+               "track_rating": -1
+            },
+            {
+               "number": 8,
+               "title": "Pilot Jones",
+               "track_rating": -1
+            },
+            {
+               "number": 9,
+               "title": "Crack Rock",
+               "track_rating": -1
+            },
+            {
+               "number": 10,
+               "title": "Pyramids",
+               "track_rating": -1
+            },
+            {
+               "number": 11,
+               "title": "Lost",
+               "track_rating": -1
+            },
+            {
+               "number": 12,
+               "title": "White",
+               "track_rating": -1
+            },
+            {
+               "number": 13,
+               "title": "Monks",
+               "track_rating": -1
+            },
+            {
+               "number": 14,
+               "title": "Bad Religion",
+               "track_rating": -1
+            },
+            {
+               "number": 15,
+               "title": "Pink Matter",
+               "track_rating": -1
+            },
+            {
+               "number": 16,
+               "title": "Forrest Gump",
+               "track_rating": -1
+            },
+            {
+               "number": 17,
+               "title": "End",
+               "track_rating": -1
+            }
+         ],
+         "average_track_rate": -1
+      },
+      {
+         "name": "ep2!",
+         "artist": "jpegmafia",
+         "rating": -1,
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "LAST DANCE!",
+               "track_rating": -1
+            },
+            {
+               "number": 2,
+               "title": "INTRO!",
+               "track_rating": -1
+            },
+            {
+               "number": 3,
+               "title": "FIX URSELF!",
+               "track_rating": -1
+            },
+            {
+               "number": 4,
+               "title": "KELTEC!",
+               "track_rating": -1
+            },
+            {
+               "number": 5,
+               "title": "THIS ONES FOR US!",
+               "track_rating": -1
+            },
+            {
+               "number": 6,
+               "title": "PANIC ROOM!",
+               "track_rating": -1
+            },
+            {
+               "number": 7,
+               "title": "FEED HER!",
+               "track_rating": -1
+            }
+         ],
+         "average_track_rate": -1
+      },
+      {
+         "name": "fantasy",
+         "artist": "whethan",
+         "rating": -1,
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "Intro (with Chrome Sparks)",
+               "track_rating": -1
+            },
+            {
+               "number": 2,
+               "title": "Freefall (feat. Oliver Tree)",
+               "track_rating": -1
+            },
+            {
+               "number": 3,
+               "title": "In The Summer (feat. Jaymes Young)",
+               "track_rating": -1
+            },
+            {
+               "number": 4,
+               "title": "Hurting on Purpose (feat. K.Flay)",
+               "track_rating": -1
+            },
+            {
+               "number": 5,
+               "title": "Drumdown Mambo (feat. Jasiah)",
+               "track_rating": -1
+            },
+            {
+               "number": 6,
+               "title": "Sunshine (with The Knocks)",
+               "track_rating": -1
+            },
+            {
+               "number": 7,
+               "title": "So Good (feat. bülow)",
+               "track_rating": -1
+            },
+            {
+               "number": 8,
+               "title": "Clouds (feat. The Wombats)",
+               "track_rating": -1
+            },
+            {
+               "number": 9,
+               "title": "All In My Head (feat. grandson)",
+               "track_rating": -1
+            },
+            {
+               "number": 10,
+               "title": "Ocean Energy (with Mr Gabriel)",
+               "track_rating": -1
+            },
+            {
+               "number": 11,
+               "title": "All I Needed (with The Front Bottoms)",
+               "track_rating": -1
+            },
+            {
+               "number": 12,
+               "title": "Stay Forever (feat. STRFKR)",
+               "track_rating": -1
+            },
+            {
+               "number": 13,
+               "title": "Wave",
+               "track_rating": -1
+            },
+            {
+               "number": 14,
+               "title": "Upside Down (feat. Grouplove)",
+               "track_rating": -1
+            },
+            {
+               "number": 15,
+               "title": "Outta Here (with RL Grime)",
+               "track_rating": -1
+            }
+         ],
+         "average_track_rate": -1
+      },
+      {
+         "name": "igor",
+         "artist": "tyler, the creator",
+         "rating": -1,
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "IGOR'S THEME",
+               "track_rating": -1
+            },
+            {
+               "number": 2,
+               "title": "EARFQUAKE",
+               "track_rating": -1
+            },
+            {
+               "number": 3,
+               "title": "I THINK",
+               "track_rating": -1
+            },
+            {
+               "number": 4,
+               "title": "EXACTLY WHAT YOU RUN FROM YOU END UP CHASING",
+               "track_rating": -1
+            },
+            {
+               "number": 5,
+               "title": "RUNNING OUT OF TIME",
+               "track_rating": -1
+            },
+            {
+               "number": 6,
+               "title": "NEW MAGIC WAND",
+               "track_rating": -1
+            },
+            {
+               "number": 7,
+               "title": "A BOY IS A GUN",
+               "track_rating": -1
+            },
+            {
+               "number": 8,
+               "title": "PUPPET",
+               "track_rating": -1
+            },
+            {
+               "number": 9,
+               "title": "WHAT'S GOOD",
+               "track_rating": -1
+            },
+            {
+               "number": 10,
+               "title": "GONE, GONE / THANK YOU",
+               "track_rating": -1
+            },
+            {
+               "number": 11,
+               "title": "I DON'T LOVE YOU ANYMORE",
+               "track_rating": -1
+            },
+            {
+               "number": 12,
+               "title": "ARE WE STILL FRIENDS?",
+               "track_rating": -1
+            }
+         ],
+         "average_track_rate": -1
+      },
+      {
+         "name": "jesus is king",
+         "artist": "kanye west",
+         "rating": -1,
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "Every Hour",
+               "track_rating": -1
+            },
+            {
+               "number": 2,
+               "title": "Selah",
+               "track_rating": -1
+            },
+            {
+               "number": 3,
+               "title": "Follow God",
+               "track_rating": -1
+            },
+            {
+               "number": 4,
+               "title": "Closed on Sunday",
+               "track_rating": -1
+            },
+            {
+               "number": 5,
+               "title": "On God",
+               "track_rating": -1
+            },
+            {
+               "number": 6,
+               "title": "Everything We Need",
+               "track_rating": -1
+            },
+            {
+               "number": 7,
+               "title": "Water",
+               "track_rating": -1
+            },
+            {
+               "number": 8,
+               "title": "God Is",
+               "track_rating": -1
+            },
+            {
+               "number": 9,
+               "title": "Hands On",
+               "track_rating": -1
+            },
+            {
+               "number": 10,
+               "title": "Use This Gospel",
+               "track_rating": -1
+            },
+            {
+               "number": 11,
+               "title": "Jesus Is Lord",
+               "track_rating": -1
+            }
+         ],
+         "average_track_rate": -1
+      },
+      {
+         "name": "romcom",
+         "artist": "jakey",
+         "rating": -1,
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "Drive Off a Bridge",
+               "track_rating": -1
+            },
+            {
+               "number": 2,
+               "title": "Like Totally Freak Me Out",
+               "track_rating": -1
+            },
+            {
+               "number": 3,
+               "title": "Every Day",
+               "track_rating": -1
+            },
+            {
+               "number": 4,
+               "title": "Survival Horror",
+               "track_rating": -1
+            },
+            {
+               "number": 5,
+               "title": "Pine Barrens",
+               "track_rating": -1
+            },
+            {
+               "number": 6,
+               "title": "Reeboks Or The Nikes",
+               "track_rating": -1
+            },
+            {
+               "number": 7,
+               "title": "Tommy Hanks",
+               "track_rating": -1
+            },
+            {
+               "number": 8,
+               "title": "Fat Head",
+               "track_rating": -1
+            }
+         ],
+         "average_track_rate": -1
+      },
+      {
+         "name": "to pimp a butterfly",
+         "artist": "kendrick lamar",
+         "rating": -1,
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "Wesley's Theory",
+               "track_rating": -1
+            },
+            {
+               "number": 2,
+               "title": "For Free? (interlude)",
+               "track_rating": -1
+            },
+            {
+               "number": 3,
+               "title": "King Kunta",
+               "track_rating": -1
+            },
+            {
+               "number": 4,
+               "title": "Institutionalized",
+               "track_rating": -1
+            },
+            {
+               "number": 5,
+               "title": "These Walls",
+               "track_rating": -1
+            },
+            {
+               "number": 6,
+               "title": "u",
+               "track_rating": -1
+            },
+            {
+               "number": 7,
+               "title": "Alright",
+               "track_rating": -1
+            },
+            {
+               "number": 8,
+               "title": "For Sale? - Interlude",
+               "track_rating": -1
+            },
+            {
+               "number": 9,
+               "title": "Momma",
+               "track_rating": -1
+            },
+            {
+               "number": 10,
+               "title": "Hood Politics",
+               "track_rating": -1
+            },
+            {
+               "number": 11,
+               "title": "How Much a Dollar Cost",
+               "track_rating": -1
+            },
+            {
+               "number": 12,
+               "title": "Complexion (A Zulu Love)",
+               "track_rating": -1
+            },
+            {
+               "number": 13,
+               "title": "The Blacker the Berry",
+               "track_rating": -1
+            },
+            {
+               "number": 14,
+               "title": "You Ain't Gotta Lie (Momma Said)",
+               "track_rating": -1
+            },
+            {
+               "number": 15,
+               "title": "i",
+               "track_rating": -1
+            },
+            {
+               "number": 16,
+               "title": "Mortal Man",
+               "track_rating": -1
+            }
+         ],
+         "average_track_rate": -1
+      },
+      {
+         "name": "vultures 1",
+         "artist": "¥$",
+         "rating": -1,
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "STARS",
+               "track_rating": -1
+            },
+            {
+               "number": 2,
+               "title": "KEYS TO MY LIFE",
+               "track_rating": -1
+            },
+            {
+               "number": 3,
+               "title": "PAID",
+               "track_rating": -1
+            },
+            {
+               "number": 4,
+               "title": "TALKING",
+               "track_rating": -1
+            },
+            {
+               "number": 5,
+               "title": "BACK TO ME",
+               "track_rating": -1
+            },
+            {
+               "number": 6,
+               "title": "HOODRAT",
+               "track_rating": -1
+            },
+            {
+               "number": 7,
+               "title": "DO IT",
+               "track_rating": -1
+            },
+            {
+               "number": 8,
+               "title": "PAPERWORK",
+               "track_rating": -1
+            },
+            {
+               "number": 9,
+               "title": "BURN",
+               "track_rating": -1
+            },
+            {
+               "number": 10,
+               "title": "FUK SUMN",
+               "track_rating": -1
+            },
+            {
+               "number": 11,
+               "title": "VULTURES",
+               "track_rating": -1
+            },
+            {
+               "number": 12,
+               "title": "CARNIVAL",
+               "track_rating": -1
+            },
+            {
+               "number": 13,
+               "title": "BEG FORGIVENESS",
+               "track_rating": -1
+            },
+            {
+               "number": 14,
+               "title": "PROBLEMATIC",
+               "track_rating": -1
+            },
+            {
+               "number": 15,
+               "title": "KING",
+               "track_rating": -1
+            }
+         ],
+         "average_track_rate": -1
+      },
+      {
+         "name": "yandhi",
+         "artist": "kanye west",
+         "rating": -1,
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "The Storm",
+               "track_rating": -1
+            },
+            {
+               "number": 2,
+               "title": "New Body",
+               "track_rating": -1
+            },
+            {
+               "number": 3,
+               "title": "Bye Bye Baby",
+               "track_rating": -1
+            },
+            {
+               "number": 4,
+               "title": "I Love It",
+               "track_rating": -1
+            },
+            {
+               "number": 5,
+               "title": "Hurricane (Reprise)",
+               "track_rating": -1
+            },
+            {
+               "number": 6,
+               "title": "Alien",
+               "track_rating": -1
+            },
+            {
+               "number": 7,
+               "title": "Last Name (Instrumental Interlude)",
+               "track_rating": -1
+            },
+            {
+               "number": 8,
+               "title": "Garden (Live Beat Snippet)",
+               "track_rating": -1
+            },
+            {
+               "number": 9,
+               "title": "We Got Love (Remix)",
+               "track_rating": -1
+            },
+            {
+               "number": 10,
+               "title": "Chakras",
+               "track_rating": -1
+            }
+         ],
+         "average_track_rate": -1
+      }
+   ]
+}
