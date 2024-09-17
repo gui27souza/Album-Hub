@@ -2,6 +2,9 @@
 
 Album Hub is a personal album library where the user can rate them and their tracks
 
+![image](https://github.com/user-attachments/assets/83e12475-7c84-4089-8b0b-dacdc15a8263)
+
+
 #### Technologies involved:
  - The front-end is made by HTML, CSS and JavaScript, also making use of the LastFM API and JavaScript library node-vibrant
  - The back-end is made by JavaScript, Node.js and its modules, JSON, and making use of the LastFM API
