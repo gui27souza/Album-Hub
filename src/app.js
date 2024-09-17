@@ -9,19 +9,9 @@ async function main() {
 
     const user_data = readUserData()
     const data = readData()
-
-    if (user_data.username == -1) {
-        username = await askQuestion('Insert an username: ')
-        user_data.username = username
-        updateData(user_data, 'user-data')
-    }
-
-    if (user_data.api_key == -1) {
-        api_key = await askQuestion('Insert your LastFM API key: ')
-        user_data.api_key = api_key
-        updateData(user_data, 'user-data')
-    }  
     
+    await checkUserData(user_data)
+
     await serverSetup()
 
     let open_browser_interface = await askQuestion('Would you like to open the interface in your default browser?\n1 - Yes\n2 - No\n\n')
@@ -47,7 +37,7 @@ async function main() {
         if (command == 2) {
             let album_name = await askQuestion('\nAlbum Name: ')
             let artist = await askQuestion('Artist: ')
-            await rateTracklist(album_name, artist, data, user_data.api_key)
+            await rateTracklist(album_name, artist, data, user_data.api_key, true)
         }
 
         if (command == 3) {
@@ -64,13 +54,27 @@ async function main() {
         if (command == 5) {
             let album_name = await askQuestion('\nAlbum Name: ')
             let artist = await askQuestion('Artist: ')
-            await searchTracklist(album_name, artist)
+            await searchTracklist(album_name, artist, user_data.api_key)
         }
     }
 }
 
 main()
 
+async function checkUserData(user_data) {
+
+    if (user_data.username == -1) {
+        username = await askQuestion('Insert an username: ')
+        user_data.username = username
+        updateData(user_data, 'user-data')
+    }
+
+    if (user_data.api_key == -1) {
+        api_key = await askQuestion('Insert your LastFM API key: ')
+        user_data.api_key = api_key
+        updateData(user_data, 'user-data')
+    }  
+}
 
 async function addAlbum(album_name, artist, data, api_key) {
     
@@ -85,7 +89,7 @@ async function addAlbum(album_name, artist, data, api_key) {
 
     const check = await checkAlbum(album_name, artist, api_key)
     if (check == -1) return
-    if (check.lenght == 2) {
+    if (check.length == 2) {
         await addAlbum(check[0], check[1], data, api_key)
         return
     }
@@ -99,16 +103,11 @@ async function addAlbum(album_name, artist, data, api_key) {
         "average_track_rate": -1 
     }    
 
-    let command = await askQuestion('Would you like to rate it?\n1 - Yes\n2 - No\n\n')
-    if (command == 1) {
-        let rating = await askQuestion('\nRating: ')
-        newAlbum.rating = rating
-
-        let command2 = await askQuestion('would you like to rate the tracks?\n1 - Yes\n2 - No\n\n')
-        if (command2 == 1) await rateTracklist(album_name, artist, rating)
-    }
-
     data.albums.push(newAlbum)
+
+    let command = await askQuestion('\nWould you like to rate it?\n1 - Yes\n2 - No\n\n')
+    if (command == 1) await rateTracklist(album_name, artist, data, api_key)
+
     updateData(data, 'data')
     console.log('\nAlbum added to you library!\n')
 
@@ -137,6 +136,11 @@ async function searchTerms(search, data, api_key) {
 
     let search_results = await searchAlbumData(search, api_key)
 
+    if (search_results.length == 0) {
+        console.log('No items found\n')
+        return
+    }
+
     console.log('')
     let i = 0
     search_results.forEach(album => {
@@ -151,9 +155,16 @@ async function searchTerms(search, data, api_key) {
     }
 }
 
-async function searchTracklist(album_name, artist) {
+async function searchTracklist(album_name, artist, api_key) {
     
-    let tracklist = await getTracklist(album_name, artist, user_data.api_key)
+    let check = await checkAlbum(album_name, artist, api_key)
+    if (check.length == 2) {
+        album_name = check[0]
+        artist = check[1]
+    }
+
+    let tracklist = await getTracklist(album_name, artist, api_key)
+    if (tracklist == -1) return
     
     console.log('')
     let i = 0
@@ -163,8 +174,6 @@ async function searchTracklist(album_name, artist) {
 }
 
 async function rateTracklist(album_name, artist, data, api_key) {
-
-    let album_rating = await askQuestion('Rating: ')
 
     album_name = album_name.toLowerCase()
     artist = artist.toLowerCase()
@@ -178,34 +187,33 @@ async function rateTracklist(album_name, artist, data, api_key) {
 
     const album = data.albums[albumIndex]
 
+    let album_rating = await askQuestion('\nRating: ')
     album.rating = parseFloat(album_rating).toFixed(1)
 
     let rate_tracks = await askQuestion(`\nWould you like to rate the tracks?\n1 - Yes\n2 - No\n\n`)
-    if (rate_tracks != 1) {
-        updateData(data, 'data')
-        return
+    if (rate_tracks == 1) {
+
+        const tracklist = await getTracklist(album_name, artist, api_key)
+
+        let total_rate = 0
+        let total_tracks = 0
+
+        console.log('')
+        for (const track of tracklist) {
+            let track_rating = await askQuestion(`${track.title}: `)
+            track.track_rating = track_rating
+            if (track_rating === '-' || isNaN(parseFloat(track_rating))) continue
+            total_rate += parseFloat(track_rating)
+            total_tracks++
+        }
+
+        let average_rating = total_rate / total_tracks
+
+        album.tracklist = tracklist
+        album.average_track_rate = average_rating.toFixed(1)
+
+        console.log(`\nThe average track rating is ${average_rating.toFixed(1)}!\n`)
     }
-
-    const tracklist = await getTracklist(album_name, artist, api_key)
-
-    let total_rate = 0
-    let total_tracks = 0
-
-    console.log('')
-    for (const track of tracklist) {
-        let track_rating = await askQuestion(`${track.title}: `)
-        track.track_rating = track_rating
-        if (track_rating === '-' || isNaN(parseFloat(track_rating))) continue
-        total_rate += parseFloat(track_rating)
-        total_tracks++
-    }
-
-    let average_rating = total_rate / total_tracks
-
-    album.tracklist = tracklist
-    album.average_track_rate = average_rating.toFixed(1)
-
-    console.log(`\nThe average track rating is ${average_rating.toFixed(1)}!\n`)
-
+    
     updateData(data, 'data')
 }
