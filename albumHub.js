@@ -12,8 +12,8 @@
         const app = express()
         app.use(express.static(path.join(__dirname, 'public')))
         app.listen(2727, function () {
-            console.log('Gate 2727')
-            console.log('link: http://localhost:2727/views/index.html')
+            console.log('\nGate 2727')
+            console.log('link: http://localhost:2727/views/index.html\n')
         })
     }
 // 
@@ -256,6 +256,12 @@
     const main = async () => {
 
         await serverSetup()
+        
+        open_interface = await askQuestion('Would you like to open the interface in your default browser?\n1 - Yes\n2 - No\n\n')
+        if (open_interface == 1) {
+            const open = await import('open')
+            open.default('http://localhost:2727/views/index.html')
+        }
 
         if (jsonData.api_key == 0) {
             api_key = await askQuestion('Insert your LastFM API key: ')
