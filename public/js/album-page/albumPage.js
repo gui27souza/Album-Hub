@@ -32,7 +32,7 @@ async function loadJSON() {
     data = await response.json()
     console.log(data)
     api_key = data.api_key
-    data = data.albuns
+    data = data.albums
 
     await loadAlbumPage()
 }

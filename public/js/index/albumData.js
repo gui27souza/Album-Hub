@@ -18,15 +18,15 @@ document.addEventListener('DOMContentLoaded', () => {
         data = await response.json()
         console.log(data)
         api_key = data.api_key
-        data = data.albuns
+        data = data.albums
 
         
         // Check the loaded data
         console.log(data)
         
-        // Loads all the albuns in the home page
+        // Loads all the albums in the home page
         data.forEach(album => {
-            createAlbuns(album.name, album.artist, album.rating, album.average_track_rate)
+            createAlbums(album.name, album.artist, album.rating, album.average_track_rate)
         })
     }
 
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Creates the album HTML element in the interface
 
-    async function createAlbuns(album_name, artist, rating, average_track_rate) {
+    async function createAlbums(album_name, artist, rating, average_track_rate) {
 
         // Creates and add classes and attributes to the item div
         const album_element = document.createElement("div")

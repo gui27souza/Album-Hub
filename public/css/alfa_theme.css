@@ -11,7 +11,7 @@ body {
     }
 
     .album-item {
-        background-color: var(--albuns);
+        background-color: var(--albums);
         transition: transform ease .15s, filter ease .15s;
     }
 
