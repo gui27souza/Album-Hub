@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Album Hub</title>
+
+    <!-- CSS -->
+        <link rel="stylesheet" href="../css/reset.css">
+
+        <link rel="stylesheet" href="../css/main_variables.css">
+        <link rel="stylesheet" href="../css/style.css">
+
+        <link id="theme" rel="stylesheet" href="../css/alfa_theme.css">
+        <link rel="stylesheet" href="../css/index/actions.css">
+        <link rel="stylesheet" href="../css/index/album-container.css">
+        <link rel="stylesheet" href="../css/index/tracklist-container.css">
+    <!---->
+
+</head>
+<body>
+
+    <!-- Actions Container -->
+    <section 
+        class="actions-container"
+        id="actions-container"
+    >
+
+        <input
+        type="text"
+        class="searchbar"
+        id="searchbar"
+        name="search"
+        autocomplete="off"
+        placeholder="Look for an album..."
+        >
+
+        <div class="actions-buttons">
+
+            <select id="order" class="actions-buttons-order" onchange="order(this.options[this.selectedIndex].id)">
+                
+                <option 
+                    class="order-option"
+                    id="random">
+                    Random
+                </option>
+
+                <option 
+                    class="order-option"
+                    id="name_des">
+                    Name 
+                </option>
+                <option 
+                    class="order-option"
+                    style="display: none;"
+                    id="name_asc">
+                    Name &#8593;
+                </option>
+
+                <option 
+                    class="order-option"
+                    id="artist_des">
+                    Artist 
+                </option>
+                <option 
+                    class="order-option"
+                    style="display: none;"
+                    id="artist_asc">
+                    Artist asc&#8593;
+                </option>
+
+                <option 
+                    class="order-option"
+                    id="rate_des">
+                    Rate 
+                </option>
+                <option 
+                    class="order-option"
+                    style="display: none;"
+                    id="rate_asc">
+                    Rate &#8593;
+                </option>
+                
+                <option 
+                    class="order-option"
+                    id="unrated">
+                    Unrated
+                </option>
+                        
+            </select>
+
+        </div>
+
+    </section>
+
+    <!-- No Items Found Container -->
+    <section 
+        class="no-items-found" 
+        id="no-items-found"
+    >
+        <p>
+            No Items Found.
+        </p>
+    </section>
+    
+    <!-- Album Container -->
+    <section 
+        class="album-container" 
+        id="album-container"
+    ></section>
+
+    <!-- Tracklist Container -->
+    <section
+    class="tracklist-container"
+    id="tracklist-container"
+    >
+        <div class="tracklist-hide" onclick="tracklist()"></div>
+
+        <div class="tracklist" id="tracklist" >
+            
+            <div class="tracklist-items" id="tracklist-items"></div>
+            
+            <a 
+                href="#" 
+                class="go-to-album" 
+                id="go-to-album" 
+                data-album="" 
+                data-artist=""
+            >
+                Go to album page
+            </a>
+
+        </div>
+    </section>
+
+
+    <!-- Data Related Scripts -->
+        <script src="../js/index/albumData.js"></script>
+
+        <script src="../js/index/search.js"></script>
+        <script src="../js/index/loadTracklist.js"></script>
+        <script src="../js/index/order.js"></script>
+    <!---->
+</body>
+</html>
