@@ -1,0 +1,112 @@
+/* Main Containers Width */
+
+    :root {
+        --main-width: 85%;
+    }
+
+    @media screen
+    and (min-width: 400px) {
+        :root {
+            --main-width: 90%;
+        }
+    }
+
+/*  */
+
+
+/* Paddings */
+
+    :root {
+        --container-padding: 1rem;
+        --item-padding: .8rem;
+        --inner-padding: .8rem;
+    }
+
+    @media screen
+    and (min-width: 300px) {
+        :root {
+            --container-padding: 1.6rem;
+            --item-padding: 1.2rem;
+            --inner-padding: .6rem;
+        }
+    }
+
+    @media screen
+    and (min-width: 400px) {
+        :root {
+            --container-padding: 2rem;
+            --item-padding: 1.6rem;
+            --inner-padding: 1.2rem;
+        }
+    }
+
+    @media screen
+    and (min-width: 1500px) {
+        :root {
+            --container-padding: 2.4rem;
+            --item-padding: 1.8rem;
+            --inner-padding: 1.6rem;
+        }
+    }
+
+/*  */
+
+/* Gaps */
+
+    :root {
+        --container-gap: 1rem;
+        --item-gap: .8rem;
+        --inner-gap: .8rem;
+    }
+
+    @media screen
+    and (min-width: 300px) {
+        :root {
+            --container-gap: 1.6rem;
+            --item-gap: 1.2rem;
+            --inner-gap: .8rem;
+        }
+    }
+
+    @media screen
+    and (min-width: 400px) {
+        :root {
+            --container-gap: 2rem;
+            --item-gap: 1.6rem;
+            --inner-gap: 1.2rem;
+        }
+    }
+
+    @media screen
+    and (min-width: 1500px) {
+        :root {
+            --container-gap: 2.4rem;
+            --item-gap: 1.8rem;
+            --inner-gap: 1.6rem;
+        }
+    }
+
+/*  */
+
+
+/* Margin */
+
+    :root {
+        --margin: 2rem 0;
+    }
+
+    @media screen
+    and (min-width: 400px) {
+        :root {
+            --margin: 3rem 0;
+        }
+    }
+
+    @media screen
+    and (min-width: 900px) {
+        :root {
+            --margin: 4rem 0;
+        }
+    }
+
+/*  */
