@@ -5,7 +5,7 @@
 
 body {
     background-image: 
-        linear-gradient(-40deg, var(--album-background-dark) 60%, var(--album-background-light))
+        linear-gradient(-40deg, var(--album-background-dark) 50%, var(--album-background-light))
     ;
 }
 

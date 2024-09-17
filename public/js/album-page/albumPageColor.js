@@ -12,7 +12,6 @@ async function getAlbumColors() {
         .then((palette) => {
             console.log(palette)
             albumColors(palette)
-            paletteTester(palette)
         })
 
         .catch((err) => {

@@ -3311,6 +3311,49 @@
             }
          ],
          "average_track_rate": -1
+      },
+      {
+         "name": "1999",
+         "artist": "rich brian",
+         "rating": "10.0",
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "Sometimes",
+               "track_rating": "10"
+            },
+            {
+               "number": 2,
+               "title": "Don't Care",
+               "track_rating": "10"
+            },
+            {
+               "number": 3,
+               "title": "Long Run",
+               "track_rating": "10"
+            },
+            {
+               "number": 4,
+               "title": "When You Come Home",
+               "track_rating": "7"
+            },
+            {
+               "number": 5,
+               "title": "DOA",
+               "track_rating": "9"
+            },
+            {
+               "number": 6,
+               "title": "Love In My Pocket",
+               "track_rating": "6"
+            },
+            {
+               "number": 7,
+               "title": "Sins",
+               "track_rating": "6"
+            }
+         ],
+         "average_track_rate": "8.3"
       }
    ]
 }

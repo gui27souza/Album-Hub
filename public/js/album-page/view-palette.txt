@@ -1,0 +1,89 @@
+
+    
+    const vibrant = `rgb(${palette.Vibrant.rgb[0]}, ${palette.Vibrant.rgb[1]}, ${palette.Vibrant.rgb[2]})`
+    const vibrant_dark = `rgb(${palette.DarkVibrant.rgb[0]}, ${palette.DarkVibrant.rgb[1]}, ${palette.DarkVibrant.rgb[2]})`
+    const vibrant_light = `rgb(${palette.LightVibrant.rgb[0]}, ${palette.LightVibrant.rgb[1]}, ${palette.LightVibrant.rgb[2]})`
+
+    const muted = `rgb(${palette.Muted.rgb[0]}, ${palette.Muted.rgb[1]}, ${palette.Muted.rgb[2]})`
+    const muted_dark = `rgb(${palette.DarkMuted.rgb[0]}, ${palette.DarkMuted.rgb[1]}, ${palette.DarkMuted.rgb[2]})`
+    const muted_light = `rgb(${palette.LightMuted.rgb[0]}, ${palette.LightMuted.rgb[1]}, ${palette.LightMuted.rgb[2]})`
+    
+    document.documentElement.style.setProperty('--vibrant', vibrant)
+    document.documentElement.style.setProperty('--dark-vibrant', vibrant_dark)
+    document.documentElement.style.setProperty('--light-vibrant', vibrant_light)
+    
+    document.documentElement.style.setProperty('--muted', muted)
+    document.documentElement.style.setProperty('--dark-muted', muted_dark)
+    document.documentElement.style.setProperty('--light-muted', muted_light)
+
+
+function paletteTester(palette) {
+
+    for (const color in palette) {
+        const HTML_element = document.getElementById(`${color}`);
+        HTML_element.innerHTML = `${palette[color].population}`;
+    }
+
+}
+
+<div class="palette-tester" id="palette-tester">
+        <div class="Vibrant" id="Vibrant">128</div>
+        <div class="DarkVibrant" id="DarkVibrant">128</div>
+        <div class="LightVibrant" id="LightVibrant">128</div>
+        <div class="Muted" id="Muted">128</div>
+        <div class="DarkMuted" id="DarkMuted">128</div>
+        <div class="LightMuted" id="LightMuted">128</div>
+</div>
+
+:root {
+    --vibrant: rgb(255, 0, 0);
+    --light-vibrant: rgb(255, 255, 255);
+    --dark-vibrant: rgb(0, 0, 0);
+    
+    --muted: rgb(255, 127, 127);
+    --light-muted: rgb(255, 255, 255);
+    --dark-muted: rgb(0, 0, 0);
+}
+
+
+
+.palette-tester {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    z-index: 99;
+}
+
+.palette-tester * {
+    height: 10rem;
+    width: 10rem;
+
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Vibrant {
+    background-color: var(--vibrant);
+}
+#LightVibrant {
+    background-color: var(--light-vibrant);
+}
+#DarkVibrant {
+    background-color: var(--dark-vibrant);
+}
+#Muted {
+    background-color: var(--muted);
+}
+#LightMuted {
+    background-color: var(--light-muted);
+}
+#DarkMuted {
+    background-color: var(--dark-muted);
+}
