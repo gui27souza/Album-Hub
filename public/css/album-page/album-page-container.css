@@ -1,81 +1,28 @@
 :root {
-    --vibrant: rgb(255, 0, 0);
-    --light-vibrant: rgb(255, 255, 255);
-    --dark-vibrant: rgb(0, 0, 0);
-    
-    --muted: rgb(255, 127, 127);
-    --light-muted: rgb(255, 255, 255);
-    --dark-muted: rgb(0, 0, 0);
-
-    --album-sub-items: #000;
-    --album-container: ;
-    --album-background-dark: ;
-    --album-background-light: ;
+    --album-background-dark: #1A1A1D;
+    --album-background-light: #2C2C2E;
 }
 
 body {
     background-image: 
         linear-gradient(-40deg, var(--album-background-dark) 60%, var(--album-background-light))
     ;
-    background-image: 
-        linear-gradient(-40deg, var(--dark-muted) 60%, var(--muted))
-    ;
 }
 
 .album-page-container {
-    background-color: var(--album-container);
     background-color: var(--vibrant);
+    background-color: var(--container);
 }
 
-.album-page-header-title,
-.album-page-header-artist,
+.album-page-header-text * {
+    background-color: var(--light-vibrant);
+    background-color: var(--sub-items);
+}
+
 .tracklist-container,
-.album-info-tags,
-.album-info-links,
-.album-info-summary {
-    background-color: var(--album-sub-items);
+.album-info * {
     background-color: var(--light-vibrant);
-}
-
-.palette-tester {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-
-    position: absolute;
-    top: 0;
-    right: 0;
-
-    z-index: 99;
-}
-
-.palette-tester * {
-    height: 10rem;
-    width: 10rem;
-
-    font-size: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#Vibrant {
-    background-color: var(--vibrant);
-}
-#LightVibrant {
-    background-color: var(--light-vibrant);
-}
-#DarkVibrant {
-    background-color: var(--dark-vibrant);
-}
-#Muted {
-    background-color: var(--muted);
-}
-#LightMuted {
-    background-color: var(--light-muted);
-}
-#DarkMuted {
-    background-color: var(--dark-muted);
+    background-color: var(--sub-items);
 }
 
 .album-page-container {

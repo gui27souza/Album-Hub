@@ -1,4 +1,24 @@
 .actions-container {
+    background-color: var(--container);
+}
+
+.searchbar {
+    background-color: var(--sub-items);
+}
+
+.actions-buttons-order {
+    background-color: var(--sub-items);
+}
+
+.no-items-found {
+    background-color: var(--container);
+}
+
+.no-items-found p {
+    background-color: var(--sub-items);
+}
+
+.actions-container {
     display: flex;
     flex-flow: column;
     align-items: center;
