@@ -1,10 +1,26 @@
 // Modules import 
+    const express = require('express')
+    const path = require('path')
     const fs = require('fs')
     const readline = require('readline')
 // 
 
+
+
+// Server setup
+    async function serverSetup() {
+        const app = express()
+        app.use(express.static(path.join(__dirname, 'public')))
+        app.listen(2727, function () {
+            console.log('Gate 2727')
+            console.log('link: http://localhost:2727/views/index.html')
+        })
+    }
+// 
+
+
 // Creation of an object with the data
-    const data = fs.readFileSync('./data.json')
+    const data = fs.readFileSync('./public/data/data.json')
     const jsonData = JSON.parse(data)
     let api_key = jsonData.api_key
 // 
@@ -26,6 +42,8 @@
     }
 
 // 
+
+
 
 // Gets an album tracklist by LastFM API
 
@@ -237,7 +255,7 @@
 
     const main = async () => {
 
-        let kill_program = 0
+        await serverSetup()
 
         if (jsonData.api_key == 0) {
             api_key = await askQuestion('Insert your LastFM API key: ')
@@ -245,11 +263,11 @@
             fs.writeFileSync('./data.json', JSON.stringify(jsonData, null, 2), 'utf8')
         }
 
-        while (!kill_program) {
+        while (true) {
 
             console.log('\n\t-----Album Hub-----\n')
             
-            let command = await askQuestion('1 - Add album\n2 - Rate Album\\Tracklist\n3 - Remove album\n4 - See my library\n5 - Search album\n6 - Search album tracklist\n\n0 - End program\n\n')
+            let command = await askQuestion('1 - Add album\n2 - Rate Album\\Tracklist\n3 - Remove album\n4 - See my library\n5 - Search album\n6 - Search album tracklist\n\nctrl + c - End program\n\n')
 
             if (command == 1) {
                 let album_name = await askQuestion('\nAlbum Name: ')
@@ -313,12 +331,8 @@
 
             }
 
-            if (command == 0) {
-                kill_program = 1
-            }
         }
 
-        rl.close()
     }
 
     main()
