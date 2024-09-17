@@ -26,12 +26,13 @@ async function getAlbum(album_name, artist) {
 async function loadJSON() {
 
     // Gets the data of the JSON
-    const response = await fetch('../data/data.json')
+    const response = await fetch('../../data/data.json')
+    const response_user = await fetch('../../data/user-data.json')
     
     // Store data in global var
     data = await response.json()
-    console.log(data)
-    api_key = data.api_key
+    user_data = await response_user.json()
+    api_key = user_data.api_key
     data = data.albums
 
     await loadAlbumPage()
@@ -40,8 +41,6 @@ async function loadJSON() {
 async function loadAlbumPage() {
     
     const album = await getAlbum(album_name, artist)
-
-    console.log(album)
 
     const album_title = document.getElementById('album-title')
     const album_artist = document.getElementById('album-artist')

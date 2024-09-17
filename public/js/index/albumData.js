@@ -13,16 +13,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Gets the data of the JSON
         const response = await fetch('../../data/data.json')
+        const response_user = await fetch('../../data/user-data.json')
         
         // Store data in global var
         data = await response.json()
-        console.log(data)
-        api_key = data.api_key
+        user_data = await response_user.json()
+        api_key = user_data.api_key
         data = data.albums
-
-        
-        // Check the loaded data
-        console.log(data)
         
         // Loads all the albums in the home page
         data.forEach(album => {
