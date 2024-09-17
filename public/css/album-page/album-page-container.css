@@ -181,14 +181,18 @@ body {
 .album-info-tags span:nth-of-type(odd){text-align: left;}
 .album-info-tags span:nth-of-type(even){text-align: right;}
 
-.album-info-links {
+.album-rate {
     height: calc(50% - var(--container-gap)/2);
     width: calc(50% - var(--container-gap)/2);
 
     display: flex;
     flex-flow: column;
+    justify-content: center;
+    align-items: center;
 
     border-radius: 1rem;
+
+    font-size: 8rem;
 }
 
 .album-info-summary {

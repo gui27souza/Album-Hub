@@ -14,12 +14,6 @@ async function main() {
 
     await serverSetup()
 
-    let open_browser_interface = await askQuestion('Would you like to open the interface in your default browser?\n1 - Yes\n2 - No\n\n')
-    if (open_browser_interface == 1) {
-        const open = await import('open')
-        open.default('http://localhost:2727/views/index.html')
-    }
-
     console.log(`\nWelcome, ${user_data.username} !`)
 
     while (true) {

@@ -1,6 +1,7 @@
 let data = []
 let album_name
 let artist
+let api_key
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -16,6 +17,7 @@ async function getAlbum(album_name, artist) {
     try {
         const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=${api_key}&artist=${encodeURIComponent(artist)}&album=${encodeURIComponent(album_name)}&format=json`);
         const data = await response.json();
+        console.log(data)
         return data.album;
     } catch (error) {
         console.error('Error fetching album', error);
@@ -62,6 +64,14 @@ function getTracklistHTML(album_name, artist) {
     
     const albumIndex = data.findIndex(album => album.name == album_name && album.artist == artist)
 
+    const album_rate = document.getElementById('album-rate')
+    let rating, average_track_rate
+    if (data[albumIndex].rating == -1) rating = '&Oslash'
+    else rating = data[albumIndex].rating
+    if (data[albumIndex].average_track_rate == -1) average_track_rate = '&Oslash'
+    else average_track_rate = data[albumIndex].average_track_rate
+    album_rate.innerHTML = `${rating} | ${average_track_rate}`
+
     const tracklist = data[albumIndex].tracklist
     let i = 0
 
@@ -82,9 +92,6 @@ function getAlbumInfoHTML(album) {
         if (i%2 == 1) {album_info_tags.innerHTML += `<span>${tag.name} •</span>`}  
         i++      
     });
-
-    const album_info_links = document.getElementById('album-info-links')
-    album_info_links.innerHTML = album.url
 
     const album_info_summary = document.getElementById('album-info-summary')
 
