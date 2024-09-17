@@ -84,7 +84,7 @@
         album_name = album_name.toLowerCase()
         artist = artist.toLowerCase()
 
-        const albumIndex = jsonData.albuns.findIndex(album => album.name === album_name && album.artist === artist)
+        const albumIndex = jsonData.albums.findIndex(album => album.name === album_name && album.artist === artist)
         if(albumIndex != -1) {
             console.log(`\n'${album_name}' by '${artist}' is already in your library!\n`)
             return -1
@@ -100,7 +100,7 @@
         const tracklist = await getTrackList(album_name, artist)
         const newAlbum = { name: album_name, artist: artist, "rating": -1, tracklist: tracklist, "average_track_rate": -1 }
 
-        jsonData.albuns.push(newAlbum)
+        jsonData.albums.push(newAlbum)
 
         const updatedData = JSON.stringify(jsonData, null, 3)
         fs.writeFileSync('./data.json', updatedData, 'utf8')
@@ -125,14 +125,14 @@
         album_name = album_name.toLowerCase()
         artist = artist.toLowerCase()
 
-        album_index = jsonData.albuns.findIndex(album => album.name === album_name && album.artist === artist)
+        album_index = jsonData.albums.findIndex(album => album.name === album_name && album.artist === artist)
 
         if (album_index == -1) {
             console.log(`\n'${album_name}' by '${artist}' is not in your library\n`)
             return
         }
 
-        jsonData.albuns.splice(album_index, 1)
+        jsonData.albums.splice(album_index, 1)
         console.log(`\n'${album_name}' by '${artist}' was removed from your library!\n`)
 
         const updatedData = JSON.stringify(jsonData, null, 3)
@@ -148,14 +148,14 @@
         album_name = album_name.toLowerCase()
         artist = artist.toLowerCase()
         
-        const albumIndex = jsonData.albuns.findIndex(album => album.name === album_name && album.artist === artist)
+        const albumIndex = jsonData.albums.findIndex(album => album.name === album_name && album.artist === artist)
 
         if (albumIndex === -1) {
             console.log(`\n'${album_name}' by '${artist}' is not in your library\n`)
             return
         }
 
-        const album = jsonData.albuns[albumIndex]
+        const album = jsonData.albums[albumIndex]
 
         album.rating = parseFloat(rating).toFixed(1)
         if (rating == 10) album.rating = 10
@@ -296,7 +296,7 @@
 
             if (command == 4) {
                 console.log('')
-                jsonData.albuns.forEach(album => {
+                jsonData.albums.forEach(album => {
                     console.log("Name:\t", album.name)
                     console.log("Artist:\t", album.artist)
                     console.log("Rating:\t", album.rating, '\n')
