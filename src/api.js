@@ -1,6 +1,6 @@
 // Module imports
 const fetch = require('node-fetch')
-const {askQuestion, closeInterface} = require('./user-interface')
+const {askQuestion} = require('./user-interface')
 
 // Get the tracklist of an album
 async function getTracklist(album_name, artist, api_key) {

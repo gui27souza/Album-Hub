@@ -1,7 +1,7 @@
 // Module import
     const {serverSetup} = require('./server')
     const {readData, readUserData, updateData} = require('./file-handler')
-    const {askQuestion} = require('./user-interface')
+    const {askQuestion, closeUserInterface} = require('./user-interface')
     const {getTracklist, searchAlbumData, checkAlbum} = require('./api')
 // 
 
@@ -29,7 +29,7 @@
 
             // Main terminal interface
             console.log('\n\t-----Album Hub-----\n')                
-            let command = await askQuestion('1 - Add album\n2 - Rate Album/Tracklist\n3 - Remove album\n4 - Search album\n5 - Search album tracklist\n\nctrl + c - End program\n\n')
+            let command = await askQuestion('1 - Add album\n2 - Rate Album/Tracklist\n3 - Remove album\n4 - Search album\n5 - Search album tracklist\n\n0 - End program\n\n')
 
             // Add album
             if (command == 1) {
@@ -64,9 +64,16 @@
                 let artist = await askQuestion('Artist: ')
                 await searchTracklist(album_name, artist, user_data.api_key)
             }
-        }
-    }
 
+            if (command == 0) {
+                console.log('')
+                process.exit(0)
+            }
+
+        }
+
+    }
+    
     main()
 
 // 
