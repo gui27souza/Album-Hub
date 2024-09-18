@@ -1,60 +1,77 @@
-const {serverSetup} = require('./server')
-const {readData, readUserData, updateData} = require('./file-handler')
-const {askQuestion} = require('./user-interface')
-const {getTracklist, searchAlbumData, checkAlbum} = require('./api')
+// Module import
+    const {serverSetup} = require('./server')
+    const {readData, readUserData, updateData} = require('./file-handler')
+    const {askQuestion} = require('./user-interface')
+    const {getTracklist, searchAlbumData, checkAlbum} = require('./api')
+// 
 
 
 
-async function main() {
-
-    const user_data = readUserData()
-    const data = readData()
+// Main function
     
-    await checkUserData(user_data)
+    async function main() {
 
-    await serverSetup()
+        // Get data in JSON
+        const user_data = readUserData()
+        const data = readData()
+        
+        // Check user data
+        await checkUserData(user_data)
 
-    console.log(`\nWelcome, ${user_data.username} !`)
+        // Setup the application server
+        await serverSetup()
 
-    while (true) {
+        // Greetings
+        console.log(`\nWelcome, ${user_data.username} !`)
 
-        console.log('\n\t-----Album Hub-----\n')
-            
-        let command = await askQuestion('1 - Add album\n2 - Rate Album\\Tracklist\n3 - Remove album\n4 - Search album\n5 - Search album tracklist\n\nctrl + c - End program\n\n')
+        // Keeps the program on until the user close it
+        while (true) {
 
-        if (command == 1) {
-            let album_name = await askQuestion('\nAlbum Name: ')
-            let artist = await askQuestion('Artist: ')
-            await addAlbum(album_name, artist, data, user_data.api_key)
-        }
+            // Main terminal interface
+            console.log('\n\t-----Album Hub-----\n')                
+            let command = await askQuestion('1 - Add album\n2 - Rate Album/Tracklist\n3 - Remove album\n4 - Search album\n5 - Search album tracklist\n\nctrl + c - End program\n\n')
 
-        if (command == 2) {
-            let album_name = await askQuestion('\nAlbum Name: ')
-            let artist = await askQuestion('Artist: ')
-            await rateTracklist(album_name, artist, data, user_data.api_key, true)
-        }
+            // Add album
+            if (command == 1) {
+                let album_name = await askQuestion('\nAlbum Name: ')
+                let artist = await askQuestion('Artist: ')
+                await addAlbum(album_name, artist, data, user_data.api_key)
+            }
 
-        if (command == 3) {
-            let album_name = await askQuestion('\nAlbum Name: ')
-            let artist = await askQuestion('Artist: ')
-            removeAlbum(album_name, artist, data)
-        }
+            // Rate album/tracklist
+            if (command == 2) {
+                let album_name = await askQuestion('\nAlbum Name: ')
+                let artist = await askQuestion('Artist: ')
+                await rateTracklist(album_name, artist, data, user_data.api_key, true)
+            }
 
-        if (command == 4) {
-            let search = await askQuestion('\nSearch terms: ')
-            await searchTerms(search, data, user_data.api_key)
-        }
+            // Remove album
+            if (command == 3) {
+                let album_name = await askQuestion('\nAlbum Name: ')
+                let artist = await askQuestion('Artist: ')
+                removeAlbum(album_name, artist, data)
+            }
 
-        if (command == 5) {
-            let album_name = await askQuestion('\nAlbum Name: ')
-            let artist = await askQuestion('Artist: ')
-            await searchTracklist(album_name, artist, user_data.api_key)
+            // Search album
+            if (command == 4) {
+                let search = await askQuestion('\nSearch terms: ')
+                await searchTerms(search, data, user_data.api_key)
+            }
+
+            // Search album tracklist
+            if (command == 5) {
+                let album_name = await askQuestion('\nAlbum Name: ')
+                let artist = await askQuestion('Artist: ')
+                await searchTracklist(album_name, artist, user_data.api_key)
+            }
         }
     }
-}
 
-main()
+    main()
 
+// 
+
+// Check if the user already has a username and a LastFM API key
 async function checkUserData(user_data) {
 
     if (user_data.username == -1) {
@@ -70,6 +87,7 @@ async function checkUserData(user_data) {
     }  
 }
 
+// Check if an album is valid and add it to the library and, if required, call rateTracklist
 async function addAlbum(album_name, artist, data, api_key) {
     
     album_name = album_name.toLowerCase()
@@ -108,65 +126,7 @@ async function addAlbum(album_name, artist, data, api_key) {
     return 1
 }
 
-function removeAlbum(album_name, artist, data) {
-
-    album_name = album_name.toLowerCase()
-    artist = artist.toLowerCase()
-
-    album_index = data.albums.findIndex(album => album.name === album_name && album.artist === artist)
-
-    if (album_index == -1) {
-        console.log(`\n'${album_name}' by '${artist}' is not in your library\n`)
-        return
-    }
-
-    data.albums.splice(album_index, 1)
-    console.log(`\n'${album_name}' by '${artist}' was removed from your library!\n`)
-
-    updateData(data, 'data')
-}
-
-async function searchTerms(search, data, api_key) {
-
-    let search_results = await searchAlbumData(search, api_key)
-
-    if (search_results.length == 0) {
-        console.log('No items found\n')
-        return
-    }
-
-    console.log('')
-    let i = 0
-    search_results.forEach(album => {
-        console.log(`${++i} - ${album.name} by ${album.artist}`)
-    })
-
-    let command = await askQuestion('\nWould you like to add any to your library?\n1 - Yes\n2 - No\n\n')
-    if (command == 1) {
-        let album_index = await askQuestion('\nType the value of the album in the list: ')
-        album_add = search_results[album_index-1]
-        await addAlbum(album_add.name, album_add.artist, data, api_key)
-    }
-}
-
-async function searchTracklist(album_name, artist, api_key) {
-    
-    let check = await checkAlbum(album_name, artist, api_key)
-    if (check.length == 2) {
-        album_name = check[0]
-        artist = check[1]
-    }
-
-    let tracklist = await getTracklist(album_name, artist, api_key)
-    if (tracklist == -1) return
-    
-    console.log('')
-    let i = 0
-    tracklist.forEach(track => {
-        console.log(++i,'-',track.title)
-    })
-}
-
+// Check if an album is valid and allow the user to rate the album and, if required, its tracks
 async function rateTracklist(album_name, artist, data, api_key) {
 
     album_name = album_name.toLowerCase()
@@ -210,4 +170,66 @@ async function rateTracklist(album_name, artist, data, api_key) {
     }
     
     updateData(data, 'data')
+}
+
+// Remove an album from the library
+function removeAlbum(album_name, artist, data) {
+
+    album_name = album_name.toLowerCase()
+    artist = artist.toLowerCase()
+
+    album_index = data.albums.findIndex(album => album.name === album_name && album.artist === artist)
+
+    if (album_index == -1) {
+        console.log(`\n'${album_name}' by '${artist}' is not in your library\n`)
+        return
+    }
+
+    data.albums.splice(album_index, 1)
+    console.log(`\n'${album_name}' by '${artist}' was removed from your library!\n`)
+
+    updateData(data, 'data')
+}
+
+// Search for terms and return 5 possible albums, and if required, call the function to add album to library
+async function searchTerms(search, data, api_key) {
+
+    let search_results = await searchAlbumData(search, api_key)
+
+    if (search_results.length == 0) {
+        console.log('No items found\n')
+        return
+    }
+
+    console.log('')
+    let i = 0
+    search_results.forEach(album => {
+        console.log(`${++i} - ${album.name} by ${album.artist}`)
+    })
+
+    let command = await askQuestion('\nWould you like to add any to your library?\n1 - Yes\n2 - No\n\n')
+    if (command == 1) {
+        let album_index = await askQuestion('\nType the value of the album in the list: ')
+        album_add = search_results[album_index-1]
+        await addAlbum(album_add.name, album_add.artist, data, api_key)
+    }
+}
+
+// Check if an album is valid and get its tracklist
+async function searchTracklist(album_name, artist, api_key) {
+    
+    let check = await checkAlbum(album_name, artist, api_key)
+    if (check.length == 2) {
+        album_name = check[0]
+        artist = check[1]
+    }
+
+    let tracklist = await getTracklist(album_name, artist, api_key)
+    if (tracklist == -1) return
+    
+    console.log('')
+    let i = 0
+    tracklist.forEach(track => {
+        console.log(++i,'-',track.title)
+    })
 }

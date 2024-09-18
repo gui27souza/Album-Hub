@@ -1,7 +1,8 @@
-// API fetch functions
+// Module imports
 const fetch = require('node-fetch')
 const {askQuestion, closeInterface} = require('./user-interface')
 
+// Get the tracklist of an album
 async function getTracklist(album_name, artist, api_key) {
 
     try {
@@ -29,7 +30,7 @@ async function getTracklist(album_name, artist, api_key) {
 
 }
 
-
+// Search albuns based on given terms
 async function searchAlbumData(search, api_key) {
 
     try {
@@ -47,6 +48,7 @@ async function searchAlbumData(search, api_key) {
 
 }
 
+// Check if an album is valid and give 2 options if is not
 async function checkAlbum(album_name, artist, api_key) {
 
     const tracklist = await getTracklist(album_name, artist, api_key)
@@ -92,4 +94,5 @@ async function checkAlbum(album_name, artist, api_key) {
 
 }
 
+// Module exports
 module.exports = {getTracklist, searchAlbumData, checkAlbum}
