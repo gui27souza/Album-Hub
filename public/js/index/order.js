@@ -1,7 +1,10 @@
-previous_order_type = ''
+// Global var to manage page funcionality
+let previous_order_type = ''
 
+// Changes the order of the albums
 function order(order_type) {
 
+    // Reloads the album container
     if (previous_order_type == 'unrated') {
         document.getElementById('album-container').innerHTML = ''
         data.forEach(album => {
@@ -9,19 +12,22 @@ function order(order_type) {
         })
     }
 
+    // Get album elements and sort them
     let all_items = Array.from(document.getElementsByClassName('album-item'))
-
     let all_items_ordered = sortBy(all_items, order_type)
 
+    // Reset the container to put the new order
     document.getElementById('album-container').innerHTML = ''
-
     all_items_ordered.forEach(item => document.getElementById('album-container').appendChild(item))
 
+    // Manage actions options
     inputSelect(order_type)
-    
+
+    // Manage page funcionality
     previous_order_type = order_type
 }
 
+// Sort the elments by the selected order
 function sortBy(all_items, order_type) {
     
     switch (order_type) {
@@ -183,6 +189,7 @@ function sortBy(all_items, order_type) {
     return all_items
 }
 
+// Manage actions style
 function inputSelect(order_type) {
 
     const input_select = document.getElementsByClassName('order-option')

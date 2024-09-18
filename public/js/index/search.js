@@ -20,11 +20,14 @@
         // Gets the value
         const input_value = searchbar.value.trim().toLowerCase()
 
+        // Verify by each item
         for (let item of all_albums) {
 
+            // Element data
             let album_name = item.getAttribute('data-album')
             let artist = item.getAttribute('data-artist')
 
+            // Check the data
             if (album_name.includes(input_value) || artist.includes(input_value) ||
             (album_name + ' ' + artist).includes(input_value) || (artist + ' ' + album_name).includes(input_value)) {
                 item.style.display = 'flex'
@@ -35,6 +38,7 @@
             }
         }
 
+        // no-items-found section manage
         noItemsFound(there_is_item)
 
     })

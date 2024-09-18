@@ -1,17 +1,17 @@
-// Global var that will recieve the JSON data
+// Global var that will recieve the JSON data and LastFM API key
 let data = []
 let api_key
 
-// Makes sure that the data store happens once
+// Make sure that the data store happens once
 document.addEventListener('DOMContentLoaded', () => {
     loadJSON()
 })
 
-// Get th data from the JSON file and uses it
+// Get the data from the JSON file and use it
 
     async function loadJSON() {
 
-        // Gets the data of the JSON
+        // Get the data of the JSON
         const response = await fetch('../../data/data.json')
         const response_user = await fetch('../../data/user-data.json')
         
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
         api_key = user_data.api_key
         data = data.albums
         
-        // Loads all the albums in the home page
+        // Load all the albums in the home page
         data.forEach(album => {
             createAlbums(album.name, album.artist, album.rating, album.average_track_rate)
         })
@@ -29,11 +29,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // 
 
-// Creates the album HTML element in the interface
+// Create the album HTML element in the interface
 
     async function createAlbums(album_name, artist, rating, average_track_rate) {
 
-        // Creates and add classes and attributes to the item div
+        // Create and add classes and attributes to the item div
         const album_element = document.createElement("div")
         album_element.classList.add('album-item')
         album_element.setAttribute('onclick', `tracklist('${album_name}', '${artist}')`)
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
         album_element.setAttribute('data-artist', `${artist}`)
         album_element.setAttribute('data-rate', `${rating}`)
 
-        // Gets the actual album name and cover
+        // Get the actual album name and cover
         const album_object = await getAlbum(album_name, artist)
         const image_link = album_object.image[4]['#text']
 
@@ -59,22 +59,27 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         `;
 
-        // Appends item to the container
+        // Append item to the container
         document.getElementById("album-container").appendChild(album_element)
     }
 
 // 
 
-// Gets the actual album object
+// Get the actual album object
 
     async function getAlbum(album_name, artist) {
+
         try {
-            const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=${api_key}&artist=${encodeURIComponent(artist)}&album=${encodeURIComponent(album_name)}&format=json`);
-            const data = await response.json();
-            return data.album;
-        } catch (error) {
-            console.error('Error fetching album', error);
-            return {};
+            const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=${api_key}&artist=${encodeURIComponent(artist)}&album=${encodeURIComponent(album_name)}&format=json`)
+            
+            const data = await response.json()
+
+            return data.album
+        } 
+        
+        catch (error) {
+            console.error('Error fetching album', error)
+            return {}
         }
     }
 

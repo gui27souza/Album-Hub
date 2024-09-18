@@ -1,9 +1,11 @@
-let data = []
-let album_name
-let artist
-let api_key
+// Global variables
+    let data = []
+    let album_name
+    let artist
+    let api_key
+// 
 
-
+// 
 document.addEventListener('DOMContentLoaded', () => {
 
     loadJSON()
@@ -13,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     artist = params.get('artist')
 })
 
+// Get the album data from LastFM API
 async function getAlbum(album_name, artist) {
     try {
         const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=${api_key}&artist=${encodeURIComponent(artist)}&album=${encodeURIComponent(album_name)}&format=json`);
@@ -25,6 +28,7 @@ async function getAlbum(album_name, artist) {
     }
 }
 
+// Gets the data
 async function loadJSON() {
 
     // Gets the data of the JSON
@@ -37,9 +41,11 @@ async function loadJSON() {
     api_key = user_data.api_key
     data = data.albums
 
+    // Load album page
     await loadAlbumPage()
 }
 
+// Put the album data in the HTML elements
 async function loadAlbumPage() {
     
     const album = await getAlbum(album_name, artist)
@@ -58,13 +64,17 @@ async function loadAlbumPage() {
     await getAlbumColors()
 }
 
+// Put the album tracklist and tracklist data in the HTML elements
 function getTracklistHTML(album_name, artist) {
 
+    // HTML elements
     const tracklist_div = document.getElementById('tracklist-items')
+    const album_rate = document.getElementById('album-rate')
     
+    // Find album index in the data
     const albumIndex = data.findIndex(album => album.name == album_name && album.artist == artist)
 
-    const album_rate = document.getElementById('album-rate')
+    // Get album rating
     let rating, average_track_rate
     if (data[albumIndex].rating == -1) rating = '&Oslash'
     else rating = data[albumIndex].rating
@@ -72,20 +82,23 @@ function getTracklistHTML(album_name, artist) {
     else average_track_rate = data[albumIndex].average_track_rate
     album_rate.innerHTML = `${rating} | ${average_track_rate}`
 
+    // Get tracklist, and if there is, rate
     const tracklist = data[albumIndex].tracklist
     let i = 0
-
     if (tracklist[0].track_rating == -1) unrated = `&Oslash`
-
     tracklist.forEach(track => {
         tracklist_div.innerHTML += `<span>${++i}. ${track.title} ${(track.track_rating == -1)? '' : '| ' + track.track_rating}</span>`
     })
+
 }
 
+// Put the album infor in the HTML
 function getAlbumInfoHTML(album) {
     
+    // HTML elements
     const album_info_tags = document.getElementById('album-info-tags')
     
+    // Album tags
     let i = 0
     album.tags.tag.forEach(tag => {
         if (i%2 == 0) {album_info_tags.innerHTML += `<span>• ${tag.name}</span>`}
@@ -93,8 +106,8 @@ function getAlbumInfoHTML(album) {
         i++      
     });
 
+    // Album wiki
     const album_info_summary = document.getElementById('album-info-summary')
-
     if (album.wiki != undefined) album_info_summary.innerHTML = album.wiki.summary
     else album_info_summary.innerHTML = 'No wiki for this album'
 }
