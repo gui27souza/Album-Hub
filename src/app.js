@@ -36,6 +36,7 @@
                 let album_name = await askQuestion('\nAlbum Name: ')
                 let artist = await askQuestion('Artist: ')
                 await addAlbum(album_name, artist, data, user_data.api_key)
+                await wait(2000)
             }
 
             // Rate album/tracklist
@@ -43,6 +44,7 @@
                 let album_name = await askQuestion('\nAlbum Name: ')
                 let artist = await askQuestion('Artist: ')
                 await rateTracklist(album_name, artist, data, user_data.api_key, true)
+                await wait(2000)
             }
 
             // Remove album
@@ -50,12 +52,14 @@
                 let album_name = await askQuestion('\nAlbum Name: ')
                 let artist = await askQuestion('Artist: ')
                 removeAlbum(album_name, artist, data)
+                await wait(2000)
             }
 
             // Search album
             if (command == 4) {
                 let search = await askQuestion('\nSearch terms: ')
                 await searchTerms(search, data, user_data.api_key)
+                await wait(3000)
             }
 
             // Search album tracklist
@@ -63,6 +67,7 @@
                 let album_name = await askQuestion('\nAlbum Name: ')
                 let artist = await askQuestion('Artist: ')
                 await searchTracklist(album_name, artist, user_data.api_key)
+                await wait(5000)
             }
 
             if (command == 0) {
@@ -239,4 +244,8 @@ async function searchTracklist(album_name, artist, api_key) {
     tracklist.forEach(track => {
         console.log(++i,'-',track.title)
     })
+}
+
+async function wait(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms))
 }
