@@ -39,8 +39,18 @@ Album Hub is a personal album library where the user can rate them and their tra
   #### Server
   - After executing the app.js file, the program will create a local host server with the gate 2727, so you can access the interface
   - It will be asked if you'd like to open the interface in your default browser
-  ![image](https://github.com/user-attachments/assets/6f069162-a904-4c43-92f5-8cde71eb0bd5)
 
+  ```
+    Insert an username: your_username
+    Insert your LastFM API key: your_api_key
+
+    Gate 2727
+    link: http://localhost:2727/views/index.html
+
+    Would you like to open the interface in your default browser?
+    1 - Yes
+    2 - No
+  ```
 
 ### Terminal/Interface:
 
@@ -55,18 +65,65 @@ Album Hub is a personal album library where the user can rate them and their tra
   - After executing the node command, something like this should appear:
   <br>
 
-  ![image](https://github.com/user-attachments/assets/af56111f-b6c4-44c3-b410-e9e06b39d9d8)
+  ```
+    Welcome, your_username !
 
+            -----Album Hub-----
+
+    1 - Add album
+    2 - Rate Album/Tracklist
+    3 - Remove album
+    4 - Search album
+    5 - Search album tracklist
+
+    0 - End program
+  ```
   
   - Type 1 to add your first album, after you will get asked about the name of the album and the artist, lets take 'Yeezus' by 'Kanye West' for example
   <br>
-  
-  ![image](https://github.com/user-attachments/assets/d79d08c7-a475-4d70-883e-4b693ffbfea0)
+
+  ```
+    Welcome, your_username !
+
+            -----Album Hub-----
+
+    1 - Add album
+    2 - Rate Album/Tracklist
+    3 - Remove album
+    4 - Search album
+    5 - Search album tracklist
+
+    0 - End program
+
+    1
+
+    Album Name: yeezus
+    Artist: kanye west
+  ```
 
   - It will be asked if yu'd like to rate the album and its tracklist
   <br>
 
-  ![image](https://github.com/user-attachments/assets/e9eac407-123e-4f59-8f2a-6e40b149d333)
+  ```
+    Album Name: yeezus
+    Artist: kanye west
+
+    Would you like to rate it?
+    1 - Yes
+    2 - No
+
+    1
+
+    Rating: 10
+
+    Would you like to rate the tracks?
+    1 - Yes
+    2 - No
+
+    2
+
+    Album added to you library!
+  ```
 
   - This is what you should see in the interface
   <br>
