@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Load all the albums in the home page
         data.forEach(album => {
-            createAlbums(album.name, album.artist, album.rating, album.average_track_rate)
+            createAlbums(album.name, album.artist, album.rate, album.average_track_rate)
         })
     }
 
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Create the album HTML element in the interface
 
-    async function createAlbums(album_name, artist, rating, average_track_rate) {
+    async function createAlbums(album_name, artist, rate, average_track_rate) {
 
         // Create and add classes and attributes to the item div
         const album_element = document.createElement("div")
@@ -39,14 +39,14 @@ document.addEventListener('DOMContentLoaded', () => {
         album_element.setAttribute('onclick', `tracklist('${album_name}', '${artist}')`)
         album_element.setAttribute('data-album', `${album_name}`)
         album_element.setAttribute('data-artist', `${artist}`)
-        album_element.setAttribute('data-rate', `${rating}`)
+        album_element.setAttribute('data-rate', `${rate}`)
 
         // Get the actual album name and cover
         const album_object = await getAlbum(album_name, artist)
         const image_link = album_object.image[4]['#text']
 
         // In case is not rated yet
-        if (rating == -1) rating = `&Oslash`
+        if (rate == -1) rate = `&Oslash`
         if (average_track_rate == -1) average_track_rate = `&Oslash`
 
         // HTML element
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="album-text">
                 <span class="album-name album-text-item">${album_object.name}</span>
                 <span class="album-artist album-text-item">${album_object.artist}</span>
-                <span class="album-rating album-text-item">Rate: ${rating} | Tracks rate: ${average_track_rate}</span>
+                <span class="album-rate album-text-item">Rate: ${rate} | Tracks rate: ${average_track_rate}</span>
             </div>
         `;
 

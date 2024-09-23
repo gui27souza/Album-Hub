@@ -122,7 +122,8 @@ async function addAlbum(album_name, artist, data, api_key) {
     const newAlbum = { 
         name: album_name,
         artist: artist,
-        "rating": -1,
+        "rate": -1,
+        "custom_rates": -1,
         tracklist: tracklist,
         "average_track_rate": -1 
     }    
@@ -153,8 +154,8 @@ async function rateTracklist(album_name, artist, data, api_key) {
 
     const album = data.albums[albumIndex]
 
-    let album_rating = await askQuestion('\nRating: ')
-    album.rating = parseFloat(album_rating).toFixed(1)
+    let album_rate = await askQuestion('\nRate: ')
+    album.rate = parseFloat(album_rate).toFixed(1)
 
     let rate_tracks = await askQuestion(`\nWould you like to rate the tracks?\n1 - Yes\n2 - No\n\n`)
     if (rate_tracks == 1) {
@@ -166,19 +167,19 @@ async function rateTracklist(album_name, artist, data, api_key) {
 
         console.log('')
         for (const track of tracklist) {
-            let track_rating = await askQuestion(`${track.title}: `)
-            track.track_rating = track_rating
-            if (track_rating === '-' || isNaN(parseFloat(track_rating))) continue
-            total_rate += parseFloat(track_rating)
+            let track_rate = await askQuestion(`${track.title}: `)
+            track.track_rate = track_rate
+            if (track_rate === '-' || isNaN(parseFloat(track_rate))) continue
+            total_rate += parseFloat(track_rate)
             total_tracks++
         }
 
-        let average_rating = total_rate / total_tracks
+        let average_rate = total_rate / total_tracks
 
         album.tracklist = tracklist
-        album.average_track_rate = average_rating.toFixed(1)
+        album.average_track_rate = average_rate.toFixed(1)
 
-        console.log(`\nThe average track rating is ${average_rating.toFixed(1)}!\n`)
+        console.log(`\nThe average track rate is ${average_rate.toFixed(1)}!\n`)
     }
     
     updateData(data, 'data')

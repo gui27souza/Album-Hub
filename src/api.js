@@ -17,7 +17,7 @@ async function getTracklist(album_name, artist, api_key) {
             tracklist.push({
                 "number": ++i,
                 "title": track.name,
-                "track_rating": -1
+                "track_rate": -1
             })
         })
 

@@ -8,7 +8,7 @@ function order(order_type) {
     if (previous_order_type == 'unrated') {
         document.getElementById('album-container').innerHTML = ''
         data.forEach(album => {
-            createAlbums(album.name, album.artist, album.rating, album.average_track_rate)
+            createAlbums(album.name, album.artist, album.rate, album.average_track_rate)
         })
     }
 

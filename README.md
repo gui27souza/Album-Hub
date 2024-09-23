@@ -114,7 +114,7 @@ Album Hub is a personal album library where the user can rate them and their tra
 
     1
 
-    Rating: 10
+    Rate: 10
 
     Would you like to rate the tracks?
     1 - Yes

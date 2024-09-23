@@ -56,7 +56,7 @@ let tracklist_is_on = false
         // Create each track element
         let i = 0
         tracklist.forEach(track => {
-            tracklist_div.innerHTML += `<span>${++i}. ${track.title} ${(track.track_rating == -1)? '' : '| ' + track.track_rating}</span>`
+            tracklist_div.innerHTML += `<span>${++i}. ${track.title} ${(track.track_rate == -1)? '' : '| ' + track.track_rate}</span>`
         })
     }
 

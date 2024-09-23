@@ -74,20 +74,20 @@ function getTracklistHTML(album_name, artist) {
     // Find album index in the data
     const albumIndex = data.findIndex(album => album.name == album_name && album.artist == artist)
 
-    // Get album rating
-    let rating, average_track_rate
-    if (data[albumIndex].rating == -1) rating = '&Oslash'
-    else rating = data[albumIndex].rating
+    // Get album rate
+    let rate, average_track_rate
+    if (data[albumIndex].rate == -1) rate = '&Oslash'
+    else rate = data[albumIndex].rate
     if (data[albumIndex].average_track_rate == -1) average_track_rate = '&Oslash'
     else average_track_rate = data[albumIndex].average_track_rate
-    album_rate.innerHTML = `${rating} | ${average_track_rate}`
+    album_rate.innerHTML = `${rate} | ${average_track_rate}`
 
     // Get tracklist, and if there is, rate
     const tracklist = data[albumIndex].tracklist
     let i = 0
-    if (tracklist[0].track_rating == -1) unrated = `&Oslash`
+    if (tracklist[0].track_rate == -1) unrated = `&Oslash`
     tracklist.forEach(track => {
-        tracklist_div.innerHTML += `<span>${++i}. ${track.title} ${(track.track_rating == -1)? '' : '| ' + track.track_rating}</span>`
+        tracklist_div.innerHTML += `<span>${++i}. ${track.title} ${(track.track_rate == -1)? '' : '| ' + track.track_rate}</span>`
     })
 
 }
