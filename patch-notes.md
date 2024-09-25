@@ -1,5 +1,15 @@
 # Album-Hub Patch Notes
 
+### Album-Hub 2.1
+
+- Custom rates
+  - instrumental
+  - cover
+  - aesthetic
+  - firts listen impact
+
+- Backend: app modules organization
+
 ### Album-Hub 2.0
 
 - File architecture rebuild
