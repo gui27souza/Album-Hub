@@ -25,19 +25,21 @@ Album Hub is a personal album library where the user can rate them and their tra
 
   - Clone the repository or download the zip file
   - Open the directory in the terminal
-  - Access the src directory
+  - Set up the node modules
   ```
-    cd src/
+    npm install
   ```
-  - Execute the main file
+  
+  - Run the program
   ```
-    node app.js
+    npm start
   ```
+
   - Only in your first time using, you will be required to give your API key
   - It will also be asked once about a username, feel free to choose any !
   
   #### Server
-  - After executing the app.js file, the program will create a local host server with the gate 2727, so you can access the interface
+  - After it starts running, the program will create a local host server with the gate 2727, so you can access the interface
   - It will be asked if you'd like to open the interface in your default browser
 
   ```
