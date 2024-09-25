@@ -1,5 +1,5 @@
 // Module imports
-const fetch = require('node-fetch')
+import('node-fetch')
 const {askQuestion} = require('./user-interface')
 
 // Get the tracklist of an album

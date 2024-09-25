@@ -1,8 +1,11 @@
 // Module import
     const {serverSetup} = require('./server')
     const {readData, readUserData, updateData} = require('./file-handler')
-    const {askQuestion, closeUserInterface} = require('./user-interface')
-    const {getTracklist, searchAlbumData, checkAlbum} = require('./api')
+    const {askQuestion} = require('./user-interface')
+
+    const {addAlbum, removeAlbum} = require('./app-modules/items-manage')
+    const {searchTerms, searchTracklist} = require('./app-modules/items-search')
+    const {rateTracklist} = require('./app-modules/items-rate')
 // 
 
 
@@ -99,154 +102,7 @@ async function checkUserData(user_data) {
     }  
 }
 
-// Check if an album is valid and add it to the library and, if required, call rateTracklist
-async function addAlbum(album_name, artist, data, api_key) {
-    
-    album_name = album_name.toLowerCase()
-    artist = artist.toLowerCase()
-
-    const albumIndex = data.albums.findIndex(album => album.name === album_name && album.artist === artist)
-    if(albumIndex != -1) {
-        console.log(`\n'${album_name}' by '${artist}' is already in your library!\n`)
-        return -1
-    }
-
-    const check = await checkAlbum(album_name, artist, api_key)
-    if (check == -1) return
-    if (check.length == 2) {
-        await addAlbum(check[0], check[1], data, api_key)
-        return
-    }
-
-    const tracklist = await getTracklist(album_name, artist, api_key)
-    const newAlbum = { 
-        name: album_name,
-        artist: artist,
-        "rate": -1,
-        "custom_rates": -1,
-        tracklist: tracklist,
-        "average_track_rate": -1 
-    }    
-
-    data.albums.push(newAlbum)
-
-    let command = await askQuestion('\nWould you like to rate it?\n1 - Yes\n2 - No\n\n')
-    if (command == 1) await rateTracklist(album_name, artist, data, api_key)
-
-    updateData(data, 'data')
-    console.log('\nAlbum added to you library!\n')
-
-    return 1
-}
-
-// Check if an album is valid and allow the user to rate the album and, if required, its tracks
-async function rateTracklist(album_name, artist, data, api_key) {
-
-    album_name = album_name.toLowerCase()
-    artist = artist.toLowerCase()
-    
-    const albumIndex = data.albums.findIndex(album => album.name === album_name && album.artist === artist)
-
-    if (albumIndex === -1) {
-        console.log(`\n'${album_name}' by '${artist}' is not in your library\n`)
-        return
-    }
-
-    const album = data.albums[albumIndex]
-
-    let album_rate = await askQuestion('\nRate: ')
-    album.rate = parseFloat(album_rate).toFixed(1)
-
-    let rate_tracks = await askQuestion(`\nWould you like to rate the tracks?\n1 - Yes\n2 - No\n\n`)
-    if (rate_tracks == 1) {
-
-        const tracklist = await getTracklist(album_name, artist, api_key)
-
-        let total_rate = 0
-        let total_tracks = 0
-
-        console.log('')
-        for (const track of tracklist) {
-            let track_rate = await askQuestion(`${track.title}: `)
-            track.track_rate = track_rate
-            if (track_rate === '-' || isNaN(parseFloat(track_rate))) continue
-            total_rate += parseFloat(track_rate)
-            total_tracks++
-        }
-
-        let average_rate = total_rate / total_tracks
-
-        album.tracklist = tracklist
-        album.average_track_rate = average_rate.toFixed(1)
-
-        console.log(`\nThe average track rate is ${average_rate.toFixed(1)}!\n`)
-    }
-    
-    updateData(data, 'data')
-}
-
-// Remove an album from the library
-function removeAlbum(album_name, artist, data) {
-
-    album_name = album_name.toLowerCase()
-    artist = artist.toLowerCase()
-
-    album_index = data.albums.findIndex(album => album.name === album_name && album.artist === artist)
-
-    if (album_index == -1) {
-        console.log(`\n'${album_name}' by '${artist}' is not in your library\n`)
-        return
-    }
-
-    data.albums.splice(album_index, 1)
-    console.log(`\n'${album_name}' by '${artist}' was removed from your library!\n`)
-
-    updateData(data, 'data')
-}
-
-// Search for terms and return 5 possible albums, and if required, call the function to add album to library
-async function searchTerms(search, data, api_key) {
-
-    let search_results = await searchAlbumData(search, api_key)
-
-    if (search_results.length == 0) {
-        console.log('No items found\n')
-        return
-    }
-
-    console.log('')
-    let i = 0
-    search_results.forEach(album => {
-        console.log(`${++i} - ${album.name} by ${album.artist}`)
-    })
-
-    let command = await askQuestion('\nWould you like to add any to your library?\n1 - Yes\n2 - No\n\n')
-    if (command == 1) {
-        let album_index = await askQuestion('\nType the value of the album in the list: ')
-        album_add = search_results[album_index-1]
-        await addAlbum(album_add.name, album_add.artist, data, api_key)
-    }
-}
-
-// Check if an album is valid and get its tracklist
-async function searchTracklist(album_name, artist, api_key) {
-    
-    let check = await checkAlbum(album_name, artist, api_key)
-    if (check.length == 2) {
-        album_name = check[0]
-        artist = check[1]
-    }
-
-    let tracklist = await getTracklist(album_name, artist, api_key)
-    if (tracklist == -1) return
-    
-    console.log('')
-    let i = 0
-    tracklist.forEach(track => {
-        console.log(++i,'-',track.title)
-    })
-}
-
+// Give some time to read the terminal
 async function wait(ms) {
     return new Promise(resolve => setTimeout(resolve, ms))
 }
