@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="../css/index/actions.css">
         <link rel="stylesheet" href="../css/index/album-container.css">
         <link rel="stylesheet" href="../css/index/tracklist-container.css">
+        <link rel="stylesheet" href="../css/index/add-album.css">
     <!---->
 
 </head>
@@ -90,6 +91,9 @@
                         
             </select>
 
+            <div class="actions-buttons-add" onclick="openAddAlbum()">
+                Add an Album +
+            </div>
         </div>
 
     </section>
@@ -134,6 +138,62 @@
         </div>
     </section>
 
+    <div class="add-album" id="add-album">
+
+        <div class="add-album-hide" onclick="openAddAlbum()"></div>
+
+        <div class="add-album-container">
+            <div class="add-album-input"> 
+
+                <input class="add-album-name" type="text" name="" id="add-album-name" placeholder="Album name">
+
+                <input class="add-album-artist" type="text" name="" id="add-album-artist" placeholder="Artist">
+                
+                <div class="add-album-submit">Add</div>
+            </div>
+
+            <div class="add-album-output">
+                
+                <div class="album-item">
+                    <img src="image.png" alt="" class="album-image">
+                    <div class="album-text">
+                        <span class="album-name album-text-item">clancy</span>
+                        <span class="album-artist album-text-item">twenty one pilots</span>
+                        <span class="album-rate album-text-item">Rate: 10 | Tracks rate: 9.7</span>
+                    </div>
+                </div>
+                
+                <div class="album-item">
+                    <img src="image.png" alt="" class="album-image">
+                    <div class="album-text">
+                        <span class="album-name album-text-item">clancy</span>
+                        <span class="album-artist album-text-item">twenty one pilots</span>
+                        <span class="album-rate album-text-item">Rate: 10 | Tracks rate: 9.7</span>
+                    </div>
+                </div>
+                
+                <div class="album-item">
+                    <img src="image.png" alt="" class="album-image">
+                    <div class="album-text">
+                        <span class="album-name album-text-item">clancy</span>
+                        <span class="album-artist album-text-item">twenty one pilots</span>
+                        <span class="album-rate album-text-item">Rate: 10 | Tracks rate: 9.7</span>
+                    </div>
+                </div>
+                
+                <div class="album-item">
+                    <img src="image.png" alt="" class="album-image">
+                    <div class="album-text">
+                        <span class="album-name album-text-item">clancy</span>
+                        <span class="album-artist album-text-item">twenty one pilots</span>
+                        <span class="album-rate album-text-item">Rate: 10 | Tracks rate: 9.7</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 
     <!-- Data Related Scripts -->
         <script src="../js/index/controller.js"></script>
@@ -142,6 +202,8 @@
         <script src="../js/index/search.js"></script>
         <script src="../js/index/loadTracklist.js"></script>
         <script src="../js/index/order.js"></script>
+        
+        <script src="../js/index/addAlbum.js"></script>
     <!---->
 </body>
 </html>
