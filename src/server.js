@@ -1,14 +1,17 @@
 // Module imports
 const path = require('path')
 const express = require('express')
+const router = require('./controller')
 const {askQuestion} = require('./user-interface')
 
 // Setup the server by express
 async function serverSetup() {
     
-    // Creates a localhost server with the gate 2727
     const app = express()
     app.use(express.static(path.join(__dirname, '../public')))
+
+    app.use('/api', router)
+    
     await new Promise((resolve) => {
         app.listen(2727, function () {
             console.log('\nGate 2727')

@@ -1,5 +1,6 @@
 // Module import
     const {serverSetup} = require('./server')
+    const {router} = require('./controller')
     const {readData, readUserData, updateData} = require('./file-handler')
     const {askQuestion} = require('./user-interface')
 
@@ -23,7 +24,7 @@
 
         // Setup the application server
         await serverSetup()
-
+        
         // Greetings
         console.log(`\nWelcome, ${user_data.username} !`)
 
