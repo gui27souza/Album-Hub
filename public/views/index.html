@@ -125,15 +125,29 @@
             
             <div class="tracklist-items" id="tracklist-items"></div>
             
-            <a 
-                href="#" 
-                class="go-to-album" 
-                id="go-to-album" 
-                data-album="" 
-                data-artist=""
-            >
-                Go to album page
-            </a>
+            <div class="tracklist-actions">
+
+                <a 
+                    href="#" 
+                    class="go-to-album" 
+                    id="go-to-album" 
+                    data-album="" 
+                    data-artist=""
+                    >
+                    Go to album page
+                </a>
+                
+                <a 
+                    onclick="deleteAlbum(this)"
+                    class="delete-album" 
+                    id="delete-album" 
+                    data-album="" 
+                    data-artist=""
+                    >
+                    Delete album
+                </a>
+
+            </div>
 
         </div>
     </section>
@@ -149,47 +163,41 @@
 
                 <input class="add-album-artist" type="text" name="" id="add-album-artist" placeholder="Artist">
                 
-                <div class="add-album-submit">Add</div>
+                <div class="add-album-submit" onclick="addAlbum()">Add</div>
             </div>
 
-            <div class="add-album-output">
+            <div class="add-album-output" id="add-album-output" style="display: none;">
                 
-                <div class="album-item">
-                    <img src="image.png" alt="" class="album-image">
+                <div class="add-album-item">
+                    <img src="" alt="" class="album-image">
                     <div class="album-text">
-                        <span class="album-name album-text-item">clancy</span>
-                        <span class="album-artist album-text-item">twenty one pilots</span>
-                        <span class="album-rate album-text-item">Rate: 10 | Tracks rate: 9.7</span>
+                        <span class="album-name album-text-item"></span>
+                        <span class="album-artist album-text-item"></span>
+                        <span class="album-rate album-text-item"></span>
                     </div>
                 </div>
                 
-                <div class="album-item">
-                    <img src="image.png" alt="" class="album-image">
-                    <div class="album-text">
-                        <span class="album-name album-text-item">clancy</span>
-                        <span class="album-artist album-text-item">twenty one pilots</span>
-                        <span class="album-rate album-text-item">Rate: 10 | Tracks rate: 9.7</span>
-                    </div>
-                </div>
-                
-                <div class="album-item">
-                    <img src="image.png" alt="" class="album-image">
-                    <div class="album-text">
-                        <span class="album-name album-text-item">clancy</span>
-                        <span class="album-artist album-text-item">twenty one pilots</span>
-                        <span class="album-rate album-text-item">Rate: 10 | Tracks rate: 9.7</span>
-                    </div>
-                </div>
-                
-                <div class="album-item">
-                    <img src="image.png" alt="" class="album-image">
-                    <div class="album-text">
-                        <span class="album-name album-text-item">clancy</span>
-                        <span class="album-artist album-text-item">twenty one pilots</span>
-                        <span class="album-rate album-text-item">Rate: 10 | Tracks rate: 9.7</span>
-                    </div>
-                </div>
 
+                <div class="add-album-main-item">
+
+                    <img src="#" class="main-item-album-cover" id="main-item-album-cover">
+
+
+                    <div class="main-item-album-content">
+                        
+                        <div class="main-item-album-info">
+                            <div class="main-item-album-name" id="main-item-album-name"></div>
+                            <div class="main-item-album-artist" id="main-item-album-artist"></div>
+                        </div>
+    
+                        <div class="main-item-add-album" id="main-item-add-album"
+                        onclick="sendAddAlbum(album_data)">
+                            Add Album to library
+                        </div>
+
+                    </div>                    
+                    
+                </img>
             </div>
         </div>
     </div>
