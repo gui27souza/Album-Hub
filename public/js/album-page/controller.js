@@ -6,18 +6,23 @@
 // 
 
 // Gets the data
+
     async function loadJSON() {
 
-        // Gets the data of the JSON
-        const response = await fetch('/api/data')
-        const response_user = await fetch('/api/user-data')
+        // Get the data of the JSON
+        const response = await fetch('/data')
         
         // Store data in global var
         data = await response.json()
-        user_data = await response_user.json()
-        api_key = user_data.api_key
         data = data.albums
 
-        // Load album page
         await loadAlbumPage()
     }
+
+// 
+
+async function getUserApiKey() {
+    const user_data_response = await fetch('/user-data')
+    user_data = await user_data_response.json()
+    api_key = user_data.api_key
+}
