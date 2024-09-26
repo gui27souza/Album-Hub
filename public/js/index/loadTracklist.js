@@ -42,10 +42,13 @@ let tracklist_is_on = false
         // HTML elements
         const tracklist_div = document.getElementById('tracklist-items')
         const go_to_album = document.getElementById('go-to-album')
+        const delete_album = document.getElementById('delete-album')
 
         // Data for other functions use
         go_to_album.setAttribute('data-album', `${album_name}`)
         go_to_album.setAttribute('data-artist', `${artist}`)
+        delete_album.setAttribute('data-album', `${album_name}`)
+        delete_album.setAttribute('data-artist', `${artist}`)
         
         // Find the album the the data
         const albumIndex = data.findIndex(album => album.name == album_name && album.artist == artist)

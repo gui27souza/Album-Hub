@@ -1,5 +1,6 @@
 // Make sure that the data store happens once
 document.addEventListener('DOMContentLoaded', () => {
+    getUserApiKey()
     loadJSON()
 })
 
