@@ -55,6 +55,11 @@
     padding-bottom: 1rem;
 }
 
+.tracklist-actions {
+    display: flex;
+    justify-content: space-around;
+}
+
 .go-to-album {
     background-color: #ccc;
     color: #000;
@@ -73,6 +78,27 @@
 
 .go-to-album:hover {
     background-color: #888;
+}
+
+.delete-album {
+    background-color: #ccc;
+    color: #000;
+
+    text-align: center;
+    width: fit-content;
+
+    padding: 1rem;
+
+    border-radius: 1rem;
+
+    align-self: center;
+
+    transition: .5s ease background-color;
+}
+
+.delete-album:hover {
+    background-color: #ff3a3a;
+    cursor: pointer;
 }
 
 .tracklist-items::-webkit-scrollbar {
