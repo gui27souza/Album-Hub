@@ -1,17 +1,16 @@
-const path = require('path')
-
 const express = require('express')
 const app = express()
 
+const path = require('path')
+
 const {readData, readUserData, updateData} = require('./file-handler')
-const {userHasAlbum} = require('./fetch-data')
-const {addAlbum, removeAlbum} = require('./modify-data')
+const {addAlbum, deleteAlbum} = require('./modify-data')
 
 app.use(express.static(path.join(__dirname, '../public')))
 app.use(express.json())
 
+// Server setup
 const PORT = 2727
-
 app.listen(PORT, () => {
     console.log('Server running on http://localhost:2727/views/index.html\n')
 })
@@ -42,15 +41,11 @@ app.post('/data/addAlbum', (req, res) => {
     res.status(200)
 })
 
+// Delete album
 app.post('/data/deleteAlbum', (req, res) => {
 
     const album_data = req.body
-
-    const albumRemoved = removeAlbum(album_data)
-
-    if (!albumRemoved) {
-
-    }
+    deleteAlbum(album_data)
 
     res.status(200)
 })

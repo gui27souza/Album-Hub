@@ -1,4 +1,4 @@
-const { readData, updateData } = require("./file-handler")
+const { readData, readUserData, updateData } = require("./file-handler")
 
 async function addAlbum(album_data) {
 
@@ -48,7 +48,7 @@ function formatTracklist(tracklist) {
     return formated_tracklist
 }
 
-function removeAlbum(album_data) {
+function deleteAlbum(album_data) {
 
     const data = readData()
     
@@ -64,4 +64,4 @@ function removeAlbum(album_data) {
     return true
 }
 
-module.exports = {addAlbum, removeAlbum}
+module.exports = {addAlbum, deleteAlbum}
