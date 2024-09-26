@@ -2,9 +2,9 @@
   "name": "album-hub",
   "version": "1.0.0",
   "description": "Album Hub is a personal album library where the user can rate them and their tracks",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
-    "start": "cd src/ && node app.js",
+    "start": "cd source/ && node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

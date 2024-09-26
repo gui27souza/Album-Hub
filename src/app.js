@@ -1,8 +1,4 @@
 // Module import
-    const {serverSetup} = require('./server')
-    const {router} = require('./controller')
-    const {readData, readUserData, updateData} = require('./file-handler')
-    const {askQuestion} = require('./user-interface')
 
     const {addAlbum, removeAlbum} = require('./app-modules/items-manage')
     const {searchTerms, searchTracklist} = require('./app-modules/items-search')
@@ -15,25 +11,13 @@
     
     async function main() {
 
-        // Get data in JSON
-        const user_data = readUserData()
-        const data = readData()
         
         // Check user data
         await checkUserData(user_data)
 
-        // Setup the application server
-        await serverSetup()
-        
-        // Greetings
-        console.log(`\nWelcome, ${user_data.username} !`)
 
         // Keeps the program on until the user close it
         while (true) {
-
-            // Main terminal interface
-            console.log('\n\t-----Album Hub-----\n')                
-            let command = await askQuestion('1 - Add album\n2 - Rate Album/Tracklist\n3 - Remove album\n4 - Search album\n5 - Search album tracklist\n\n0 - End program\n\n')
 
             // Add album
             if (command == 1) {
@@ -101,9 +85,4 @@ async function checkUserData(user_data) {
         user_data.api_key = api_key
         updateData(user_data, 'user-data')
     }  
-}
-
-// Give some time to read the terminal
-async function wait(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms))
 }

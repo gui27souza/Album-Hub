@@ -2617,99 +2617,6 @@
          "average_track_rate": -1
       },
       {
-         "name": "channel orange",
-         "artist": "frank ocean",
-         "rate": -1,
-         "tracklist": [
-            {
-               "number": 1,
-               "title": "Start",
-               "track_rate": -1
-            },
-            {
-               "number": 2,
-               "title": "Thinkin Bout You",
-               "track_rate": -1
-            },
-            {
-               "number": 3,
-               "title": "Fertilizer",
-               "track_rate": -1
-            },
-            {
-               "number": 4,
-               "title": "Sierra Leone",
-               "track_rate": -1
-            },
-            {
-               "number": 5,
-               "title": "Sweet Life",
-               "track_rate": -1
-            },
-            {
-               "number": 6,
-               "title": "Not Just Money",
-               "track_rate": -1
-            },
-            {
-               "number": 7,
-               "title": "Super Rich Kids",
-               "track_rate": -1
-            },
-            {
-               "number": 8,
-               "title": "Pilot Jones",
-               "track_rate": -1
-            },
-            {
-               "number": 9,
-               "title": "Crack Rock",
-               "track_rate": -1
-            },
-            {
-               "number": 10,
-               "title": "Pyramids",
-               "track_rate": -1
-            },
-            {
-               "number": 11,
-               "title": "Lost",
-               "track_rate": -1
-            },
-            {
-               "number": 12,
-               "title": "White",
-               "track_rate": -1
-            },
-            {
-               "number": 13,
-               "title": "Monks",
-               "track_rate": -1
-            },
-            {
-               "number": 14,
-               "title": "Bad Religion",
-               "track_rate": -1
-            },
-            {
-               "number": 15,
-               "title": "Pink Matter",
-               "track_rate": -1
-            },
-            {
-               "number": 16,
-               "title": "Forrest Gump",
-               "track_rate": -1
-            },
-            {
-               "number": 17,
-               "title": "End",
-               "track_rate": -1
-            }
-         ],
-         "average_track_rate": -1
-      },
-      {
          "name": "ep2!",
          "artist": "jpegmafia",
          "rate": -1,
@@ -3285,6 +3192,60 @@
             }
          ],
          "average_track_rate": "8.3"
+      },
+      {
+         "name": "a boy named hexd",
+         "artist": "999 heartake sabileye",
+         "rate": -1,
+         "custom_rates": -1,
+         "tracklist": [
+            {
+               "number": 1,
+               "title": "godspeed",
+               "track_rate": -1
+            },
+            {
+               "number": 2,
+               "title": "The Shape Of HexD To Come",
+               "track_rate": -1
+            },
+            {
+               "number": 3,
+               "title": "why is it even bitcrushed lol",
+               "track_rate": -1
+            },
+            {
+               "number": 4,
+               "title": "SoundCloud",
+               "track_rate": -1
+            },
+            {
+               "number": 5,
+               "title": "RateYourMusic",
+               "track_rate": -1
+            },
+            {
+               "number": 6,
+               "title": "Online Third Impact: Hype Incarnate.",
+               "track_rate": -1
+            },
+            {
+               "number": 7,
+               "title": "A BOY NAMED HEXD",
+               "track_rate": -1
+            },
+            {
+               "number": 8,
+               "title": "(Yikes) [Bonus Track]",
+               "track_rate": -1
+            },
+            {
+               "number": 9,
+               "title": "Rap Game Third Impact: the End of Hype (Bonus Track)",
+               "track_rate": -1
+            }
+         ],
+         "average_track_rate": -1
       }
    ]
 }
