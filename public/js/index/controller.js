@@ -27,26 +27,64 @@ let album_data
 
 // 
 
+// Send request to server to get an album Object
 
-function deleteAlbum(element) {
-    let album_name = element.dataset.album
-    let artist = element.dataset.artist
+    async function getAlbum(album_name, artist) {
+        
+        try{
+            const response = await fetch(`/search/album?album_name=${encodeURIComponent(album_name)}&artist=${encodeURIComponent(artist)}`)
 
-    sendDeleteAlbum(album_name, artist)
+            if (response.status === 404) {
+                return false
+            }
+            
+            const album = await response.json()
+            return album
+        }
 
-    location.reload()
-}
+        catch (error) {
+            console.error('Erro ao buscar álbum:', error)
+            return false
+        }
+    }
 
-function sendDeleteAlbum(album_name, artist) {
+// 
 
-    fetch('/data/deleteAlbum', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-            album_name,
-            artist
+// Send request to server to add album
+
+    function postAddAlbum(album_data) {
+
+        fetch('/data/addAlbum', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                name: album_data.name,
+                artist: album_data.artist,
+                tracklist: album_data.tracks.track
+            })
         })
-    })
-}
+        
+        location.reload()
+    }
+
+// 
+
+// Send request to server to delete album
+
+    function postDeleteAlbum(album_name, artist) {
+
+        fetch('/data/deleteAlbum', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                album_name,
+                artist
+            })
+        })
+    }
+
+// 
