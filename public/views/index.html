@@ -152,22 +152,31 @@
         </div>
     </section>
 
-    <div class="add-album" id="add-album">
+    <div
+        class="add-album" 
+        id="add-album"
+    >
 
         <div class="add-album-hide" onclick="openAddAlbum()"></div>
 
         <div class="add-album-container">
-            <div class="add-album-input"> 
+            
+            <div class="add-album-input" id="add-album-input">
 
                 <input class="add-album-name" type="text" name="" id="add-album-name" placeholder="Album name">
 
                 <input class="add-album-artist" type="text" name="" id="add-album-artist" placeholder="Artist">
                 
-                <div class="add-album-submit" onclick="addAlbum()">Add</div>
+                <div class="add-album-submit" onclick="addAlbum()">Search</div>
+
             </div>
 
-            <div class="add-album-output" id="add-album-output" style="display: none;">
+            <div class="add-album-output" id="add-album-output">
                 
+                <div class="add-album-not-found" id="add-album-not-found" style="display: none;">
+                    Album not Found
+                </div>
+
                 <div class="add-album-item">
                     <img src="" alt="" class="album-image">
                     <div class="album-text">
@@ -178,7 +187,7 @@
                 </div>
                 
 
-                <div class="add-album-main-item">
+                <div class="add-album-main-item" id="add-album-main-item" style="display: none;">
 
                     <img src="#" class="main-item-album-cover" id="main-item-album-cover">
 
@@ -191,15 +200,17 @@
                         </div>
     
                         <div class="main-item-add-album" id="main-item-add-album"
-                        onclick="sendAddAlbum(album_data)">
+                        onclick="postAddAlbum(album_data)">
                             Add Album to library
                         </div>
 
                     </div>                    
                     
-                </img>
+                </div>
             </div>
+
         </div>
+
     </div>
 
 
@@ -211,7 +222,8 @@
         <script src="../js/index/loadTracklist.js"></script>
         <script src="../js/index/order.js"></script>
         
-        <script src="../js/index/addAlbum.js"></script>
+        <script src="../js/index/add-album.js"></script>
+        <script src="../js/index/delete-album.js"></script>
     <!---->
 </body>
 </html>

@@ -28,18 +28,19 @@ app.get('/data', (req, res) => {
 })
 
 // Add album
-app.post('/data/addAlbum', (req, res) => {
+    app.post('/data/addAlbum', (req, res) => {
 
-    const album_data = req.body
+        const album_data = req.body
 
-    const albumAdded = addAlbum(album_data)
+        const albumAdded = addAlbum(album_data)
 
-    if (!albumAdded) {
+        if (!albumAdded) {
 
-    }
+        }
 
-    res.status(200)
-})
+        res.status(200)
+    })
+// 
 
 // Delete album
 app.post('/data/deleteAlbum', (req, res) => {
