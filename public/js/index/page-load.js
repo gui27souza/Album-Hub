@@ -1,8 +1,23 @@
 // Make sure that the data store happens once
-document.addEventListener('DOMContentLoaded', () => {
-    getUserApiKey()
+document.addEventListener('DOMContentLoaded', async () => {
+    await getUserData()
+    await getData()
     loadJSON()
 })
+
+// Get the data from the JSON file and use it
+
+    async function loadJSON() {
+
+        document.getElementById('album-container').innerHTML = ''
+
+        // Load all the albums in the home page
+        data.forEach(album => {
+            createAlbums(album.name, album.artist, album.rate, album.average_track_rate)
+        })
+    }
+
+//
 
 // Create the album HTML element in the interface
 
@@ -17,7 +32,9 @@ document.addEventListener('DOMContentLoaded', () => {
         album_element.setAttribute('data-rate', `${rate}`)
 
         // Get the actual album name and cover
+        console.log(album_name, artist)
         const album_object = await getAlbum(album_name, artist)
+        console.log(album_object)
         const image_link = album_object.image[4]['#text']
 
         // In case is not rated yet
@@ -36,26 +53,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Append item to the container
         document.getElementById("album-container").appendChild(album_element)
-    }
-
-// 
-
-// Get the actual album object
-
-    async function getAlbum(album_name, artist) {
-
-        try {
-            const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=${api_key}&artist=${encodeURIComponent(artist)}&album=${encodeURIComponent(album_name)}&format=json`)
-            
-            const data = await response.json()
-
-            return data.album
-        } 
-        
-        catch (error) {
-            console.error('Error fetching album', error)
-            return {}
-        }
     }
 
 // 
