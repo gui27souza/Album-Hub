@@ -21,7 +21,7 @@
 
 // 
 
-async function getUserApiKey() {
+async function getUserData() {
     const user_data_response = await fetch('/user-data')
     user_data = await user_data_response.json()
     api_key = user_data.api_key

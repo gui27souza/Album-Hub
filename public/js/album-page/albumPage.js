@@ -3,7 +3,7 @@
 // 
 document.addEventListener('DOMContentLoaded', () => {
 
-    getUserApiKey()
+    getUserData()
     loadJSON()
 
     const params = new URLSearchParams(window.location.search)

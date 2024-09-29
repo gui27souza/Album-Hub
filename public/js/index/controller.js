@@ -3,47 +3,30 @@ let data = []
 let api_key
 let album_data
 
-// Get the data from the JSON file and use it
+// Send request to server to get data
 
-    async function loadJSON() {
-
+    async function getData() {
+        
         // Get the data of the JSON
         const response = await fetch('/data')
-        
+            
         // Store data in global var
         data = await response.json()
         data = data.albums
-
-        document.getElementById('album-container').innerHTML = ''
-
-        // Load all the albums in the home page
-        data.forEach(album => {
-            createAlbums(album.name, album.artist, album.rate, album.average_track_rate)
-        })
     }
 
 // 
 
-async function getUserApiKey() {
-    const user_data_response = await fetch('/user-data')
-    user_data = await user_data_response.json()
-    api_key = user_data.api_key
-}
+// Send request to server to get user data
 
-function sendAddAlbum(album_data) {
-    fetch('/data/addAlbum', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-            name: album_data.name,
-            artist: album_data.artist,
-            tracklist: album_data.tracks.track
-        })
-    })
-    location.reload()
-}
+    async function getUserData() {
+        const user_data_response = await fetch('/user-data')
+        user_data = await user_data_response.json()
+        api_key = user_data.api_key
+    }
+
+// 
+
 
 function deleteAlbum(element) {
     let album_name = element.dataset.album
