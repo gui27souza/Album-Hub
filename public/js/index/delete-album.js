@@ -2,15 +2,15 @@
 
 // Gather the album info that will be deleted
 
-    function deleteAlbum(element) {
+    async function deleteAlbum(element) {
 
         // Album info
         let album_name = element.dataset.album
         let artist = element.dataset.artist
 
         // Send request to delete album
-        postDeleteAlbum(album_name, artist)
-
+        getDeleteAlbum(album_name, artist)
+        
         // Reload page
         location.reload()
     }

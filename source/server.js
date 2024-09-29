@@ -75,10 +75,11 @@ app.use(express.json())
 // 
 
 // Delete album
-    app.post('/data/deleteAlbum', (req, res) => {
+    app.get('/data/deleteAlbum/album', (req, res) => {
 
-        const album_data = req.body
-        deleteAlbum(album_data)
+        const album_name = req.query.album_name
+        const artist = req.query.artist
+        deleteAlbum(album_name, artist)
 
         res.status(200)
     })

@@ -54,12 +54,12 @@ const { readData, readUserData, updateData, updateUserData } = require("./file-h
 //
 
 // Delete album on data
-    function deleteAlbum(album_data) {
+    function deleteAlbum(album_name, artist) {
 
         const data = readData()
         
-        album_name = album_data.album_name.toLowerCase()
-        artist = album_data.artist.toLowerCase()
+        album_name = album_name.toLowerCase()
+        artist = artist.toLowerCase()
 
         album_index = data.albums.findIndex(album => album.name === album_name && album.artist === artist)
 

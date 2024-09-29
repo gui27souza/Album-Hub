@@ -73,18 +73,19 @@ let album_data
 
 // Send request to server to delete album
 
-    function postDeleteAlbum(album_name, artist) {
+    async function getDeleteAlbum(album_name, artist) {
 
-        fetch('/data/deleteAlbum', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                album_name,
-                artist
-            })
-        })
+        try{
+
+            await fetch(`/data/deleteAlbum/album?album_name=${encodeURIComponent(album_name)}&artist=${encodeURIComponent(artist)}`)
+
+            return
+        }
+
+        catch (error) {
+            console.error('Erro ao deletar álbum:', error)
+            return false
+        }
     }
 
 // 
