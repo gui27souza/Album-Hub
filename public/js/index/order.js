@@ -1,3 +1,5 @@
+// Manages the order of the album-items
+
 // Global var to manage page funcionality
 let previous_order_type = ''
 

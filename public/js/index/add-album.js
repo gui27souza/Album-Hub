@@ -1,3 +1,5 @@
+// Manages the visibility of the add-album section, in wich is possible to search an album and add it to your library
+
 // Manage addAlbum section visibility
 let isVisible = false
 

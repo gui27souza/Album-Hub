@@ -1,3 +1,5 @@
+// Uses the user data to load his library
+
 // Make sure that the data store happens once
 document.addEventListener('DOMContentLoaded', async () => {
     await getUserData()
@@ -32,10 +34,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         album_element.setAttribute('data-rate', `${rate}`)
 
         // Get the actual album name and cover
-        console.log(album_name, artist)
         const album_object = await getAlbum(album_name, artist)
-        console.log(album_object)
-        const image_link = album_object.image[4]['#text']
 
         // In case is not rated yet
         if (rate == -1) rate = `&Oslash`
@@ -43,7 +42,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         // HTML element
         album_element.innerHTML = `
-            <img src="${image_link}" alt="" class="album-image">
+            <img src="${album_object.image[4]['#text']}" alt="" class="album-image">
             <div class="album-text">
                 <span class="album-name album-text-item">${album_object.name}</span>
                 <span class="album-artist album-text-item">${album_object.artist}</span>

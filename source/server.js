@@ -43,8 +43,6 @@ app.use(express.json())
 // Get album
     app.get('/search/album', async (req, res) => {
 
-        console.log(req.query.album_name, req.query.artist)
-        
         const album = await searchAlbum(req.query.album_name, req.query.artist)
 
         if (!album || album.tracks == undefined) {
@@ -52,8 +50,6 @@ app.use(express.json())
                 message: 'album not found or album is incompatible'
             })
         }
-
-        console.log(album)
 
         res.status(200).json(album)
     })

@@ -1,3 +1,5 @@
+// Loads the tracklist in the tracklist section and also gives the option to go to album page or delete it
+
 // Visibility management
 let tracklist_is_on = false
 

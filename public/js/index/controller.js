@@ -1,3 +1,5 @@
+// Main functions that talks to the server, with data interchange
+
 // Global var that will recieve the JSON data and LastFM API key
 let data = []
 let api_key
@@ -32,6 +34,7 @@ let album_data
     async function getAlbum(album_name, artist) {
         
         try{
+
             const response = await fetch(`/search/album?album_name=${encodeURIComponent(album_name)}&artist=${encodeURIComponent(artist)}`)
 
             if (response.status === 404) {

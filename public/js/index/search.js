@@ -1,3 +1,5 @@
+// Manages the album item search of an album in the library
+
 // Variables
 
     var searchbar = document.getElementById("searchbar")
