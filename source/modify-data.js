@@ -1,4 +1,5 @@
-const { readData, readUserData, updateData } = require("./file-handler")
+// Functions import
+const { readData, readUserData, updateData, updateUserData } = require("./file-handler")
 
 // Add album from front-end to data
     async function addAlbum(album_data) {
@@ -52,20 +53,22 @@ const { readData, readUserData, updateData } = require("./file-handler")
     }
 //
 
-function deleteAlbum(album_data) {
+// Delete album on data
+    function deleteAlbum(album_data) {
 
-    const data = readData()
-    
-    album_name = album_data.album_name.toLowerCase()
-    artist = album_data.artist.toLowerCase()
+        const data = readData()
+        
+        album_name = album_data.album_name.toLowerCase()
+        artist = album_data.artist.toLowerCase()
 
-    album_index = data.albums.findIndex(album => album.name === album_name && album.artist === artist)
+        album_index = data.albums.findIndex(album => album.name === album_name && album.artist === artist)
 
-    data.albums.splice(album_index, 1)
+        data.albums.splice(album_index, 1)
 
-    updateData(data, 'data')
+        updateData(data)
 
-    return true
-}
+        return true
+    }
+// 
 
 module.exports = {addAlbum, deleteAlbum}
