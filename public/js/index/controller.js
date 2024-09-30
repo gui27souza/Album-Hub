@@ -55,22 +55,44 @@ let album_data
 
 // Send request to server to add album
 
-    function postAddAlbum(album_data) {
-
-        fetch('/data/addAlbum', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
             body: JSON.stringify({
                 name: album_data.name,
                 artist: album_data.artist,
                 tracklist: album_data.tracks.track
-            })
-        })
+    async function postAddAlbum(album_data) {
+
+        try {
         
-        location.reload()
+            // Send album to be added to the server
+            const response = await fetch('/data/addAlbum', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+            })
+
+            // Error dealing
+            if (!response.ok) {
+                if (response.status === 409) {
+                    window.alert('Album is already in the library!')
+                } else {
+                    window.alert('An error occurred while adding the album!')
+                }
+                return
+            }
+
+            if (response.status === 200) {
+                location.reload()
+            }
+
+        } 
+        
+        catch (error) {
+            console.error('Fetch error:', error)
+            window.alert('An unexpected error occurred.')
+        }
     }
+
 
 // 
 

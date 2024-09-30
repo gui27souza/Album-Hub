@@ -2,7 +2,8 @@
 const { readData, readUserData, updateData, updateUserData } = require("./file-handler")
 
 // Add album from front-end to data
-    async function addAlbum(album_data) {
+
+    function addAlbum(album_data) {
 
         const data = readData()
         
@@ -30,9 +31,11 @@ const { readData, readUserData, updateData, updateUserData } = require("./file-h
         updateData(data)
         return true
     }
+
 // 
 
 // Format tracklist sent from front-end to data format
+
     function formatTracklist(tracklist) {
         let formated_tracklist = []
 
@@ -51,9 +54,11 @@ const { readData, readUserData, updateData, updateUserData } = require("./file-h
 
         return formated_tracklist
     }
+
 //
 
 // Delete album on data
+
     function deleteAlbum(album_name, artist) {
 
         const data = readData()
@@ -69,6 +74,7 @@ const { readData, readUserData, updateData, updateUserData } = require("./file-h
 
         return true
     }
+    
 // 
 
 module.exports = {addAlbum, deleteAlbum}
