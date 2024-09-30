@@ -7,8 +7,8 @@ const { readData, readUserData, updateData, updateUserData } = require("./file-h
 
         const data = readData()
         
-        album_name = album_data.name.toLowerCase()
-        artist = album_data.artist.toLowerCase()
+        album_name = album_data.name
+        artist = album_data.artist
 
         const albumIndex = data.albums.findIndex(album => album.name === album_name && album.artist === artist)
         if(albumIndex != -1) {
@@ -21,6 +21,7 @@ const { readData, readUserData, updateData, updateUserData } = require("./file-h
         const newAlbum = { 
             name: album_name,
             artist: artist,
+            cover: album_data.cover,
             "rate": -1,
             "custom_rates": -1,
             tracklist: tracklist,
@@ -49,7 +50,7 @@ const { readData, readUserData, updateData, updateUserData } = require("./file-h
             }
 
             formated_tracklist.push(formated_track)
-        i++
+            i++
         })
 
         return formated_tracklist

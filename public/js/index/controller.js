@@ -66,9 +66,10 @@ let album_data
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
-                name: album_data.name,
-                artist: album_data.artist,
-                tracklist: album_data.tracks.track
+                    name: album_data.name,
+                    artist: album_data.artist,
+                    cover: album_data.image[4]['#text'],
+                    tracklist: album_data.tracks.track
                 })
             })
 
