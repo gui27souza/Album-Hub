@@ -4,12 +4,12 @@
 document.addEventListener('DOMContentLoaded', async () => {
     await getUserData()
     await getData()
-    loadJSON()
+    loadPage()
 })
 
 // Get the data from the JSON file and use it
 
-    async function loadJSON() {
+    async function loadPage() {
 
         document.getElementById('album-container').innerHTML = ''
 
