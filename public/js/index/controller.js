@@ -55,10 +55,6 @@ let album_data
 
 // Send request to server to add album
 
-            body: JSON.stringify({
-                name: album_data.name,
-                artist: album_data.artist,
-                tracklist: album_data.tracks.track
     async function postAddAlbum(album_data) {
 
         try {
@@ -69,9 +65,13 @@ let album_data
                 headers: {
                     'Content-Type': 'application/json'
                 },
+                body: JSON.stringify({
+                name: album_data.name,
+                artist: album_data.artist,
+                tracklist: album_data.tracks.track
+                })
             })
 
-            // Error dealing
             if (!response.ok) {
                 if (response.status === 409) {
                     window.alert('Album is already in the library!')
