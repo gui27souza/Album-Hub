@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     await getUserData()
     await getData()
     loadPage()
+    order('random')
 })
 
 // Get the data from the JSON file and use it
