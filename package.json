@@ -1,10 +1,10 @@
 {
   "name": "album-hub",
-  "version": "1.0.0",
+  "version": "3.0.0",
   "description": "Album Hub is a personal album library where the user can rate them and their tracks",
   "main": "server.js",
   "scripts": {
-    "start": "cd source/ && node server.js",
+    "start": "node source/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -12,7 +12,7 @@
     "url": "git+https://github.com/gui27souza/Album-Hub.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Guilherme Souza",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/gui27souza/Album-Hub/issues"

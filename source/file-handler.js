@@ -1,36 +1,61 @@
 // Module imports
 const fs = require('fs')
+const path = require('path')
 
-// Read album library data
+// Generic function to read json data files
+    
+    function readJsonFile(fileName) {
+
+        const dataPath = path.join(__dirname, `../data/${fileName}`)
+
+        if (!fs.existsSync(dataPath)) {
+            console.error(`Arquivo ${fileName} não encontrado em:`, dataPath)
+            process.exit(1)
+        }
+
+        const data = fs.readFileSync(dataPath, 'utf8')
+        return JSON.parse(data)
+    }
+
+// 
+
+// Read the data files and user-data file
+    
     function readData() {
-        const data = fs.readFileSync('../data/data.json')
-        const json_data = JSON.parse(data)
-        return json_data
+        return readJsonFile('data.json')
     }
-// 
 
-// Read user data
     function readUserData() {
-        const user_data = fs.readFileSync('../data/user-data.json')
-        const json_user_data = JSON.parse(user_data)
-        return json_user_data
+        return readJsonFile('user-data.json')
     }
+
 // 
 
-// Update the original data with changes
-    function updateData(updated_data_json) {
-        const updated_data = JSON.stringify(updated_data_json, null, 3)
-        fs.writeFileSync(`../data/data.json`, updated_data, 'utf8')
+// Generic function to update JSON files with new data
+
+    function updateJsonFile(fileName, updatedDataJson) {
+
+        const dataPath = path.join(__dirname, `../data/${fileName}`)
+
+        const updatedData = JSON.stringify(updatedDataJson, null, 3)
+
+        fs.writeFileSync(dataPath, updatedData, 'utf8')
+
         return true
     }
+
 // 
 
-// Update the original data with changes
-    function updateUserData(updated_user_data_json) {
-        const updated_data = JSON.stringify(updated_user_data_json, null, 3)
-        fs.writeFileSync(`../data/user-data.json`, updated_data, 'utf8')
-        return true
+// Update the album library data and the user data
+    
+    function updateData(updatedDataJson) {
+        return updateJsonFile('data.json', updatedDataJson)
     }
+
+    function updateUserData(updatedUserDataJson) {
+        return updateJsonFile('user-data.json', updatedUserDataJson)
+    }
+
 // 
 
 // Module exports
