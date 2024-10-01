@@ -12,7 +12,6 @@ const { readData, readUserData, updateData, updateUserData } = require("./file-h
 
         const albumIndex = data.albums.findIndex(album => album.name === album_name && album.artist === artist)
         if(albumIndex != -1) {
-            console.log(`\n'${album_name}' by '${artist}' is already in your library!\n`)
             return false
         }
 

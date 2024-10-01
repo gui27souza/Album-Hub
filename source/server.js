@@ -30,7 +30,8 @@ app.use(express.json())
 
     app.get('/user-data', (req, res) => {
         const user_data = readUserData()
-        res.status(200).json(user_data)
+        console.log('Got user data\n')
+        return res.status(200).json(user_data)
     })
 
 // 
@@ -39,6 +40,7 @@ app.use(express.json())
 
     app.get('/data', (req, res) => {
         const data = readData()
+        console.log('Got data\n')
         return res.status(200).json(data)
     })
 
@@ -51,11 +53,15 @@ app.use(express.json())
         const album = await searchAlbum(req.query.album_name, req.query.artist)
 
         if (!album || album.tracks == undefined) {
+            console.log('Album not found or album is incompatible')
+            console.log(req.query.album_name, req.query.artist, '\n')
             return res.status(404).json({
                 message: 'album not found or album is incompatible'
             })
         }
 
+        console.log('Album found')
+        console.log(req.query.album_name, req.query.artist, '\n')
         return res.status(200).json(album)
     })
 
@@ -69,9 +75,11 @@ app.use(express.json())
         const albumAdded = addAlbum(album_data)
 
         if (!albumAdded) {
+            console.log(album_data.name, 'by', album_data.artist, 'is already in the library\n')
             return res.status(409).send('Album is already in the library')
         }
 
+        console.log(album_data.name, 'by', album_data.artist, 'added to the library\n')
         return res.status(200).send('Album added successfully')
     })
 
@@ -85,6 +93,7 @@ app.use(express.json())
         const artist = req.query.artist
         deleteAlbum(album_name, artist)
 
+        console.log(album_name, 'by', artist, 'deleted from the library\n')
         return res.status(200)
     })
 
