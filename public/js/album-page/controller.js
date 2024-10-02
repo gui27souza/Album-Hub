@@ -1,15 +1,19 @@
-async function getAlbumData(album_name, artist) {
-    
-    try {
-        const response = await fetch(`/data/album/?album_name=${encodeURIComponent(album_name)}&artist=${encodeURIComponent(artist)}`)
+// Gets the album data from server to load page
 
-        const album_data = await response.json()
+    async function getAlbumData(album_name, artist) {
+        
+        try {
+            const response = await fetch(`/data/album/?album_name=${encodeURIComponent(album_name)}&artist=${encodeURIComponent(artist)}`)
 
-        return album_data
+            const album_data = await response.json()
+
+            return album_data
+        }
+
+        catch(error) {
+            console.error('ERROR: error fetching the album', error)
+            return false
+        }
     }
 
-    catch(error) {
-        console.error('ERROR: error fetching the album', error)
-        return false
-    }
-}
+// 
