@@ -69,7 +69,9 @@ let album_data
                     name: album_data.name,
                     artist: album_data.artist,
                     cover: album_data.image[4]['#text'],
-                    tracklist: album_data.tracks.track
+                    tracklist: album_data.tracks.track,
+                    tags: album_data.tags,
+                    wiki: album_data.wiki? album_data.wiki.content : -1
                 })
             })
 

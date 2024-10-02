@@ -16,6 +16,7 @@ const { readData, readUserData, updateData, updateUserData } = require("./file-h
         }
 
         const tracklist = formatTracklist(album_data.tracklist)
+        const tags = formatTags(album_data.tags.tag)
         
         const newAlbum = { 
             name: album_name,
@@ -24,7 +25,9 @@ const { readData, readUserData, updateData, updateUserData } = require("./file-h
             "rate": -1,
             "custom_rates": -1,
             tracklist: tracklist,
-            "average_track_rate": -1 
+            "average_track_rate": -1,
+            tags: tags,
+            wiki: album_data.wiki
         }    
 
         data.albums.push(newAlbum)
@@ -34,7 +37,7 @@ const { readData, readUserData, updateData, updateUserData } = require("./file-h
 
 // 
 
-// Format tracklist sent from front-end to data format
+// Format tracklist and tags sent from front-end to data format
 
     function formatTracklist(tracklist) {
         let formated_tracklist = []
@@ -55,6 +58,17 @@ const { readData, readUserData, updateData, updateUserData } = require("./file-h
         return formated_tracklist
     }
 
+    function formatTags(tags) {
+
+        let formated_tags = []
+
+        for (let i = 0; i < 5; i++) {
+            formated_tags.push(tags[i].name)
+        }
+    
+        return formated_tags
+    }
+
 //
 
 // Delete album on data
@@ -63,9 +77,6 @@ const { readData, readUserData, updateData, updateUserData } = require("./file-h
 
         const data = readData()
         
-        album_name = album_name.toLowerCase()
-        artist = artist.toLowerCase()
-
         album_index = data.albums.findIndex(album => album.name === album_name && album.artist === artist)
 
         data.albums.splice(album_index, 1)

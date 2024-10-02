@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 // Get the data from the JSON file and use it
 
-    async function loadPage() {
+    function loadPage() {
 
         document.getElementById('album-container').innerHTML = ''
 
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 // Create the album HTML element in the interface
 
-    async function createAlbums(album_name, artist, cover, rate, average_track_rate) {
+    function createAlbums(album_name, artist, cover, rate, average_track_rate) {
 
         // Create and add classes and attributes to the item div
         const album_element = document.createElement("div")

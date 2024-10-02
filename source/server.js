@@ -9,6 +9,7 @@
 
     // Functions
     const {readData, readUserData, updateData, updateUserData} = require('./file-handler')
+    const {getAlbumData} = require('./read-data')
     const {addAlbum, deleteAlbum} = require('./modify-data')
     const {searchAlbum} = require('./lastfm-api')
 // 
@@ -46,7 +47,23 @@ app.use(express.json())
 
 // 
 
-// Get album
+// Get album from user data
+
+    app.get('/data/album', (req, res) => {
+
+        const album_name = req.query.album_name
+        const artist = req.query.artist
+
+        const album_data = getAlbumData(album_name, artist)
+
+        if (album_data == false) return res.status(404)
+
+        return res.status(200).json(album_data)
+    })
+
+// 
+
+// Search album
 
     app.get('/search/album', async (req, res) => {
 

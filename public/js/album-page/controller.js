@@ -1,28 +1,15 @@
-// Global variables
-    let data = []
-    let album_name
-    let artist
-    let api_key
-// 
+async function getAlbumData(album_name, artist) {
+    
+    try {
+        const response = await fetch(`/data/album/?album_name=${encodeURIComponent(album_name)}&artist=${encodeURIComponent(artist)}`)
 
-// Gets the data
+        const album_data = await response.json()
 
-    async function loadJSON() {
-
-        // Get the data of the JSON
-        const response = await fetch('/data')
-        
-        // Store data in global var
-        data = await response.json()
-        data = data.albums
-
-        await loadAlbumPage()
+        return album_data
     }
 
-// 
-
-async function getUserData() {
-    const user_data_response = await fetch('/user-data')
-    user_data = await user_data_response.json()
-    api_key = user_data.api_key
+    catch(error) {
+        console.error('ERROR: error fetching the album', error)
+        return false
+    }
 }
