@@ -7,27 +7,23 @@ const { readData, readUserData, updateData, updateUserData } = require("./file-h
 
         const data = readData()
         
-        album_name = album_data.name
-        artist = album_data.artist
-
-        const albumIndex = data.albums.findIndex(album => album.name === album_name && album.artist === artist)
-        if(albumIndex != -1) {
-            return false
-        }
-
-        const tracklist = formatTracklist(album_data.tracklist)
+        const album_name = album_data.name
+        const artist = album_data.artist
+        const cover = album_data.image[4]['#text']
+        const tracklist = formatTracklist(album_data.tracks.track)
         const tags = formatTags(album_data.tags.tag)
+        const wiki = album_data.wiki? album_data.wiki.content : -1
         
         const newAlbum = { 
             name: album_name,
             artist: artist,
-            cover: album_data.cover,
+            cover: cover,
             "rate": -1,
             "custom_rates": -1,
             tracklist: tracklist,
             "average_track_rate": -1,
             tags: tags,
-            wiki: album_data.wiki
+            wiki: wiki
         }    
 
         data.albums.push(newAlbum)

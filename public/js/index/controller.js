@@ -55,25 +55,12 @@ let album_data
 
 // Send request to server to add album
 
-    async function postAddAlbum(album_data) {
+    async function postAddAlbum(album_name, artist) {
 
         try {
-        
+                    
             // Send album to be added to the server
-            const response = await fetch('/data/addAlbum', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    name: album_data.name,
-                    artist: album_data.artist,
-                    cover: album_data.image[4]['#text'],
-                    tracklist: album_data.tracks.track,
-                    tags: album_data.tags,
-                    wiki: album_data.wiki? album_data.wiki.content : -1
-                })
-            })
+            const response = await fetch(`/data/addAlbum/album?album_name=${encodeURIComponent(album_name)}&artist=${encodeURIComponent(artist)}`, {method: 'POST'})
 
             if (!response.ok) {
                 if (response.status === 409) {

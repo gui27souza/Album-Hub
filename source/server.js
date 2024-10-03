@@ -11,7 +11,7 @@
     const {readData, readUserData, updateData, updateUserData} = require('./file-handler')
     const {getAlbumData} = require('./read-data')
     const {addAlbum, deleteAlbum} = require('./modify-data')
-    const {searchAlbum} = require('./lastfm-api')
+    const {searchAlbumAPI, getAlbumAPI} = require('./lastfm-api')
 // 
 
 // Public setup
@@ -67,9 +67,9 @@ app.use(express.json())
 
     app.get('/search/album', async (req, res) => {
 
-        const album = await searchAlbum(req.query.album_name, req.query.artist)
+        const album = await searchAlbumAPI(req.query.album_name, req.query.artist)
 
-        if (!album || album.tracks == undefined) {
+        if (!album) {
             console.log('Album not found or album is incompatible')
             console.log(req.query.album_name, req.query.artist, '\n')
             return res.status(404).json({
@@ -78,7 +78,7 @@ app.use(express.json())
         }
 
         console.log('Album found')
-        console.log(req.query.album_name, req.query.artist, '\n')
+        console.log(album.name, album.artist, '\n')
         return res.status(200).json(album)
     })
 
@@ -86,17 +86,24 @@ app.use(express.json())
 
 // Add album
 
-    app.post('/data/addAlbum', (req, res) => {
+    app.post('/data/addAlbum/album', async (req, res) => {
 
-        const album_data = req.body
-        const albumAdded = addAlbum(album_data)
+        const album_name = req.query.album_name
+        const artist = req.query.artist
 
-        if (!albumAdded) {
-            console.log(album_data.name, 'by', album_data.artist, 'is already in the library\n')
+        if (getAlbumData(album_name, artist) != false) {
+            console.log(album_name, 'by', artist, 'is already in the library\n')
             return res.status(409).send('Album is already in the library')
         }
 
-        console.log(album_data.name, 'by', album_data.artist, 'added to the library\n')
+        const album_api = await getAlbumAPI(album_name, artist)
+        const albumAdded = addAlbum(album_api)
+
+        if (!albumAdded) {
+            return res.status(505).send('Internal server error')
+        }
+
+        console.log(album_name, 'by', artist, 'added to the library\n')
         return res.status(200).send('Album added successfully')
     })
 

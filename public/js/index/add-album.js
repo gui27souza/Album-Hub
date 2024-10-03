@@ -63,9 +63,11 @@ let isVisible = false
 
         // HTML elements
         const album_cover = document.getElementById('main-item-album-cover')
-        album_cover.src = album.image[4]['#text']
+        album_cover.src = album.image[3]['#text']
+
         const album_name = document.getElementById('main-item-album-name')
         album_name.innerHTML = album.name
+
         const artist = document.getElementById('main-item-album-artist')
         artist.innerHTML = album.artist
 
