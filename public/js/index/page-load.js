@@ -34,6 +34,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         album_element.setAttribute('data-artist', `${artist}`)
         album_element.setAttribute('data-rate', `${rate}`)
 
+        if (cover == "") cover = "../images/album-cover-not-found.png"
+
         // In case is not rated yet
         if (rate == -1) rate = `&Oslash`
         if (average_track_rate == -1) average_track_rate = `&Oslash`

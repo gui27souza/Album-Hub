@@ -65,6 +65,8 @@ let album_data
             if (!response.ok) {
                 if (response.status === 409) {
                     window.alert('Album is already in the library!')
+                } else if (response.status === 501) {
+                    window.alert('Album without tracklist!')
                 } else {
                     window.alert('An error occurred while adding the album!')
                 }

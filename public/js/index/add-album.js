@@ -62,8 +62,10 @@ let isVisible = false
         main_item.style.display = 'flex'
 
         // HTML elements
+        
         const album_cover = document.getElementById('main-item-album-cover')
-        album_cover.src = album.image[3]['#text']
+        if (album.image[3]['#text'] == '') album_cover.src = "../images/album-cover-not-found.png"
+        else album_cover.src = album.image[3]['#text']
 
         const album_name = document.getElementById('main-item-album-name')
         album_name.innerHTML = album.name

@@ -9,8 +9,12 @@ const { readData, readUserData, updateData, updateUserData } = require("./file-h
         
         const album_name = album_data.name
         const artist = album_data.artist
+        
         const cover = album_data.image[4]['#text']
+        
+        if (!album_data.tracks) return -1
         const tracklist = formatTracklist(album_data.tracks.track)
+        
         const tags = formatTags(album_data.tags.tag)
         const wiki = album_data.wiki? album_data.wiki.content : -1
         

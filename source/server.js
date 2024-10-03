@@ -99,6 +99,7 @@ app.use(express.json())
         const album_api = await getAlbumAPI(album_name, artist)
         const albumAdded = addAlbum(album_api)
 
+        if (albumAdded == -1) return res.status(501).send('Album without tracklist!')
         if (!albumAdded) {
             return res.status(505).send('Internal server error')
         }
