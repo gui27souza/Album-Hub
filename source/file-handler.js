@@ -19,14 +19,14 @@ const path = require('path')
 
 // 
 
-// Read the data files and user-data file
+// Read the data files and settings file
     
     function readData() {
         return readJsonFile('data.json')
     }
 
-    function readUserData() {
-        return readJsonFile('user-data.json')
+    function readSettings() {
+        return readJsonFile('settings.json')
     }
 
 // 
@@ -46,17 +46,17 @@ const path = require('path')
 
 // 
 
-// Update the album library data and the user data
+// Update the album library data and the settings
     
     function updateData(updatedDataJson) {
         return updateJsonFile('data.json', updatedDataJson)
     }
 
-    function updateUserData(updatedUserDataJson) {
-        return updateJsonFile('user-data.json', updatedUserDataJson)
+    function updateSettings(updatedSettingsJson) {
+        return updateJsonFile('settings.json', updatedSettingsJson)
     }
 
 // 
 
 // Module exports
-module.exports = {readData, readUserData, updateData, updateUserData}
+module.exports = {readData, readSettings, updateData, updateSettings}

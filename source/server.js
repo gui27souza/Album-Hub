@@ -8,7 +8,7 @@
     const path = require('path')
 
     // Functions
-    const {readData, readUserData, updateData, updateUserData} = require('./file-handler')
+    const {readData, readSettings, updateData, updateSettings} = require('./file-handler')
     const {getAlbumData} = require('./read-data')
     const {addAlbum, deleteAlbum} = require('./modify-data')
     const {searchAlbumAPI, getAlbumAPI} = require('./lastfm-api')
@@ -27,12 +27,12 @@ app.use(express.json())
     })
 // 
 
-// Get user data
+// Get settings
 
-    app.get('/user-data', (req, res) => {
-        const user_data = readUserData()
-        console.log('Got user data\n')
-        return res.status(200).json(user_data)
+    app.get('/settings', (req, res) => {
+        const settings = readSettings()
+        console.log('Got settings\n')
+        return res.status(200).json(settings)
     })
 
 // 

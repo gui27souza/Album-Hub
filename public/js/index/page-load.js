@@ -2,7 +2,6 @@
 
 // Make sure that the data store happens once
 document.addEventListener('DOMContentLoaded', async () => {
-    await getUserData()
     await getData()
     loadPage()
     order('random')

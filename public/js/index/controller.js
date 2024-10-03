@@ -2,7 +2,6 @@
 
 // Global var that will recieve the JSON data and LastFM API key
 let data = []
-let api_key
 let album_data
 
 // Send request to server to get data
@@ -15,16 +14,6 @@ let album_data
         // Store data in global var
         data = await response.json()
         data = data.albums
-    }
-
-// 
-
-// Send request to server to get user data
-
-    async function getUserData() {
-        const user_data_response = await fetch('/user-data')
-        user_data = await user_data_response.json()
-        api_key = user_data.api_key
     }
 
 // 

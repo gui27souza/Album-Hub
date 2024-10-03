@@ -1,5 +1,5 @@
 // Functions import
-const { readData, readUserData, updateData, updateUserData } = require("./file-handler")
+const { readData, readSettings, updateData, updateSettings } = require("./file-handler")
 
 function getAlbumData(album_name, artist) {
 
