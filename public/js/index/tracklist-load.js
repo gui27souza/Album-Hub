@@ -53,7 +53,7 @@ let tracklist_is_on = false
         delete_album.setAttribute('data-artist', `${artist}`)
         
         // Find the album the the data
-        const albumIndex = data.findIndex(album => album.name == album_name && album.artist == artist)
+        const albumIndex = data.findIndex(album => album.name === album_name && album.artist === artist)
 
         // Get the album tracklist
         const tracklist = data[albumIndex].tracklist
