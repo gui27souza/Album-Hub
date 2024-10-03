@@ -78,6 +78,7 @@ const { readData, readUserData, updateData, updateUserData } = require("./file-h
         const data = readData()
         
         album_index = data.albums.findIndex(album => album.name === album_name && album.artist === artist)
+        if (album_index == -1) return false
 
         data.albums.splice(album_index, 1)
 

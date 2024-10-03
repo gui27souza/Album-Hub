@@ -56,7 +56,7 @@ app.use(express.json())
 
         const album_data = getAlbumData(album_name, artist)
 
-        if (album_data == false) return res.status(404)
+        if (album_data == false) return res.status(404).send('Album not in user library!')
 
         return res.status(200).json(album_data)
     })
@@ -70,15 +70,16 @@ app.use(express.json())
         const album = await searchAlbumAPI(req.query.album_name, req.query.artist)
 
         if (!album) {
+            
             console.log('Album not found or album is incompatible')
             console.log(req.query.album_name, req.query.artist, '\n')
-            return res.status(404).json({
-                message: 'album not found or album is incompatible'
-            })
+
+            return res.status(404).send("album not found or album is incompatible")
         }
 
         console.log('Album found')
         console.log(album.name, album.artist, '\n')
+
         return res.status(200).json(album)
     })
 
@@ -97,12 +98,13 @@ app.use(express.json())
         }
 
         const album_api = await getAlbumAPI(album_name, artist)
+        
+        if (!album_api) return res.status(505).send('Internal server error')
+
         const albumAdded = addAlbum(album_api)
 
         if (albumAdded == -1) return res.status(501).send('Album without tracklist!')
-        if (!albumAdded) {
-            return res.status(505).send('Internal server error')
-        }
+        if (!albumAdded) return res.status(505).send('Internal server error')
 
         console.log(album_name, 'by', artist, 'added to the library\n')
         return res.status(200).send('Album added successfully')
@@ -116,7 +118,10 @@ app.use(express.json())
 
         const album_name = req.query.album_name
         const artist = req.query.artist
-        deleteAlbum(album_name, artist)
+        
+        const albumDeleted = deleteAlbum(album_name, artist)
+
+        if (!albumDeleted) return res.status(409).send('Album is not in the library')
 
         console.log(album_name, 'by', artist, 'deleted from the library\n')
         return res.status(200)
