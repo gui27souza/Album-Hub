@@ -28,6 +28,7 @@ body {
 
 .album-container {
     width: var(--main-width);
+    min-height: 50.4rem;
 
     padding: var(--container-padding);
 

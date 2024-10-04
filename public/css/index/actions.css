@@ -9,6 +9,17 @@
 .actions-buttons-order,
 .actions-buttons-add {
     background-color: var(--sub-items);
+
+    transition: all ease .1s;
+}
+
+.actions-buttons-order:hover,
+.actions-buttons-add:hover {
+    background-color: var(--background-light);
+    color: aliceblue;
+    cursor: pointer;
+    scale: 1.1;
+    filter: drop-shadow(0 0 .6rem var(--sub-items));
 }
 
 .no-items-found {
@@ -72,7 +83,7 @@
 }
 
 .actions-buttons-add {
-    font-size: 2rem;
+    font-size: 2.4rem;
 
     display: flex;
     justify-content: center;

@@ -77,6 +77,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    transition: all ease .2s;
+}
+
+.add-album-submit:hover {
+    background-color: var(--background-light);
+    color: aliceblue;
+    cursor: pointer;
 }
 
 .add-album-output {
@@ -87,32 +95,6 @@
 
     display: flex;
     justify-content: space-between;
-}
-
-.add-album-item {
-    width: 27rem;
-    height: 100%;
-
-    padding: var(--item-padding);
-
-    display: flex;
-    flex-flow: column;
-    gap: var(--item-gap);
-
-    border-radius: .5rem;
-
-    background-color: var(--albums);
-    transition: transform ease .15s, filter ease .15s;
-
-    display: none;
-}
-
-.add-album-item:hover {
-    cursor: pointer;
-
-    transform: scale(1.05);
-
-    filter: drop-shadow(0 0 1rem var(--sub-items));
 }
 
 .add-album-main-item {
@@ -186,6 +168,14 @@
     border-radius: 1rem;
 
     text-align: center;
+
+    transition: all ease .2s;
+}
+
+.main-item-add-album:hover {
+    background-color: var(--background-light);
+    color: aliceblue;
+    cursor: pointer;
 }
 
 .add-album-not-found {

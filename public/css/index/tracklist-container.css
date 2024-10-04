@@ -73,11 +73,13 @@
 
     align-self: center;
 
-    transition: .5s ease background-color;
+    transition: all ease .2s;
 }
 
 .go-to-album:hover {
-    background-color: #888;
+    background-color: var(--background-light);
+    cursor: pointer;
+    color: aliceblue;
 }
 
 .delete-album {
@@ -93,11 +95,12 @@
 
     align-self: center;
 
-    transition: .5s ease background-color;
+    transition: all ease .2s;
 }
 
 .delete-album:hover {
     background-color: #ff3a3a;
+    color: aliceblue;
     cursor: pointer;
 }
 
