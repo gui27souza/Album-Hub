@@ -12,19 +12,22 @@
     const {getAlbumData} = require('./read-data')
     const {addAlbum, deleteAlbum} = require('./modify-data')
     const {searchAlbumAPI, getAlbumAPI} = require('./lastfm-api')
+
 // 
 
 // Public setup
 app.use(express.static(path.join(__dirname, '../public')))
 
-// Express dealing with json
+// Middleware to deal with json
 app.use(express.json())
 
 // Server setup
+
     const PORT = 2727
     app.listen(PORT, () => {
         console.log('Server running on http://localhost:2727/views/index.html\n')
     })
+
 // 
 
 // Get settings
@@ -118,10 +121,13 @@ app.use(express.json())
 
         const album_name = req.query.album_name
         const artist = req.query.artist
+
+        if (!getAlbumData(album_name, artist)) {
+            console.log(album_name, 'by', artist, 'is not in the library\n')
+            return res.status(409).send('Album is not in the library')
+        }
         
         const albumDeleted = deleteAlbum(album_name, artist)
-
-        if (!albumDeleted) return res.status(409).send('Album is not in the library')
 
         console.log(album_name, 'by', artist, 'deleted from the library\n')
         return res.status(200)

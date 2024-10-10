@@ -5,16 +5,15 @@ const { readData, readSettings, updateData, updateSettings } = require("./file-h
 
     function addAlbum(album_data) {
 
+        // Albums without tracklist are not supported
+        if (!album_data.tracks) return -1
+
         const data = readData()
         
         const album_name = album_data.name
-        const artist = album_data.artist
-        
+        const artist = album_data.artist        
         const cover = album_data.image[4]['#text']
-        
-        if (!album_data.tracks) return -1
         const tracklist = formatTracklist(album_data.tracks.track)
-        
         const tags = formatTags(album_data.tags.tag)
         const wiki = album_data.wiki? album_data.wiki.content : -1
         
@@ -32,6 +31,7 @@ const { readData, readSettings, updateData, updateSettings } = require("./file-h
 
         data.albums.push(newAlbum)
         updateData(data)
+
         return true
     }
 
@@ -40,6 +40,7 @@ const { readData, readSettings, updateData, updateSettings } = require("./file-h
 // Format tracklist and tags sent from front-end to data format
 
     function formatTracklist(tracklist) {
+
         let formated_tracklist = []
 
         let i = 1
@@ -78,10 +79,7 @@ const { readData, readSettings, updateData, updateSettings } = require("./file-h
         const data = readData()
         
         album_index = data.albums.findIndex(album => album.name === album_name && album.artist === artist)
-        if (album_index == -1) return false
-
         data.albums.splice(album_index, 1)
-
         updateData(data)
 
         return true
