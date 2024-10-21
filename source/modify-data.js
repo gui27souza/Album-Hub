@@ -61,9 +61,11 @@ const { readData, readSettings, updateData, updateSettings } = require("./file-h
 
     function formatTags(tags) {
 
+        const tags_lenght = tags.length
+
         let formated_tags = []
 
-        for (let i = 0; i < 5; i++) {
+        for (let i = 0; i < tags_lenght; i++) {
             formated_tags.push(tags[i].name)
         }
     
