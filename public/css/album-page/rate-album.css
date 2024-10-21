@@ -1,0 +1,44 @@
+.rate-album-show {
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    background-color: aliceblue;
+    font-size: 2rem;
+
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.rate-album-hide {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.rate-album-container {
+    position: fixed;
+    top: 0;
+
+    background-color: #000000a4;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+}
+
+.rate-album {
+    height: 86rem;
+    width: 80rem;
+    background-color: aliceblue;
+
+    border-radius: 2rem;
+
+    z-index: 2;
+}

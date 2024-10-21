@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="../css/style.css">
 
         <link rel="stylesheet" href="../css/album-page/album-page-container.css">
+        <link rel="stylesheet" href="../css/album-page/rate-album.css">
     <!---->
 
     <!-- CDN Vibrant.js -->
@@ -58,8 +59,22 @@
 
     </section>
 
+    <div class="rate-album-show" id="rate-album-show" onclick="showRateAlbum()">
+        <span>Rate Album</span>
+    </div>
+    <section class="rate-album-container" id="rate-album-container">
+
+        <div class="rate-album-hide" id="rate-album-hide" onclick="hideRateAlbum()"></div>
+
+        <div class="rate-album">
+
+        </div>
+
+    </section>
+
     <script src="../js/album-page/controller.js"></script>
     <script src="../js/album-page/page-load.js"></script>
     <script src="../js/album-page/page-color.js"></script>
+    <script src="../js/album-page/rate-album.js"></script>
 </body>
 </html>
