@@ -75,6 +75,7 @@
     font-size: 3.6rem;
     max-width: 70%;
     text-align: justify;
+    border-bottom: #000 solid 2px;
 }
 
 .rate-album-track hr {
@@ -113,9 +114,37 @@
     border-radius: 2rem;
 }
 
+.rate-album-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    width: 80%;
+    align-self: center;
+}
+
+.rate-album-rate {
+    display: flex;
+    gap: 1rem;
+}
+
+.rate-album-rate span {
+    font-size: 4rem;
+    align-self: center;
+}
+.rate-album-rate input {
+    font-size: 3.6rem;
+    padding: 1rem;
+    width: 12rem;
+    background-color: #ccc;
+    border-radius: 1rem;
+    text-align: center;
+}
+
 .rate-album-submit {
     font-size: 4rem;
     align-self: center;
+
+    width: fit-content;
 
     padding: 1rem;
 
