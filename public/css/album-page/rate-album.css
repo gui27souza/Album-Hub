@@ -95,6 +95,8 @@
     background-color: rgb(0, 0, 0);
     color: aliceblue;
 
+    border-radius: .9rem .9rem .9rem 0;
+
     align-self: flex-end;
 
     text-align: center;
@@ -111,7 +113,6 @@
     border-radius: 2rem;
 }
 
-
 .rate-album-submit {
     font-size: 4rem;
     align-self: center;
@@ -121,4 +122,10 @@
     border-radius: 1rem;
 
     background-color: #ccc;
+}
+
+.rate-album-submit:hover {
+    cursor: pointer;
+    background-color: #2C2C2E;
+    color: aliceblue;
 }
