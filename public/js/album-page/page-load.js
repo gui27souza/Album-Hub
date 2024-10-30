@@ -9,6 +9,7 @@
         const album_data = await getAlbumData(album_name, artist)
         
         loadAlbumPage(album_data)
+        loadRateAlbum(album_data)
     })
 
 // 
