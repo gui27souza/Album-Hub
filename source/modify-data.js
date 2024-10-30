@@ -27,7 +27,7 @@ const { readData, readSettings, updateData, updateSettings } = require("./file-h
             "average_track_rate": -1,
             tags: tags,
             wiki: wiki
-        }    
+        }
 
         data.albums.push(newAlbum)
         updateData(data)
@@ -60,6 +60,8 @@ const { readData, readSettings, updateData, updateSettings } = require("./file-h
     }
 
     function formatTags(tags) {
+
+        if (tags == undefined) return []
 
         const tags_lenght = tags.length
 
