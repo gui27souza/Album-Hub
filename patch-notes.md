@@ -1,5 +1,23 @@
 # Album-Hub Patch Notes
 
+#### Planned next features
+
+- Artist Page
+- User Page
+- Create lists
+- Custom rates
+
+### Album-Hub 3.0
+
+- Major Interface Funcionality update
+  - Add albums to the library via index
+  - Rate album and tracklist via album page
+  
+- Program architechture rebuild
+
+- Scrapped:
+  - Custom rates
+
 ### Album-Hub 2.1
 
 - Custom rates
