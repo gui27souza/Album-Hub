@@ -10,7 +10,7 @@
     // Functions
     const {readData, readSettings, updateData, updateSettings} = require('./file-handler')
     const {getAlbumData} = require('./read-data')
-    const {addAlbum, deleteAlbum} = require('./modify-data')
+    const {addAlbum, deleteAlbum, updateAlbumRate, updateTracklistRate} = require('./modify-data')
     const {searchAlbumAPI, getAlbumAPI} = require('./lastfm-api')
 
 // 
@@ -130,6 +130,50 @@ app.use(express.json())
         const albumDeleted = deleteAlbum(album_name, artist)
 
         console.log(album_name, 'by', artist, 'deleted from the library\n')
+        return res.status(200)
+    })
+
+// 
+
+// Update album rate
+
+    app.put('/data/updateAlbum/album/albumRate', (req, res) => {
+
+        const album_name = req.query.album_name
+        const artist = req.query.artist
+
+        const rate = req.body.rate
+
+        const updated = updateAlbumRate(album_name, artist, rate)
+
+        if (!updated) {
+            console.log()
+            return res.status(404)
+        }
+
+        console.log(album_name, 'by', artist, '- rate: ', rate,'\n')
+        return res.status(200)
+    })
+
+// 
+
+// Update tracklist rate
+
+    app.put('/data/updateAlbum/album/tracklistRate', (req, res) => {
+
+        const album_name = req.query.album_name
+        const artist = req.query.artist
+        
+        const tracklist = req.body.tracklist
+
+        const updated = updateTracklistRate(album_name, artist, tracklist)
+
+        if (!updated) {
+            console.log()
+            return res.status(404)
+        }
+
+        console.log(album_name, 'by', artist, '- tracklist rate updated\n')
         return res.status(200)
     })
 
