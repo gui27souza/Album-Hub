@@ -23,6 +23,9 @@ function hideRateAlbum() {
         const tracklist = album_data.tracklist
 
         tracklist.forEach(track => {
+            
+            let input_value = track.track_rate != -1? track.track_rate : ''
+
             rate_album_tracklist.innerHTML += `
                 <div class="rate-album-track">
                     <span 
@@ -37,11 +40,15 @@ function hideRateAlbum() {
                         class="rate-album-track-rate"  
                         id="track-rate-${track.number}" 
                         type="text"
+                        value="${input_value}"
                     >
                 </div>
             `
             track_counting++
         })
+
+        const album_rate_input = document.getElementById('album-rate-input')
+        album_rate_input.value = album_data.rate != -1 ? album_data.rate : ''
     }
 
 // 
