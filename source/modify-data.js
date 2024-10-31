@@ -91,4 +91,51 @@ const { readData, readSettings, updateData, updateSettings } = require("./file-h
     
 // 
 
-module.exports = {addAlbum, deleteAlbum}
+// Update album rate
+
+    function updateAlbumRate(album_name, artist, rate) {
+        
+        const data = readData()
+
+        album_index = data.albums.findIndex(album => album.name === album_name && album.artist === artist)
+
+        if (album_index == -1) return false
+
+        data.albums[album_index].rate = Number(rate)
+
+        updateData(data)
+
+        return true
+    }
+
+// 
+
+// Update tracklist rate
+
+    function updateTracklistRate(album_name, artist, tracklist) {
+
+        const data = readData()
+
+        album_index = data.albums.findIndex(album => album.name === album_name && album.artist === artist)
+
+        if (album_index == -1) return false
+
+        data.albums[album_index].tracklist = tracklist
+
+        let rate_sum = 0
+        let track_counting = 0
+        data.albums[album_index].tracklist.forEach(track => {
+            rate_sum += track.track_rate
+            track_counting++
+        })
+
+        data.albums[album_index].average_track_rate = Number((rate_sum/track_counting).toFixed(1))
+
+        updateData(data)
+
+        return true
+    }
+
+// 
+
+module.exports = {addAlbum, deleteAlbum, updateAlbumRate, updateTracklistRate}
