@@ -125,8 +125,10 @@ const { readData, readSettings, updateData, updateSettings } = require("./file-h
         let rate_sum = 0
         let track_counting = 0
         data.albums[album_index].tracklist.forEach(track => {
-            rate_sum += track.track_rate
-            track_counting++
+            if (track.track_rate != -1){
+                rate_sum += track.track_rate
+                track_counting++
+            }
         })
         data.albums[album_index].average_track_rate = Number((rate_sum/track_counting).toFixed(1))
 

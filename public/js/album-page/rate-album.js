@@ -41,6 +41,7 @@ function hideRateAlbum() {
                         id="track-rate-${track.number}" 
                         type="text"
                         value="${input_value}"
+                        autocomplete="off"
                     >
                 </div>
             `
