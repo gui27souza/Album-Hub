@@ -18,6 +18,8 @@
 
 // 
 
+// Send the album rating to the server
+
     async function putAlbumRate(album_rate, album_name, artist) {
 
         try {
@@ -36,8 +38,12 @@
         }
     }
 
+// 
+
+// Send the tracklist rating to the server
+
     async function putTracklistRate(tracklist, album_name, artist) {
-        
+
         try {
             const response = await fetch(`/data/updateAlbum/album/tracklistRate/?album_name=${encodeURIComponent(album_name)}&artist=${encodeURIComponent(artist)}`, {
                 method: 'PUT',
@@ -53,3 +59,5 @@
             return
         }
     }
+
+// 
