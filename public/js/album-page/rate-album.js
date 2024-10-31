@@ -19,9 +19,15 @@ function loadRateAlbum(album_data) {
     tracklist.forEach(track => {
         rate_album_tracklist.innerHTML += `
             <div class="rate-album-track">
-                <span class="rate-album-track-name">${track.number}. ${track.title}</span>
+                <span 
+                    class="rate-album-track-name" 
+                    id="track-name-${track.number}" 
+                    data-name="${track.title}"
+                >
+                    ${track.number}. ${track.title}
+                </span>
                 <hr>
-                <input class="rate-album-track-rate" id="${track.number}" type="text">
+                <input class="rate-album-track-rate" id="track-rate-${track.number}" type="text">
             </div>
         `
     })
