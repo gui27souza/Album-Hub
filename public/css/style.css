@@ -8,6 +8,8 @@
     font-size: 62.5%;
     font-family: "Exo 2", sans-serif;
    
+    --header-background: #181818;
+
     --background-dark: #1A1A1D;
     --background-light: #2C2C2E;
     --container: #3D3D42;
