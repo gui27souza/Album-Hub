@@ -21,6 +21,25 @@
 </head>
 <body>
 
+    <!-- Header -->
+    <header class="header">
+        <div class="header-left">
+            <ul class="header-left-actions">
+                <li><a href="../views/index.html">Home</a></li>
+            </ul>
+        </div>
+        <div class="header-middle">
+            <div class="header-logo">
+                <img src="../images/svg/logo/album-hub-logo-white-text.svg">
+            </div>
+        </div>
+        <div class="header-right">
+            <ul class="header-right-actions">
+                <li id="rate-album-show" onclick="showRateAlbum()">Rate Album</li>
+            </ul>
+        </div>
+    </header>
+
     <!-- Main Container -->
     <section class="album-page-container">
 
@@ -61,7 +80,7 @@
     </section>
 
     <!-- Rate Album Section -->
-    <div class="rate-album-show" id="rate-album-show" onclick="showRateAlbum()">
+    <div >
         <span>Rate Album</span>
     </div>
     <section class="rate-album-container" id="rate-album-container">
