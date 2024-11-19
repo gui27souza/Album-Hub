@@ -1,16 +1,3 @@
-.rate-album-show {
-    position: fixed;
-    top: 0;
-    right: 0;
-
-    background-color: aliceblue;
-    font-size: 2rem;
-
-    margin: 2rem;
-    padding: 1rem;
-    border-radius: 1rem;
-}
-
 .rate-album-hide {
     position: absolute;
     top: 0;
