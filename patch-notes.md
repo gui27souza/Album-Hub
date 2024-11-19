@@ -7,6 +7,12 @@
 - Create lists
 - Custom rates
 
+## Album-Hub 3.1
+
+- Header
+  - Better navigation
+  - Actions organized
+
 ### Album-Hub 3.0
 
 - Major Interface Funcionality update
