@@ -7,6 +7,8 @@ body {
     background-image: 
         linear-gradient(-40deg, var(--album-background-dark) 50%, var(--album-background-light))
     ;
+
+    overflow-y: hidden;
 }
 
 .album-page-container {
@@ -28,7 +30,7 @@ body {
 .album-page-container {
     width: var(--main-width);
 
-    height: 90vh;
+    height: calc(90vh - 8rem);
 
     padding: var(--container-padding);
 
@@ -45,7 +47,7 @@ body {
     display: flex;
     flex-flow: row;
     gap: var(--container-gap);
-    height: 50%;
+    height: 45%;
 }
 
 .album-page-header-image {
@@ -101,7 +103,7 @@ body {
     display: flex;
     gap: var(--container-gap);
 
-    height: calc(50% - var(--container-gap));
+    height: calc(55% - var(--container-gap));
     width: 100%;
 }
 
