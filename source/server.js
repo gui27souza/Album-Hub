@@ -25,7 +25,7 @@ app.use(express.json())
 
     const PORT = 2727
     app.listen(PORT, () => {
-        console.log('Server running on http://localhost:2727/views/index.html\n')
+        console.log(`Server running on http://localhost:${PORT}/views/index.html\n`)
     })
 
 // 
