@@ -1,9 +1,12 @@
+// Modules import
+const Vibrant = require('node-vibrant')
+
 // Functions import
 const { readData, readSettings, updateData, updateSettings } = require("./file-handler")
 
 // Add album from front-end to data
 
-    function addAlbum(album_data) {
+    async function addAlbum(album_data) {
 
         // Albums without tracklist are not supported
         if (!album_data.tracks) return -1
@@ -12,8 +15,10 @@ const { readData, readSettings, updateData, updateSettings } = require("./file-h
         
         // Organize data
         const album_name = album_data.name
-        const artist = album_data.artist        
+        const artist = album_data.artist
         const cover = album_data.image[4]['#text']
+        const palette = await formatPalette(cover)
+
         const tracklist = formatTracklist(album_data.tracks.track)
         const tags = formatTags(album_data.tags.tag)
         const wiki = album_data.wiki? album_data.wiki.content : -1
@@ -22,12 +27,17 @@ const { readData, readSettings, updateData, updateSettings } = require("./file-h
         const newAlbum = { 
             name: album_name,
             artist: artist,
+
             cover: cover,
-            "rate": -1,
-            "custom_rates": -1,
+            palette: palette,
+
+            rate: -1,
+            custom_rates: -1,
+
             tracklist: tracklist,
-            "average_track_rate": -1,
-            tags: tags,
+            average_track_rate: -1,
+
+            tags: tags,            
             wiki: wiki
         }
 
@@ -39,7 +49,46 @@ const { readData, readSettings, updateData, updateSettings } = require("./file-h
 
 // 
 
-// Format tracklist and tags sent from front-end to data format
+// Format palette, tracklist and tags to data format
+
+    async function formatPalette(cover) {
+
+        try {
+            let palette = await Vibrant.from(cover)
+            .maxColorCount(4)
+            .quality(50)
+            .getPalette()
+
+            const formatted_palette = {}
+            
+            for (const swatchName in palette) {
+                const swatch = palette[swatchName];
+                if (swatch) {
+                    formatted_palette[swatchName] = {
+                        color: rgbToHex(swatch.rgb),
+                        population: swatch.population
+                    }
+                }
+            } 
+
+            return formatted_palette
+        }
+
+        catch (err) {
+            console.log('Error with Album Palette: ', err)
+            return false
+        }
+    }
+    function rgbToHex(rgb) {
+        return (
+            '#' +
+            rgb.map(x =>
+                Math.round(x).toString(16).padStart(2, '0')
+            ).join('')
+        );
+    }
+    
+    
 
     function formatTracklist(tracklist) {
         let formated_tracklist = []
