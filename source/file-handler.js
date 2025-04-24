@@ -17,9 +17,7 @@ const path = require('path')
         return JSON.parse(data)
     }
 
-// 
-
-// Read the data files and settings file
+    // Read the data files and settings file
     
     function readData() {
         return readJsonFile('data.json')
@@ -44,9 +42,7 @@ const path = require('path')
         return true
     }
 
-// 
-
-// Update the album library data and the settings
+    // Update the album library data and the settings
     
     function updateData(updatedDataJson) {
         return updateJsonFile('data.json', updatedDataJson)

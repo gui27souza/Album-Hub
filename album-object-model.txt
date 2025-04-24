@@ -1,0 +1,23 @@
+{
+   "name"
+   "artist"
+   "cover"
+   "palette": {
+      "": {
+         "color"
+         "population"
+      }
+   },
+   "rate"
+   "custom_rates"
+   "tracklist": [
+      {
+         "number"
+         "title"
+         "track_rate"
+      }
+   ],
+   "average_track_rate":
+   "tags": []
+   "wiki"
+}

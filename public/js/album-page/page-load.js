@@ -27,7 +27,7 @@
         const album_cover = document.getElementById('album-cover')
         album_cover.src = album_data.cover
 
-        await getAlbumColors()
+        albumColors(album_data.palette)
 
         // Rate and Tracklist
 

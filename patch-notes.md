@@ -19,6 +19,8 @@
   - Add albums to the library via index
   - Rate album and tracklist via album page
   
+- Album Color Shadow on album-item on index
+
 - Program architechture rebuild
 
 - Scrapped:

@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     order('random')
 })
 
+
+
 // Get the data from the JSON file and use it
 
     function loadPage() {
@@ -15,7 +17,26 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         // Load all the albums in the home page
         data.forEach(album => {
-            createAlbums(album.name, album.artist, album.cover, album.rate, album.average_track_rate)
+            createAlbums(album.name, album.artist, album.cover, album.palette, album.rate, album.average_track_rate)
+        })
+
+        const album_item_list = document.querySelectorAll('.album-item');
+
+        album_item_list.forEach((element) => {
+            
+            element.style.filter = `drop-shadow(0 0 0 #00000000)`
+
+            element.addEventListener('mouseenter', () => {
+                element.style.filter = `
+                    drop-shadow(0 0 2rem ${element.dataset.color})
+                    drop-shadow(0 0 1rem ${element.dataset.color})
+                    drop-shadow(0 0 1rem ${element.dataset.color})
+                `
+            })
+
+            element.addEventListener('mouseleave', () => {
+                element.style.filter = `drop-shadow(0 0 0 #00000000)`
+            })
         })
     }
 
@@ -23,7 +44,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 // Create the album HTML element in the interface
 
-    function createAlbums(album_name, artist, cover, rate, average_track_rate) {
+    function createAlbums(album_name, artist, cover, palette, rate, average_track_rate) {
 
         // Create and add classes and attributes to the item div
         const album_element = document.createElement("div")
@@ -32,6 +53,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         album_element.setAttribute('data-album', `${album_name}`)
         album_element.setAttribute('data-artist', `${artist}`)
         album_element.setAttribute('data-rate', `${rate}`)
+        album_element.setAttribute('data-color', `${palette.Vibrant.color}`)
 
         if (cover == "") cover = "../images/album-cover-not-found.png"
 
