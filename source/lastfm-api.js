@@ -3,18 +3,21 @@ const {readData, readSettings, updateData, updateSettings} = require('./file-han
 // Get the actual album object
 
     async function searchAlbumAPI(album_name, artist) {
-
+    
+        // Get LastFM API Key
         const settings = readSettings()
         const api_key = settings.api_key
 
+        // Fetches the LastFM API to get the album
         try {
             const response = await fetch(`https://ws.audioscrobbler.com/2.0/?limit=1&method=album.search&album=${encodeURIComponent(artist)}+${encodeURIComponent(album_name)}&api_key=${api_key}&format=json`)
             
+            // Got album succesfully
             const data = await response.json()
-
             return data.results.albummatches.album[0]
         } 
         
+        // Unexpected Error
         catch (error) {
             console.error('Error fetching album', error)
             return false

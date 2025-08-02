@@ -12,6 +12,7 @@
     const {getAlbumData} = require('./read-data')
     const {addAlbum, deleteAlbum, updateAlbumRate, updateTracklistRate} = require('./modify-data')
     const {searchAlbumAPI, getAlbumAPI} = require('./lastfm-api')
+    const {getTimeLog} = require('./internal-funcs')
 
 // 
 
@@ -25,7 +26,7 @@ app.use(express.json())
 
     const PORT = 2727
     app.listen(PORT, () => {
-        console.log(`Server running on http://localhost:${PORT}/views/index.html\n`)
+        console.log(getTimeLog() + `\nServer running on http://localhost:${PORT}/views/index.html\n`)
     })
 
 // 
@@ -38,7 +39,7 @@ app.use(express.json())
         const settings = readSettings()
 
         // Get successful
-        console.log('Got settings\n')
+        console.log(getTimeLog() + '\nGot settings\n')
         return res.status(200).json(settings)
     })
 
@@ -52,7 +53,7 @@ app.use(express.json())
         const data = readData()
 
         // Get successful
-        console.log('Got data\n')
+        console.log(getTimeLog() + '\nGot data\n')
         return res.status(200).json(data)
     })
 
@@ -62,31 +63,31 @@ app.use(express.json())
 
     app.get('/data/album', (req, res) => {
 
-        // Get data
+        // Get album parameters from url
         const album_name = req.query.album_name
         const artist = req.query.artist
 
         // Get album from user with data
         const album_data = getAlbumData(album_name, artist)
 
-        // Error - album not in the library
-        if (album_data == false) return res.status(404).send('Album not in user library!')
+        // Error -1 -> album not in the library
+        if (album_data == 404) return res.status(404).send('Album not in user library!')
 
-        // Get successful
+        // Got Album successfully
         return res.status(200).json(album_data)
     })
 
 // 
 
-// Search album
+// Search album using LastFM API
 
     app.get('/search/album', async (req, res) => {
 
-        // Get data
+        // Get album parameters from url
         const album_name = req.query.album_name
         const artist = req.query.artist
 
-        // Search album with data
+        // Search album using LastFM API
         const album = await searchAlbumAPI(album_name, artist)
 
         // Error

@@ -9,8 +9,8 @@ const path = require('path')
         const dataPath = path.join(__dirname, `../data/${fileName}`)
 
         if (!fs.existsSync(dataPath)) {
-            console.error(`Arquivo ${fileName} não encontrado em:`, dataPath)
-            process.exit(1)
+            console.error(`${fileName} - File not found in: `, dataPath)
+            return 1
         }
 
         const data = fs.readFileSync(dataPath, 'utf8')

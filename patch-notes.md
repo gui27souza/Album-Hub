@@ -7,17 +7,15 @@
 - Create lists
 - Custom rates
 
-## Album-Hub 3.1
-
-- Header
-  - Better navigation
-  - Actions organized
-
 ### Album-Hub 3.0
 
 - Major Interface Funcionality update
   - Add albums to the library via index
   - Rate album and tracklist via album page
+
+- Header
+  - Better navigation
+  - Actions organized
   
 - Album Color Shadow on album-item on index
 
